@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Facturas Normales -->
+    <record model="account.move" id="ccf1">
+        <field name="partner_id" ref="base.res_partner_12"/>
+        <field name="ref">PV0001</field>
+        <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+        <field name="invoice_date" eval="time.strftime('%Y-%m')+'-01'"/>
+        <field name="journal_id" search="[('name','=','Comprobante Credito Fiscal')]"/>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="move_type">out_invoice</field>
+        <field name="invoice_user_id" ref="base.user_demo"/>
+        <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_2'),
+                'price_unit': 642.0,
+                'quantity': 1,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'sale')], limit=1).ids)]
+                }),
+            ]"/>
+    </record>
+
+    <record model="account.move" id="ccf2">
+        <field name="partner_id" ref="base.res_partner_12"/>
+        <field name="ref">PV0002</field>
+        <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+        <field name="invoice_date" eval="time.strftime('%Y-%m')+'-02'"/>
+        <field name="journal_id" search="[('name','=','Comprobante Credito Fiscal')]"/>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="move_type">out_invoice</field>
+        <field name="invoice_user_id" ref="base.user_demo"/>
+        <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_2'),
+                'price_unit': 642.0,
+                'quantity': 2,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'sale')], limit=1).ids)]
+                }),
+            ]"/>
+    </record>
+    <!-- Facturas Rectificativas -->
+    <record model="account.move" id="ccf2_rect">
+        <field name="partner_id" ref="base.res_partner_12"/>
+        <field name="ref">PV0002</field>
+        <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+        <field name="invoice_date" eval="time.strftime('%Y-%m')+'-02'"/>
+        <field name="journal_id" search="[('name','=','Nota de Credito')]"/>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="move_type">out_invoice</field>
+        <field name="inv_refund_id" ref="ccf2"/>
+        <field name="invoice_user_id" ref="base.user_demo"/>
+        <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_2'),
+                'price_unit': 642.0,
+                'quantity': 2,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'sale')], limit=1).ids)]
+                }),
+            ]"/>
+    </record>
+    <record model="account.move" id="ccf2">
+        <field name="inv_refund_id" ref="ccf2_rect"/>
+    </record>
+    <!--function model="account.move" name="action_post">
+        <value eval="[
+            ref('ccf1'),
+            ref('ccf2'),
+            ref('ccf2_rect')
+            ]"/>
+        /function-->
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <!-- Chart template account links -->
+    <record id="sv_coa" model="account.chart.template">
+        <field name="complete_tax_set" eval="False"/>
+        <field name="use_anglo_saxon" eval="True"/>
+
+        <field name="property_account_receivable_id" ref="cuenta_por_cobrar"/>
+        <field name="property_account_payable_id" ref="cuenta_por_pagar"/>
+
+        <field name="property_account_expense_categ_id" ref="costo_de_los_bienes_vendidos"/>
+        <field name="property_account_income_categ_id" ref="venta_de_productos"/>
+
+        <field name="property_stock_account_input_categ_id" ref="inventario_entrante"/>
+        <field name="property_stock_account_output_categ_id" ref="inventario_saliente"/>
+        <field name="property_stock_valuation_account_id" ref="inventario"/>
+
+        <field name="income_currency_exchange_account_id" ref="ganancia_por_cambio_de_moneda"/>
+        <field name="expense_currency_exchange_account_id" ref="perdida_por_cambio_de_monedas"/>
+
+        <field name="default_cash_difference_income_account_id" ref="ganancia_por_diferencia_de_efectivo"/>
+        <field name="default_cash_difference_expense_account_id" ref="perdida_por_diferencia_de_efectivo"/>
+        <field name="default_pos_receivable_account_id" ref="cuenta_por_cobrar_(pos)"/>
+    </record>
+</data>
+<data noupdate="1">
+    <function model="account.chart.template" name="try_loading">
+        <value eval="[ref('l10n_sv.sv_coa')]"/>
+    </function>
+</data>
+</odoo>

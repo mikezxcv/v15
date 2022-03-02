@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Fiscal Position Templates -->
+        <record id="fiscal_position_template_exento_ventas" model="account.fiscal.position.template">
+            <field name="name">Exento y No Sujetos (Venta)</field>
+            <field name="chart_template_id" ref="sv_coa" />
+        </record>
+        
+        <record id="fiscal_position_template_exento_compras" model="account.fiscal.position.template">
+            <field name="name">Exento y No Sujetos (Compras)</field>
+            <field name="chart_template_id" ref="sv_coa" />
+        </record>
+
+        <record id="fiscal_position_template_gran_ventas" model="account.fiscal.position.template">
+            <field name="name">Gran Contribuyen (Ventas)</field>
+            <field name="chart_template_id" ref="sv_coa" />
+        </record>
+        <record id="fiscal_position_template_gran_compras" model="account.fiscal.position.template">
+            <field name="name">Gran Contribuyente (Compras)</field>
+            <field name="chart_template_id" ref="sv_coa" />
+        </record>
+        
+        <record id="fiscal_position_template_importacion" model="account.fiscal.position.template">
+            <field name="name">Importacion</field>
+            <field name="chart_template_id" ref="sv_coa" />
+        </record>
+        <record id="fiscal_position_template_exportacion" model="account.fiscal.position.template">
+            <field name="name">Exportacion</field>
+            <field name="chart_template_id" ref="sv_coa" />
+        </record>
+        
+        <record id="fiscal_position_template_iva_ventas" model="account.fiscal.position.template">
+            <field name="name">Débito Fiscal</field>
+            <field name="chart_template_id" ref="sv_coa" />
+        </record>
+        <record id="fiscal_position_template_iva_compras" model="account.fiscal.position.template">
+            <field name="name">Credito Fiscal</field>
+            <field name="chart_template_id" ref="sv_coa" />
+        </record>
+
+    </data>
+</odoo>

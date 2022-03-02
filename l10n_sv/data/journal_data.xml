@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="fcf_journal" model="account.journal">
+            <field name="name">Factura Consumidor Final</field>
+            <field name="code">FCF</field>
+            <field name="type">sale</field>
+            <field name="default_account_id" search="[('name', '=', 'Venta de productos')]"/>
+            <field name="show_on_dashboard" eval="True"/>
+            <field name="refund_sequence" eval="False"/>
+        </record>
+        <record id="ccf_journal" model="account.journal">
+            <field name="name">Comprobante Credito Fiscal</field>
+            <field name="code">CCF</field>
+            <field name="type">sale</field>
+            <field name="default_account_id" search="[('name', '=', 'Venta de productos')]"/>
+            <field name="show_on_dashboard" eval="True"/>
+            <field name="refund_sequence" eval="False"/>
+        </record>
+        <record id="exp_journal" model="account.journal">
+            <field name="name">Factura de Exportacion</field>
+            <field name="code">EXP</field>
+            <field name="type">sale</field>
+            <field name="default_account_id" search="[('name', '=', 'Venta de productos')]"/>
+            <field name="show_on_dashboard" eval="False"/>
+            <field name="refund_sequence" eval="False"/>
+        </record>
+        <record id="anu_journal" model="account.journal">
+            <field name="name">Anulacion</field>
+            <field name="code">ANU</field>
+            <field name="type">sale</field>
+            <field name="default_account_id" search="[('name', '=', 'Venta de productos')]"/>
+            <field name="show_on_dashboard" eval="False"/>
+            <field name="refund_sequence" eval="False"/>
+        </record>
+        <record id="ndc_journal" model="account.journal">
+            <field name="name">Nota de Credito</field>
+            <field name="code">NDC</field>
+            <field name="type">sale</field>
+            <field name="default_account_id" search="[('name', '=', 'Venta de productos')]"/>
+            <field name="show_on_dashboard" eval="False"/>
+            <field name="refund_sequence" eval="False"/>
+        </record>
+        <record id="axp_journal" model="account.journal">
+            <field name="name">Anulacion de Exportacion</field>
+            <field name="code">AXP</field>
+            <field name="type">sale</field>
+            <field name="default_account_id" search="[('name', '=', 'Venta de productos')]"/>
+            <field name="show_on_dashboard" eval="False"/>
+            <field name="refund_sequence" eval="False"/>
+        </record>
+        <record id="cccf_journal" model="account.journal">
+            <field name="name">Compras con Comprobante Credito Fiscal</field>
+            <field name="code">CCCF</field>
+            <field name="type">purchase</field>
+            <field name="default_account_id" search="[('name', '=', 'Costo de los bienes vendidos')]"/>
+            <field name="show_on_dashboard" eval="True"/>
+            <field name="refund_sequence" eval="False"/>
+        </record>
+
+        <record id="crec_journal" model="account.journal">
+            <field name="name">Compras con Recibos</field>
+            <field name="code">CREC</field>
+            <field name="type">purchase</field>
+            <field name="default_account_id" search="[('name', '=', 'Gastos')]"/>
+            <field name="show_on_dashboard" eval="False"/>
+            <field name="refund_sequence" eval="False"/>
+        </record>
+        <record id="cfcf_journal" model="account.journal">
+            <field name="name">Compras con Factura Consumidor Final</field>
+            <field name="code">CFCF</field>
+            <field name="type">purchase</field>
+            <field name="default_account_id" search="[('name', '=', 'Gastos')]"/>
+            <field name="show_on_dashboard" eval="False"/>
+            <field name="refund_sequence" eval="False"/>
+        </record>
+        <record id="cexc_journal" model="account.journal">
+            <field name="name">Compras Sujeto Excluido</field>
+            <field name="code">CEXC</field>
+            <field name="type">purchase</field>
+            <field name="default_account_id" search="[('name', '=', 'Gastos')]"/>
+            <field name="show_on_dashboard" eval="False"/>
+            <field name="refund_sequence" eval="False"/>
+        </record>
+        <record id="import_journal" model="account.journal">
+            <field name="name">Importaciones</field>
+            <field name="code">IMPOR</field>
+            <field name="type">purchase</field>
+            <field name="default_account_id" search="[('name', '=', 'Gastos')]"/>
+            <field name="show_on_dashboard" eval="False"/>
+            <field name="refund_sequence" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

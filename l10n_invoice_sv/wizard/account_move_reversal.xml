@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <odoo>
+        <data>
+          <record model="ir.ui.view" id="view_refund_l10n_invoice_sv">
+                <field name="name">view_refund_l10n_invoice_sv</field>
+                <field name="model">account.move.reversal</field>
+                <field name="inherit_id" ref="account.view_account_move_reversal"/>
+                <field name="arch" type="xml">
+                    <xpath expr="//field[@name='journal_id']" position="replace">
+                        <field name="journal_id" />
+                    </xpath>
+                </field>
+          </record>
+        </data>
+    </odoo>

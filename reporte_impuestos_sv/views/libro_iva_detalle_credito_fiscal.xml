@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_det_iva_cred_fiscal_tree" model="ir.ui.view">
+            <field name="name">view_det_iva_cred_fiscal_tree</field>
+            <field name="model">iva.credito.fiscal</field>
+            <field name="priority">2</field>
+            <field name="arch" type="xml">
+                <tree string="Detalle de I.V.A. Credito Fiscal"
+                      decoration-bf="message_needaction==True">
+                    <field name="message_needaction" invisible="1"/>
+                    <field name="libro_iva_id"/>
+                    <field name="correlativo"/>
+                    <field name="fecha_emision"/>
+                    <field name="num_corr_preimp"/>
+                    <field name="partner_id"/>
+                    <field name="prp_exentas"/>
+                    <field name="prp_gravadas"/>
+                    <field name="prp_debito_fiscal"/>
+                    <field name="iva_percibido"/>
+                    <field name="iva_retenido"/>
+                    <field name="total"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_libro_iva_tree_ccf" model="ir.actions.act_window">
+            <field name="name">Detalle de Libro de Credito Fiscal</field>
+            <field name="res_model">iva.credito.fiscal</field>
+            <field name="domain">[('libro_iva_id.type', '=', 'ccf')]</field>
+            <field name="context">{'libro_iva_id.type': 'ccf', 'default_libro_iva_id_type': 'ccf'}</field>
+            <field name="view_mode">tree</field><!-- pendiente ,calendar,graph-->
+            <field name="view_id" ref="reporte_impuestos_sv.view_det_iva_cred_fiscal_tree"/>
+        </record>
+
+        <menuitem id="detalle_iva_credito_fiscal"
+                  name="Detalle de I.V.A. Credito Fiscal"
+                  groups="account.group_account_user"
+                  parent="reporte_impuestos_sv.main_detalle_iva"
+                  action="action_libro_iva_tree_ccf"/>
+
+    </data>
+</odoo>

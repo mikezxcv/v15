@@ -1,0 +1,2552 @@
+.alert [data-notify="dismiss"] {
+    margin-right: 5px;
+    background: black;
+    color: #ffffff;
+}
+
+.alert span {
+    font-family: "Montserrat", "Odoo Unicode Support Noto", sans-serif;
+    max-width: 100%;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.screen .top-content .top-content-center h1 {
+    line-height: 0.5em;
+}
+
+.pos .ticket-screen {
+    background: #fff;
+    z-index: 100;
+}
+
+.pos .control-buttons {
+    padding: 10px;
+    margin-bottom: 5px;
+    background: inherit;
+}
+
+.pos .block-screen {
+    margin-top: 30%;
+    color: #FF5722;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 900;
+}
+
+.pos .payment-method-button {
+    height: 100px;
+    min-width: 300px;
+    line-height: 30px !important;
+    color: black;
+    padding: 20px !important;
+    font-size: 20px !important;
+    /*padding-top: 60px !important;*/
+    font-weight: 900 !important;
+}
+
+.pos .line_extend {
+    margin-left: 5px;
+}
+
+.pos .order .orderline .info-list {
+    color: black;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 0px;
+    font-size: 13px;
+}
+
+.pos .mobile_update_cart_item {
+    margin-left: 10px;
+}
+
+.pos .mobile_update_cart_item>li {
+    margin-left: 0px !important;
+}
+
+.paymentline.selected {
+    background: #6EC89B !important;
+}
+
+
+/*auto complete*/
+
+.ui-autocomplete {
+    position: absolute;
+    cursor: default;
+    z-index: 1001 !important;
+    background-color: #ffffff;
+    min-height: 40px;
+}
+
+.ui-menu-item {
+    color: blue;
+    font-family: "Montserrat", "Odoo Unicode Support Noto", sans-serif;
+    cursor: pointer;
+    min-height: 20px;
+    z-index: 1001 !important;
+    padding: 5px;
+}
+
+.ui-menu-item a {
+    line-height: 40px;
+    font-weight: 400;
+    padding: 15px;
+    color: blue;
+    font-size: 20px;
+    min-height: 40px;
+    border-bottom: 1px solid #FF5722;
+}
+
+.ui-menu-item:hover {
+    background: #6EC89B;
+    font-width: 900;
+}
+
+.pos .image-uploader {
+    cursor: pointer;
+}
+
+.pos .card-issue {
+    color: #FF5722;
+    line-height: 30px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.pos .card-successfully {
+    color: #6EC89B;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.pos .leftpane {
+    border-left: unset;
+    border-right: unset;
+    width: 30%;
+    max-width: 650px;
+}
+
+.pos .order-container {
+    /*border-left: 1px solid gray;*/
+    /*border-right: 1px solid gray;*/
+}
+
+.pos .order {
+    background: inherit;
+    font-size: 13px;
+}
+
+.card {
+    font-family: "Montserrat", "Odoo Unicode Support Noto", sans-serif;
+}
+
+.pos .search-box-full {
+    width: 100%;
+}
+
+.pos .switchpane .btn-switchpane h1 {
+    line-height: 1.0em !important;
+}
+
+.button,
+input {
+    font-family: inherit;
+}
+
+.pos .login_div {
+    text-align: unset;
+    width: 100%;
+    margin-left: unset
+}
+
+.alert b {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.pos .modal-dialog .popup {
+    line-height: 30px;
+    background-color: #fff;
+    max-width: 800px;
+}
+
+.pos .modal-dialog .full-form {
+    min-width: 90% !important;
+    min-height: 90% !important;
+}
+
+.pos .modal-dialog .full-form .form-footer {
+    min-height: 60px;
+    padding: 10px;
+    margin-right: 20px;
+    position: fixed;
+    float: right;
+    bottom: 20px;
+    right: 0;
+}
+
+.pos .qty-soldout {
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    font-size: 16px;
+    color: black;
+    background: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+}
+
+
+/*.pos .popup.popup-number {*/
+
+
+/*    min-width: 90% !important;*/
+
+
+/*    min-height: 90% !important;*/
+
+
+/*}*/
+
+.pos .modal-dialog .medium-form {
+    min-width: 40% !important;
+}
+
+.pos .modal-dialog .popup .product .product-name {
+    background: unset;
+}
+
+.pos .client-details-contents {
+    border-bottom: 3px solid #6EC89B;
+}
+
+.pos .js_msg {
+    font-size: 11px;
+    max-width: 200px;
+    font-weight: 900;
+    line-height: 20px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.pos .paymentlines {
+    margin-top: 23px;
+}
+
+.pos .paymentlines-container {
+    border-bottom: unset;
+}
+
+.screen .right-content {
+    width: 60%;
+}
+
+.pos .popup-password .popup-input {
+    font-size: 100px;
+    padding-bottom: 20px;
+}
+
+.pos .paymentline {
+    line-height: 50px;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.paymentlines .paymentline:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.pos .keyboard-guide {
+    color: #FF5722;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    font-size: 10px !important;
+    display: inline-table;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.pos .loader-feedback .progressbar {
+    background: #ffffff;
+    height: 2px;
+}
+
+.pos .loader-feedback .progressbar>.progress {
+    background: blue;
+}
+
+.pos .pos-logo {
+    height: 48px;
+    margin-left: 0px;
+    margin-top: 0px;
+    vertical-align: middle;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pos .successfully_order {
+    padding: 10px;
+    margin: 20px;
+    line-height: 39px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.pos .header {
+    margin-bottom: 20px;
+}
+
+.pos .client-detail {
+    text-align: left;
+    margin: 3px;
+    padding: 3px;
+    color: black;
+}
+
+.pos .client-detail .label {
+    font-weight: 900 !important;
+    color: black;
+    width: 100px;
+    font-size: 13px;
+    text-align: left;
+    display: inline-flex;
+    min-width: 100px;
+}
+
+.pos .client-detail .detail {
+    text-align: right;
+    display: inline-flex;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px #cecbcb;
+    margin-bottom: 4px;
+    background: white;
+    color: black;
+    width: 250px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px dashed #e2e2e2;
+}
+
+.ticket-screen .ordersLine {
+    max-height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-y: auto;
+}
+
+.ticket-screen .orders .col.start {
+    text-align: left;
+}
+
+.ticket-screen .orders .col.end {
+    text-align: right;
+}
+
+.pos .popup .title {
+    line-height: 30px;
+    font-family: "Montserrat", "Odoo Unicode Support Noto", sans-serif;
+    color: black;
+    padding: 30px;
+    background: #6ec89b;
+}
+
+.pos .actionpad .button:hover {
+    background: #6ec89b;
+}
+
+.pos .modal-dialog .popup {
+    font-family: "Montserrat", "Odoo Unicode Support Noto", sans-serif;
+}
+
+.btn,
+.navbar .navbar-nav>li>a.btn {
+    margin: 1px 1px !important;
+}
+
+.splitbill-screen.screen .pay-button .button {
+    background: #fff;
+}
+
+.splitbill-screen.screen .pay-button .button:hover {
+    background: #6EC89B
+}
+
+.pos .control-button {
+    height: 80px;
+    width: 48%;
+    min-width: unset;
+    float: left;
+    background: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 14px;
+    color: black;
+    font-size: 13px;
+    padding: 0px;
+    border: solid 1px rgb(209, 209, 209);
+    box-shadow: 0 2px 2px 0 rgb(153 153 153 / 14%), 0 3px 1px -2px rgb(153 153 153 / 20%), 0 1px 5px 0 rgb(153 153 153 / 12%);
+}
+
+.pos .control-button:hover {
+    background: #6EC89B
+}
+
+.pos .control-button span:hover {
+    font-size: 14px;
+}
+
+.pos .control-button.highlight,
+.pos .button.highlight {
+    border: 0px !important;
+    color: black !important;
+    font-weight: 900;
+}
+
+.pos .control-button span {
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px;
+    line-height: 15px;
+}
+
+.pos .switchpane {
+    height: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .pos .payment-buttons>div {
+        margin-right: 0px;
+        width: 45%;
+    }
+    .pos .actionpad .button.set-customer {
+        font-size: unset !important;
+    }
+    .pos .actionpad .button.pay {
+        font-size: unset !important;
+    }
+    .pos .breadcrumb {
+        width: 100% !important;
+        height: 50px;
+        margin-right: 25px;
+        margin-bottom: 5px;
+    }
+    .pos .filter {
+        display: none !important;
+    }
+    .pos .popups .popup-selection {
+        left: 0px !important;
+        width: 95%;
+    }
+    .pos .popup.popup-selection .selection-item {
+        width: 30% !important;
+        height: 80px !important;
+    }
+    .pos .modal-dialog {
+        width: 95%;
+    }
+    .pos .numpad {
+        margin-right: 0px !important;
+    }
+    .pos .breadcrumb-button.breadcrumb-home {
+        font-size: 20px !important;
+    }
+    .screen .top-content .next {
+        margin-right: 0px !important;
+    }
+    .screen .top-content .button {
+        margin-right: 0px !important;
+    }
+    .pos .searchbox-client input {
+        width: unset !important;
+    }
+    .screen .top-content .save {
+        margin-right: 20px !important;
+    }
+    .pos .client-selected {
+        display: none;
+    }
+    .pos .switchpane {
+        height: 70px;
+        width: 100%;
+    }
+    .pos .pos-search-bar .filter .options {
+        min-width: unset !important;
+    }
+    .pos .rightpane-header .pos-search-bar {
+        margin-left: 0px !important;
+    }
+    .pos .pos-search-bar .search {
+        min-width: 190px !important;
+    }
+    .pos .order .orderline .price {
+        font-size: 13px !important;
+    }
+    .pos .login-button {
+        margin: 10px;
+    }
+    .pos .order .orderline .product-name {
+        line-height: 20px !important;
+    }
+    .paymentmethods {
+        margin-top: 0px !important;
+    }
+    .pos .button-extend>button {
+        width: 30% !important;
+    }
+    .pos .control-button {
+        width: 30%;
+        height: 40px;
+        line-height: 20px;
+        font-size: 13px !important;
+        margin: 5px;
+    }
+    .pos .payment-numpad .numpad button {
+        height: 60px !important;
+        width: 22% !important;
+    }
+    .pos .popups .popup-selection {
+        left: 0px !important;
+        width: 95%;
+    }
+    .pos .payment-status-change .label {
+        font-size: unset !important;
+    }
+    .pos .payment-buttons {
+        width: unset !important;
+        max-width: 100% !important;
+    }
+    .payment-screen .payment-controls {
+        width: 43%;
+    }
+    .payment-screen .customer-button {
+        width: 43%;
+    }
+    .pos .modal-dialog {
+        width: 95%;
+    }
+    .pos .button-label {
+        font-size: 11px !important;
+    }
+    .pos .actionpad .button .fa-user {
+        display: none;
+    }
+    .pos .leftpane .pads .subpads {
+        margin-left: 0px !important;
+    }
+    .pos .numpad button {
+        height: 52px;
+    }
+    .pos .payment-numpad .numpad button {
+        height: 60px !important;
+    }
+    .pos .numpad {
+        margin-right: 0px !important;
+    }
+    .pos .popups .popup-selection {
+        left: 0px !important;
+        width: 95%;
+    }
+    .pos .numpad {
+        margin-right: 0px !important;
+    }
+    .pos .popup .category-simple-button {
+        width: 38% !important;
+    }
+    .pos .payment-numpad .numpad button {
+        height: 60px !important;
+    }
+    .pos .modal-dialog .popup textarea {
+        width: 90%;
+        border: 1px solid #3c4858;
+    }
+    .pos .modal-dialog .popup .product {
+        width: 10em !important;
+        margin: 0.5em !important;
+    }
+    .pos .modal-dialog {
+        width: 95%;
+    }
+    .pos .product {
+        width: 30% !important;
+        height: 12em !important;
+        margin-bottom: 1em !important;
+    }
+    .payment-screen .paymentlines-empty .total {
+        padding: 10px !important;
+        font-size: 40px !important;
+    }
+    .pos .product .product-img-big img {
+        height: 50%;
+        width: 50%;
+    }
+    .pos .client-details-left {
+        width: 100% !important;
+    }
+    .pos .client-details-right {
+        width: 100% !important;
+    }
+    .pos .header {
+        margin-top: 35px;
+    }
+    .pos .leftpane {
+        max-width: 100% !important;
+    }
+}
+
+.pos .sub_info {
+    margin-left: 25px;
+    font-size: 13px;
+}
+
+.pos .notification {
+    font-size: 13px;
+    background: black;
+    color: white;
+    min-width: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 65%;
+    margin-left: 5px;
+    margin-top: 0px;
+    line-height: 20px;
+}
+
+.pos .line-notification {
+    font-size: 13px;
+    background: blue;
+    color: white;
+    border-radius: 65%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pos .oe_link_icon {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 13px;
+    background: #e2e2e2;
+    color: black;
+    padding: 5px;
+    border-radius: 65%;
+    font-weight: 400 !important;
+}
+
+.pos .oe_link_icon:hover {
+    background: #6EC89B !important;
+}
+
+.pos .controls button .notification {
+    margin-top: -10px !important;
+}
+
+.pos .status-buttons {
+    float: right;
+}
+
+.pos .loader-feedback {
+    top: 35% !important;
+}
+
+
+/*.pos .loader-feedback h1 {*/
+
+
+/*    display: none;*/
+
+
+/*}*/
+
+.pos .loader {
+    background-color: unset;
+    color: black;
+}
+
+.pos .o_loader {
+    margin-bottom: 10px;
+}
+
+.pos .login-body {
+    height: unset;
+}
+
+.ticket-screen .controls {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #3c4858 !important;
+    width: 100%;
+}
+
+.pos .clientlist-screen .client-list {
+    font-size: 13px;
+}
+
+.pos .clientlist-screen .client-list thead>tr,
+.pos .clientlist-screen .client-list tr:nth-child(even) {
+    background: #fff;
+    border-top: 1px;
+}
+
+.screen .top-content {
+    width: 100%;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.pos .full_screen {
+    top: 0px !important;
+}
+
+
+/*product screen*/
+
+.pos .product .product-img-big img {
+    width: unset !important;
+}
+
+.pos .tooltip-box {
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    background: #ffffff;
+    overflow: hidden;
+    overflow-y: auto;
+    display: inline-block;
+}
+
+.card .table {
+    width: 100%;
+}
+
+.pos .tooltip-line {
+    font-size: 13px;
+    line-height: 20px;
+    font-style: normal;
+    color: #000000;
+    text-align: left
+}
+
+.pos .receipt-screen .centered-content .button {
+    background: #fff;
+}
+
+.pos .info-label {
+    border-bottom: 1px solid black;
+    max-width: 50%;
+}
+
+.pos textarea {
+    padding: 5px;
+    border: 1px solid #555555;
+    min-height: 150px;
+}
+
+.pos .warning_stock {
+    float: right;
+    color: #FF5722;
+}
+
+.pos .warning_stock .fa {
+    font-size: 30px;
+}
+
+.pos .form-control {
+    width: 85%;
+}
+
+.pos .product img {
+    margin-top: 35px;
+}
+
+[badge]:after {
+    background: blue;
+}
+
+.pos .modal-dialog .popup .label {
+    font-weight: 900;
+}
+
+.pos .cashbox .input-button,
+.pos .cashbox .mode-button {
+    color: black;
+    height: 50px !important;
+    font-size: 20px !important;
+    margin: 0px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+.currencyCashBox {
+    font-size: 30px;
+    border: unset;
+    color: red;
+    font-weight: 900;
+}
+
+.cashbox-input {
+    border: 1px solid #9E9E9E;
+    width: 60%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: blue;
+    margin: 10px;
+}
+
+.pos .qty_available {
+    top: 0px;
+    bottom: 0px;
+    padding: 10px;
+    color: black;
+    left: 0px;
+    padding-left: 7px;
+    min-height: 14px;
+    text-align: left;
+    width: 100%;
+    font-size: 18px;
+    min-width: 50%;
+    z-index: 999;
+    background: unset;
+}
+
+.pos .qty_available .notification {
+    padding: 4px;
+    background: blue;
+}
+
+.pos .rightpane-header {
+    padding: 10px;
+    background: inherit;
+}
+
+.pos .category-list {
+    background: inherit;
+    max-height: 200px;
+}
+
+.pos .rightpane-header .filter-label {
+    padding: 10px;
+    color: #FF5722;
+}
+
+.pos .rightpane-header-extend {
+    float: right;
+    margin-top: 5px;
+    margin-right: 35px;
+    width: 100%;
+}
+
+.pos .rightpane-header-extend .category-simple-button {
+    background: unset;
+    border: unset;
+}
+
+.pos .rightpane-header-extend>span:hover {
+    background: #6EC89B !important;
+}
+
+.pos .category-button {
+    border-radius: 5px;
+}
+
+.receipt-screen .default-view .actions .send-email {
+    border: 1px solid #e2e2e2;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.pos .search-customer {
+    margin-left: 10px;
+}
+
+.pos .category-button .category-img img {
+    border-radius: 5px;
+}
+
+.pos .category-button .category-name {
+    text-align: center;
+    font-size: 13px;
+}
+
+.receipt-screen .default-view .actions .buttons .button {
+    background: #e2e2e2;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.receipt-screen .default-view .actions .buttons .button:hover {
+    background: #6EC89B !important;
+}
+
+.pos .category-simple-button {
+    border-radius: 5px;
+    height: 35px;
+    margin: 3px;
+    background: #fff;
+    border: unset;
+    margin: 3px;
+}
+
+.pos .category-simple-button:hover {
+    background: #6EC89B !important;
+}
+
+.pos .product-list-empty {
+    color: #FF5722;
+    padding: 30px;
+    line-height: 60px;
+}
+
+.pos .product-list-empty>p {
+    font-size: 40px !important;
+}
+
+.pos .product {
+    width: 18em;
+    height: 18em;
+    border: 1px solid #e2e2e2;
+    margin: 10px;
+}
+
+.pos .product:hover {
+    background: rgb(110, 200, 155);
+}
+
+.pos .category-simple-button .fa {
+    font-size: 20px;
+}
+
+.payment-screen .payment-buttons .button .fa {
+    top: 60%;
+    text-align: center;
+}
+
+.pos .actionpad {
+    display: inline-block;
+    width: 50%;
+    border: unset;
+    margin: 5px;
+}
+
+.pos .actionpad .button.set-customer {
+    float: left;
+    border: none;
+}
+
+.pos .actionpad .button.set-customer:hover {
+    background: #6EC89B !important;
+}
+
+.pos .leftpane .pads .subpads {
+    margin-left: 0px;
+}
+
+.pos .numpad {
+    margin: 5px;
+    border: 0px;
+    width: 50%;
+}
+
+.pos .numpad button:nth-child(4) {
+    border-top-right-radius: 5px;
+}
+
+.pos .numpad button:first-child {
+    border-top-left-radius: 5px;
+}
+
+.pos .actionpad .button:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.pos .actionpad .button.pay .pay-circle {
+    display: none;
+}
+
+.pos .mode-button {
+    font-size: 13px;
+    float: left;
+    height: 65px;
+    width: 25%;
+    font-weight: bold;
+    vertical-align: middle;
+    color: black;
+    background: #e2e2e2;
+    border-radius: 0;
+    border: 1px solid #aaaaaa;
+    transition: all 150ms linear;
+    margin-left: 0px;
+}
+
+.pos .mode-button:hover {
+    background: #6EC89B !important;
+}
+
+.pos .actionpad .button.pay {
+    width: 100%;
+    height: 70px;
+    display: inline-block;
+    margin-bottom: 3px;
+    border: unset;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.pos .actionpad .remove-order {
+    height: 70px;
+    width: 20%;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.pos .actionpad .button.pay:hover {
+    background: #6EC89B !important;
+}
+
+.pos .so_link {
+    color: blue;
+}
+
+.pos .form-footer {
+    min-height: 60px;
+    padding: 10px;
+}
+
+.pos .btn {
+    min-width: 100px;
+    font-size: 13px;
+    color: black;
+}
+
+.pos .ready_notification {
+    font-size: 13px;
+    background: blue;
+    color: white;
+    float: right;
+    min-width: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 65%;
+    margin-left: 5px;
+    margin-top: 0px;
+    line-height: 20px;
+}
+
+.pos .clientlist-screen .client-list td:first-child {
+    font-weight: 900;
+    color: blue;
+    min-width: 200px;
+    padding: 15px;
+}
+
+
+/*payment screen */
+
+.paymentmethods {
+    margin-top: 20px;
+}
+
+.paymentmethods .button:first-child {
+    border-top-width: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-radius: 5px;
+}
+
+.paymentmethods .button:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-width: 1px;
+}
+
+.paymentline .payment-amount {
+    color: #FF5722 !important;
+}
+
+.pos .payment-status-remaining {
+    padding: 5px;
+    color: black;
+    font-weight: 900;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.pos .price {
+    font-size: 16px;
+    color: blue;
+    display: inline-block;
+}
+
+.pos .product-list-container .list tr td {
+    vertical-align: top;
+}
+
+.pos .edit-client-button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    margin: 3px;
+    display: inherit;
+    background: #fff;
+    color: black;
+    border: 1px solid #e2e2e2;
+    vertical-align: top;
+}
+
+.pos .edit-client-button:hover {
+    background: #FF5722;
+}
+
+.pos .header>button {
+    font-size: 16px !important;
+    margin-right: 10px;
+    min-height: 40px;
+    min-width: 100px;
+    padding: 10px;
+    background: #e2e2e2;
+    margin-top: 10px;
+    color: black;
+    border-radius: 5px;
+}
+
+.pos .header>button:hover {
+    background: #6EC89B;
+}
+
+.ticket-screen .controls button .fa {
+    padding: 5px;
+    background: #fff;
+    border-radius: 65%;
+    margin-right: 10px;
+    min-width: 10px;
+}
+
+.ticket-screen .controls .button-right {
+    margin-right: 40px;
+    background: #FF5722;
+}
+
+.paymentlines .paymentline:first-child {
+    border-top-width: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.pos .payment-status-change {
+    color: #fff;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+.pos .payment-status-change .label {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.pos .payment-status-change .amount {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.pos .payment-status-change .highlight {
+    background: unset !important;
+}
+
+.payment-status-container .amount.highlight {
+    padding: 10px;
+    color: black !important;
+    padding-bottom: 11px;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 5px;
+    background: unset !important;
+}
+
+.pos .display-list-features-button {
+    height: auto !important;
+}
+
+.paymentmethods>div {
+    margin: 3px
+}
+
+.floor-map .table .label {
+    bottom: 15px;
+}
+
+.pos .table-checked-in {
+    display: block;
+    position: absolute;
+    text-align: left;
+    left: 5px;
+    right: 0;
+    bottom: 0;
+    top: 15px;
+    font-size: 13px;
+}
+
+.pos .table-amount {
+    display: block;
+    position: absolute;
+    left: 5px;
+    text-align: left;
+    right: 0;
+    bottom: 0;
+    top: 30px;
+    font-size: 13px;
+}
+
+.pos .payment-buttons {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+.pos .payment-buttons>div {
+    margin: 3px;
+    display: inline-block;
+    width: 22%;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+.payment-status-container {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.payment-status-container>div {
+    width: 50%;
+}
+
+.payment-screen {
+    height: 100%;
+}
+
+.pos .show-orderline-detail {
+    cursor: pointer;
+    float: left;
+    width: 30px;
+    border-radius: 65%;
+    text-align: center;
+    margin-right: 10px;
+    height: 15px;
+}
+
+.pos .show-orderline-detail:hover {
+    background: #FF5722;
+    color: #fff;
+}
+
+.pos .orderline-input {
+    font-weight: 900;
+    margin-left: 5px;
+    height: 15px;
+    padding: 20px;
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 69px;
+    margin-right: 36px;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    color: black;
+    min-height: 15px;
+}
+
+.pos .edit-line-box {
+    height: 15px;
+    font-weight: 900;
+    width: 90%;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid #e2e2e2;
+    color: black;
+}
+
+.pos input:hover,
+.pos textarea:hover,
+.pos .form-control:hover {
+    background: #6EC89B !important;
+    color: #fff !important;
+    font-weight: 900 !important;
+    font-size: 16px !important;
+    border: none !important;
+}
+
+.payment-screen .paymentlines-empty .total {
+    color: blue;
+    font-weight: 900;
+    padding: 50px;
+    font-size: 80px;
+}
+
+.pos button {
+    font-size: unset;
+}
+
+.pos .popup-number .popup-input {
+    width: 75%;
+    background: rgba(0, 0, 0, 0.14);
+    font-size: 30px;
+    box-shadow: unset;
+}
+
+.pos .payment-buttons-container .label {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.payment-screen .payment-buttons .button:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.payment-screen .payment-buttons .button:first-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.payment-screen .payment-buttons .button:first-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.screen .top-content {
+    height: 80px;
+}
+
+.screen .full-content {
+    top: 80px;
+}
+
+.payment-screen .payment-buttons .button {
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 900;
+    padding-left: 40px;
+    color: black;
+}
+
+.payment-screen .payment-buttons .button:hover {
+    background: #6EC89B;
+}
+
+.paymentmethods .button {
+    background: #e2e2e2;
+    min-width: 100px;
+    padding: 15px;
+    line-height: 35px;
+    border-radius: 5px;
+    max-height: 50px;
+    display: inline-block;
+    border-top-width: 1px;
+    ;
+}
+
+.pos .popup input,
+.pos .popup-input {
+    width: 85%;
+    margin: 5px;
+}
+
+.paymentline .payment-name {
+    line-height: 30px;
+    padding-top: 3%;
+}
+
+.payment-screen .paymentlines-empty .message {
+    line-height: 50px;
+}
+
+.pos .popup-numpad .input-button,
+.pos .popup-numpad .mode-button {
+    color: black;
+    height: 80px;
+    width: 25%;
+    margin: 0px;
+    border: 1px solid #e2e2e2;
+    border-radius: 0px;
+}
+
+.pos .popup-numpad .input-button:hover,
+.pos .popup-numpad .mode-button:hover {
+    background: #6EC89B;
+}
+
+.paymentmethods .button:hover {
+    background: #6EC89B;
+}
+
+.pos .popup-numpad {
+    width: 100% !important;
+    background: white;
+    margin: 0px;
+}
+
+.pos .viewport>video {
+    width: 450px;
+    float: right;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+}
+
+.pos .drawingBuffer {
+    display: none;
+}
+
+.pos .numpad button:last-child {
+    border-radius: 0px;
+}
+
+.pos .payment-numpad .numpad button:nth-child(16) {
+    border-bottom-left-radius: 5px;
+}
+
+.pos .numpad button:nth-child(16) {
+    border-bottom-left-radius: 5px;
+    border-radius: 0px;
+}
+
+.pos .numpad button:nth-child(13) {
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+}
+
+.pos .payment-numpad .numpad {
+    border-top: unset;
+    margin-top: 5px;
+    width: 300px;
+}
+
+.pos .payment-numpad {
+    max-width: 310px;
+    margin-left: 0px;
+}
+
+.pos .payment-numpad .numpad button:first-child {
+    border-top-left-radius: 5px;
+}
+
+.pos .numpad button:last-child {
+    border-bottom-right-radius: 5px
+}
+
+.pos .payment-numpad .numpad button {
+    color: black;
+    border: 1px solid #aaaaaa;
+    height: 70px;
+    width: 25%;
+    background-color: #e2e2e2;
+}
+
+.pos .order .orderline-note {
+    margin-left: 0px;
+    color: blue;
+}
+
+.pos .numpad button:nth-child(4) {
+    border-top-right-radius: 5px;
+}
+
+.search-bar-portal .search-box {
+    margin: unset;
+    margin-right: 20px;
+    background-color: unset;
+    border: unset;
+}
+
+.pos .add-new-customer {
+    width: 43px;
+    height: 43px;
+    background: unset;
+    border-radius: 65%;
+    border: unset;
+    color: white;
+}
+
+.pos .add-new-customer .fa {
+    font-size: 15px;
+}
+
+.pos .actionpad .button.set-customer.decentered {
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    .pos .popup.popup-number {
+        min-width: 50% !important;
+    }
+    .pos .leftpane {
+        max-width: 100% !important;
+    }
+    .floor-map .table {
+        position: inherit;
+        display: inline-block;
+        top: unset !important;
+        left: unset !important;
+        margin: 3px;
+        width: 30% !important;
+        max-width: 30%;
+        height: unset !important;
+        line-height: 70px !important;
+        min-height: 100px;
+    }
+    .pos .table-checked-in {
+        left: 0px;
+    }
+    .pos .table-amount {
+        left: -2px;
+    }
+    .floor-map .table .order-count {
+        left: unset;
+    }
+    .floor-map .edit-button.editing {
+        display: none;
+    }
+    .floor-map {
+        background: inherit !important;
+    }
+}
+
+.pos .screen {
+    overflow: unset;
+}
+
+@media screen and (max-width: 768px) {
+    .pos .payment-status-change {
+        padding: 10px !important;
+    }
+    .pos .button-extend {
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100%;
+        width: 12% !important;
+    }
+    .pos .screen {
+        position: absolute !important;
+    }
+    .payment-status-container {
+        font-size: 20px;
+        padding: 0px !important;
+        display: grid;
+    }
+    .screen .left-content {
+        max-width: unset !important;
+    }
+    .payment-status-container>div {
+        width: 100% !important;
+    }
+    .pos .client-details-left {
+        width: 100% !important;
+    }
+    .pos .payment-numpad .numpad {
+        width: 100%;
+    }
+    .pos .control-button .fa {
+        font-size: 13px !important;
+        display: none !important;
+    }
+}
+
+.pos .pos-rightheader .header-button.lock-button {
+    border: unset;
+}
+
+.pos .control-button .fa {
+    font-size: 25px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.pos .payment-status-total-due {
+    font-weight: 900;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    line-height: 20px;
+}
+
+
+/*order cart*/
+
+.pos .badge {
+    color: black;
+}
+
+.pos .value {
+    color: #FF5722;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+/*customer (client) screen*/
+
+.pos .client-picture {
+    border-radius: 32px;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    margin-right: 16px;
+    margin-left: 13px;
+    background: white;
+    position: relative;
+    /*height: 80px;*/
+    /*width: 80px !important;*/
+    /*height: 80px !important;*/
+}
+
+.pos .client-picture .fa {
+    line-height: 75px !important;
+    font-size: 40px !important;
+}
+
+.pos .header-table {
+    background: unset !important;
+}
+
+.pos .client-picture img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.pos .actionpad .button.set-customer {
+    height: 70px;
+    width: 100%;
+    display: inline-block;
+}
+
+.pos .actionpad .remove-set-customer {
+    height: 70px;
+    width: 20%;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .pos .receipt-screen .pos-receipt-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .pos .receipt-screen .pos-receipt-container * {
+        visibility: visible;
+        background: white !important;
+        color: black !important;
+    }
+    .pos .pos-receipt {
+        margin: 0;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        border: none !important;
+        font-size: 13px !important;
+        width: 266px !important;
+    }
+    .alert.alert-with-icon {
+        display: none !important;
+    }
+    .popup {
+        display: none !important;
+    }
+}
+
+.search-bar-portal .search-box input {
+    height: 40px;
+    min-width: 250px;
+    font-size: 13px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.pos .pos-search-bar .search li {
+    color: black;
+    margin: 0.2em 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 35px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.pos .scale-mode {
+    width: 20% !important;
+    flex-grow: 0;
+    background: #e2e2e2 !important;
+}
+
+.pos .scale-mode .price {
+    display: none !important;
+}
+
+.pos .scale-mode .product-name {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.pos .scale-mode .badge {
+    display: none !important;
+}
+
+.pos .pos-rightheader .header-button:last-child .fa {
+    font-size: 20px;
+}
+
+.pos .ticket-button {
+    display: flex;
+    margin-right: 1px;
+    margin-top: 1px;
+    border-top-left-radius: 5px;
+    height: 45px;
+    border-bottom: 1px solid gray;
+    line-height: 20px;
+    background: rgb(110, 200, 155);
+    border-top-right-radius: 5px;
+    margin-left: 1px;
+}
+
+.pos .ticket-button .fa {
+    padding: 5px;
+}
+
+.pos .username {
+    font-weight: 900;
+    font-size: 11px;
+}
+
+.pos .screen-login {
+    max-width: 800px;
+    height: 500px;
+    background: #fff;
+}
+
+.pos .popup.popup-selection .selection-item {
+    display: inline-flex;
+    width: 20%;
+    height: 80px;
+    font-weight: 400;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 30px;
+    color: black;
+    background: #d2d2d2;
+    float: left;
+    border: 1px solid #c5c5c5;
+    max-height: 190px;
+}
+
+.pos .popup.popup-selection .selection-item:hover {
+    background: #6EC89B !important;
+}
+
+.pos .selection-image {
+    border-radius: 65%;
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.pos .keyboard-header {
+    text-align: center;
+    display: inline-block;
+    right: 10px;
+    padding-left: 25px;
+    color: black;
+}
+
+.pos .ticket-button:hover {
+    background: #6EC89B !important;
+}
+
+.pos .pos-branding {
+    min-width: unset;
+    max-width: 300px;
+}
+
+.pos .pos-rightheader .header-button:hover {
+    background: #6EC89B !important;
+}
+
+.pos .pos-topheader {
+    border-bottom: 1px solid gray;
+    height: 47px;
+}
+
+.pos .order .order-empty {
+    color: red;
+}
+
+.pos .cart_qty {
+    position: absolute;
+    right: 18px;
+    bottom: 1px;
+    color: #FF5722;
+    font-size: 16px;
+    line-height: 35px;
+    min-width: 20px;
+    text-align: center;
+    height: 30px;
+    padding: 3px;
+}
+
+
+/*order widget*/
+
+.pos .actionpad .button {
+    color: #fff;
+}
+
+.pos .actionpad .button .fa-user {
+    top: 17px;
+    color: black;
+    width: 25px;
+}
+
+.pos .orderline-quantity {
+    border-radius: 5px;
+    font-weight: 900;
+    line-height: 20px;
+}
+
+.pos .order .orderline .product-name {
+    width: 97%;
+    font-size: 16px;
+}
+
+.pos .price-down {
+    text-decoration: line-through;
+    font-size: 13px;
+    left: 0px;
+    color: #e2e2e2;
+}
+
+.pos .order .orderline .price {
+    text-align: right;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.pos .line-remove {
+    float: right;
+    position: fixed;
+    right: 0px;
+    width: 35px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 30px;
+    vertical-align: top;
+}
+
+.pos .line-remove:hover {
+    background: #6ec89b;
+}
+
+.pos .full-cart-screen {
+    cursor: pointer;
+    float: right;
+    border: unset;
+    background: inherit;
+    padding: 0px
+}
+
+.pos .full-cart-screen :hover {
+    background: #6ec89b;
+}
+
+.pos .popup.popup-selection .selection {
+    max-height: 400px;
+    background: #fff;
+}
+
+.pos .login-button {
+    height: 50px;
+    padding: 15px;
+    min-height: 80px;
+    color: black;
+}
+
+.pos .full-cart-screen .fa {
+    font-size: 20px;
+    width: 20px;
+}
+
+.pos .order .summary {
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.pos .order .summary .line {
+    width: 100%;
+    margin-right: 0px;
+    font-weight: 900;
+}
+
+.splitbill-screen .order .orderline.selected .info-list em {
+    padding-right: 10px;
+}
+
+.pos .order .summary .total {
+    font-size: 40px;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.pos .button-extend {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+    width: 20%;
+    background: #e2e2e2;
+}
+
+.pos .summary-label {
+    font-weight: 900;
+    border-bottom: 1px solid #3c4858;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.pos .oe_green {
+    color: #4CAF50;
+}
+
+.pos .button-label {
+    font-size: 13px;
+    padding: 2px;
+    color: black;
+    height: 40px;
+}
+
+.pos .secondary-button {
+    background: #6ec89b !important;
+}
+
+.pos .primary-button {
+    background: #FF5722 !important;
+}
+
+.pos .primary-button:hover {
+    background: #6ec89b;
+}
+
+.pos .note_element {
+    width: 100% !important;
+    margin-bottom: 0px !important;
+}
+
+.screen .screen-full-width {
+    /*height: auto;*/
+    top: 0px;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute;
+}
+
+.pos .order .summary .line .subentry {
+    line-height: 50px;
+    text-align: right;
+}
+
+.pos .button-extend>button {
+    float: left;
+    min-height: 40px;
+    height: 75px;
+    color: black;
+    display: inline-grid;
+    width: 100px;
+    font-size: 12px !important;
+    margin: 5px;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 0px;
+}
+
+.pos .button-extend>button .label {
+    background: #FF5722;
+    border-radius: 65%;
+    padding: 5px;
+    font-size: 13px !important;
+    color: #fff;
+    width: 20px;
+}
+
+.pos .client-selected {
+    padding: 20px;
+    font-size: 13px;
+    color: black;
+    border-bottom: 1px solid black;
+    font-weight: 900;
+}
+
+.card .card-title {
+    font-weight: 900;
+    margin: 10px;
+    color: black;
+    font-size: 20px;
+    min-height: 30px;
+    padding: 10px;
+    line-height: 40px;
+    border-bottom: 1px solid;
+}
+
+.pos .button-extend>button:hover {
+    background: #6ec89b;
+}
+
+.pos .summary-table {
+    width: 100%;
+    background: #e2e2e2;
+    bottom: 0px;
+    vertical-align: bottom;
+}
+
+.pos .summary-table tr th {
+    border: 1px solid #fff;
+}
+
+.pos .receipt-line td {
+    border: 1px solid #fff;
+    vertical-align: top;
+    font-size: 13px;
+}
+
+.pos .button-extend>button .fa {
+    color: black;
+    font-size: 25px;
+}
+
+.pos .order .orderline {
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+/*.pos .order .orderline.selected {*/
+
+
+/*    border-left: 10px solid #FF5722;*/
+
+
+/*    background: unset;*/
+
+
+/*    border-top: 1px solid #e2e2e2;*/
+
+
+/*    border-bottom: 1px solid #e2e2e2;*/
+
+
+/*    border-right: unset;*/
+
+
+/*    border-right: unset;*/
+
+
+/*}*/
+
+.pos .order .orderline.selected .line-remove {
+    color: #FF5722;
+}
+
+.pos .order .orderline .info-list input {
+    border: 1px solid gray;
+}
+
+.pos .order .orderline .info-list textarea {
+    border: 1px solid gray;
+}
+
+.pos .product .product-name {
+    color: black;
+    bottom: 30px;
+    font-weight: 900;
+    line-height: 20px;
+    text-align: center;
+    font-size: 13px;
+    z-index: 9999;
+}
+
+.pos .line-icon {
+    font-size: 20px;
+    margin-right: 30px;
+    margin-top: 5px;
+    min-width: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.14);
+    margin-left: 0px;
+}
+
+.pos .breadcrumb {
+    padding: 0px;
+    float: right;
+    color: black;
+    background: unset;
+    height: 52px;
+    width: 56px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+}
+
+.pos .breadcrumb-arrow {
+    display: none;
+}
+
+.pos .breadcrumb:last-child {
+    background: #6EC89B
+}
+
+.pos .breadcrumb-button {
+    color: black;
+    border-radius: 5px;
+    font-weight: 900;
+    border-right: unset;
+}
+
+.pos .breadcrumb-button.breadcrumb-home {
+    font-size: 40px;
+    color: #FF5722;
+    text-align: center;
+    border: unset;
+}
+
+.pos .breadcrumb-button.breadcrumb-home:hover {
+    background: #6EC89B
+}
+
+.pos .order_line_button {
+    color: black;
+    height: 40px;
+    padding-top: 0px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: #fff;
+    width: 40px;
+    font-size: 25px !important;
+}
+
+.pos .order_line_button:hover {
+    background: #FF5722;
+    color: #fff;
+}
+
+.pos .line-icon:hover {
+    background: #FF5722 !important;
+    color: #fff;
+}
+
+.pos .order_line_button .fa {
+    font-size: 20px;
+}
+
+.pos .numpad button {
+    color: black;
+    border-radius: 0px;
+    border: 1px solid #aaaaaa;
+    height: 70px;
+    width: 25%;
+}
+
+.pos .numpad button:hover {
+    background: #6EC89B !important;
+}
+
+.pos .breadcrumb:last-child {
+    padding-right: unset !important;
+}
+
+.payment-status-container .label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.payment-status-container .amount {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.screen .top-content .button {
+    background: #e2e2e2;
+    color: black;
+    height: 40px;
+    margin-right: 15px;
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+.screen .top-content .next {
+    margin-right: 20px;
+    min-width: 250px;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.screen .top-content .button:hover {
+    background: #6EC89B;
+}
+
+
+/*popup*/
+
+.pos .modal-dialog .popup .product .combo-item-product-img-big {
+    display: none
+}
+
+.pos .popup.popup-number {
+    min-width: 400px;
+}
+
+.pos .popup .category-simple-button {
+    line-height: 20px;
+    font-weight: 400;
+    background: #d2d2d2;
+    font-size: 13px;
+    padding: 15px;
+    min-height: 100px;
+    max-width: 20% !important;
+}
+
+.pos .popup .category-simple-button:hover {
+    background: #6EC89B;
+}
+
+.pos .product_configurator_attributes .configurator_radio input[type='radio'] {
+    width: 30%;
+}
+
+.pos .product_configurator_attributes .configurator_radio .radio_attribute_label {
+    font-weight: normal;
+    display: inline-block;
+    width: 50%;
+    color: black;
+    font-size: 20px;
+}
+
+.pos .info {
+    line-height: 20px;
+}
+
+.pos .checkbox_field {
+    box-shadow: none !important;
+    width: 20px !important;
+    margin-top: -8px;
+    float: left;
+    margin-left: 7px;
+}
+
+.pos .popup .button {
+    width: unset;
+    padding: 5px;
+    min-width: 100px;
+    margin: 10px;
+}
+
+.pos .popup .footer {
+    background: #fff;
+}
+
+.pos .popup .footer .fa {
+    margin-left: 10px;
+}
+
+
+/*customer screen*/
+
+.pos .client-line {
+    cursor: pointer;
+}
+
+.pos .client-line:hover {
+    background: #6EC89B;
+}
+
+.pos .clientlist-screen .client-detail>.label {
+    text-align: left;
+    margin-left: 12px;
+}
+
+.pos .searchbox-client {
+    margin-top: 5px;
+}
+
+.pos .pos-search-bar {
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    max-width: 500px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.pos .rightpane {
+    position: relative;
+    background: #e2e2e2;
+}
+
+.screen .left-content {
+    max-width: 35%;
+}
+
+.pos .rightpane-header .pos-search-bar {
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-flex;
+    width: 50%;
+}
+
+.pos .payment-coins {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.pos .pos-rightheader>* {
+    margin-left: 20px;
+    margin: 0px;
+    margin-left: 5px !important;
+}
+
+.pos .pos-search-bar .search ul {
+    background: white;
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 2px;
+    left: 2px;
+    box-shadow: 1px 1px 3px grey;
+    font-size: small;
+    z-index: 999;
+    max-height: 150px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.pos .pos-search-bar .search {
+    display: flex;
+    position: relative;
+    flex: 1;
+    min-width: 270px;
+}
+
+.pos .taxes-label {
+    font-size: 12px;
+    color: black;
+    line-height: 15px;
+}
+
+.pos .pos-search-bar .search input {
+    height: 50px;
+    margin: 0px;
+    font-size: 13px;
+    color: black;
+    max-width: 325px;
+    padding-left: 40px;
+    border: 1px solid #aaaaaa;
+    flex: 1;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.pos .input {
+    color: blue;
+}
+
+.pos .filter {
+    margin-left: 10px;
+    background: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+    padding-right: 40px;
+    border: solid 1px #e2e2e2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+    font-size: medium;
+    border-radius: 5px;
+    min-height: 50px;
+    color: red;
+    font-weight: 900;
+}
+
+.pos .filter>span {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.pos .pos-search-bar .search .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 13px;
+    z-index: 1;
+    color: #4f5b66
+}
+
+.pos .pos-search-bar .search .clear-icon {
+    position: absolute;
+    right: 0;
+    margin-right: 12px;
+    z-index: 1;
+    padding-top: 13px;
+    FONT-WEIGHT: 100;
+    cursor: pointer
+}
+
+.pos .pos-search-bar .filter .down-icon {
+    position: absolute;
+    right: 13px;
+    top: 10px;
+}
+
+.pos .pos-search-bar .filter .options {
+    display: block;
+    min-width: 400px;
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    z-index: 1;
+    box-shadow: 1px 1px 5px grey;
+    padding: 0.5em 0;
+    background: white;
+    color: black;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.pos .pos-search-bar .filter ul.options li {
+    padding: 0.2em 1.2em;
+    border-top: none;
+    display: flex;
+    justify-content: start;
+    line-height: 35px;
+    align-items: center;
+    border-top: 1px solid #e2e2e2;
+}
+
+.ticket-screen .pos-search-bar .filter {
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    background: rgb(110, 200, 155);
+    color: #fff;
+    height: 50px;
+}
+
+.pos .pos-search-bar .filter ul.options li:hover {
+    background: #6EC89B;
+    cursor: pointer;
+}
+
+.pos .searchbox-client input {
+    height: 60px;
+    padding: 0px;
+    font-size: 16px;
+    margin-right: 20%;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2
+}
+
+.pos .clientlist-screen .client-details-left {
+    width: 40%;
+    float: left;
+    paddding: 20px;
+}
+
+.pos .clientlist-screen .client-details-right {
+    width: 40%;
+    float: right;
+    paddding: 20px;
+}
+
+.pos .client-details-left {
+    float: left;
+    width: 45%;
+}
+
+.pos .client-details-right {
+    width: 40%;
+    float: right;
+}
+
+.pos .checkbox {
+    box-shadow: none !important;
+    width: 35px !important;
+    left: 0px;
+    margin-left: 5px;
+    float: left !important;
+}
+
+.tooltip-table {
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    position: inherit;
+    z-index: 100;
+    border: 1px solid #e2e2e2;
+    background-color: white;
+    color: black;
+    top: 20px;
+    width: 94%;
+}
+
+.parentCell:hover span.tooltip-table {
+    display: block;
+}
+
+.tooltip-table td {
+    padding: 5px;
+}
+
+.tooltip-table th {
+    padding: 5px 27px;
+}
+
+.tooltip-table td {
+    font-size: 13px;
+}
+
+.tooltip-table th u {
+    color: #000;
+    font-size: 13px;
+}

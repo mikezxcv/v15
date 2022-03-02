@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="SaleOrderList" owl="1">
+        <div class="ticket-screen screen" t-on-activate-edit-mode="activateEditMode">
+            <div class="screen-content">
+                <div class="controls">
+                    <div class="buttons">
+                        <button class="highlight" t-on-click="back">
+                            <i class="fa fa-chevron-left"></i>
+                            <t t-if="!env.isMobile"> Back</t>
+                        </button>
+                    </div>
+                    <SearchBar t-if="!state.detailIsShown" config="searchBarConfig" placeholder="'Search Orders...'"/>
+                    <button class="button-right" t-on-click="clearSearch">
+                        <i class="fa fa-refresh "></i>
+                        <t t-if="!env.isMobile"> Clear Search</t>
+                    </button>
+                </div>
+                <div t-if="state.detailIsShown" class="client-details-contents subwindow-container-fix">
+                    <SaleOrderDetail order="order" t-props="state.editModeProps"/>
+                    <!-- TODO: when props change, SaleOrderDetail will change, It reason we call t-props
+                    -->
+                </div>
+                <div class="orders" t-if="getOrders and getOrders.length != 0">
+                    <div class="header-row">
+                        <div class="col start">Number</div>
+                        <div t-if="!env.isMobile" class="col start">Reserve From</div>
+                        <div t-if="!env.isMobile" class="col start">Reserve To</div>
+                        <div t-if="!env.isMobile" class="col start">Reserve Table</div>
+                        <div t-if="!env.isMobile" class="col start">Reserve No of Guests</div>
+                        <div t-if="!env.isMobile" class="col start">Reserve Mobile</div>
+                        <div t-if="!env.isMobile" class="col start">Date Order</div>
+                        <div t-if="!env.isMobile" class="col start">Customer</div>
+                        <div t-if="!env.isMobile" class="col start">Sale Person</div>
+                        <div class="col start">Total</div>
+                        <div class="col start">Status</div>
+                    </div>
+                    <t t-foreach="getOrders" t-as="order"
+                       t-key="order.id">
+                        <SaleOrderRow order="order"
+                                      t-att-class="{'highlight': getHighlight}"
+                                      selectedOrder="state.selectedOrder"
+                                      detailIsShown="state.detailIsShown"
+                                      t-on-click-order="clickOrder"/> <!-- matching to (1) of PosOrderRow-->
+                    </t>
+                </div>
+                <t t-else="">
+                    <h1 class="loading-orders">... LOADING ORDERS ...</h1>
+                </t>
+            </div>
+        </div>
+    </t>
+
+</templates>

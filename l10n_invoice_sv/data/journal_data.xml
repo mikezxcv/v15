@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="l10n_sv.fcf_journal" model="account.journal">
+            <field name="type_report">fcf</field>
+        </record>
+        <record id="l10n_sv.ccf_journal" model="account.journal">
+            <field name="type_report">ccf</field>
+        </record>
+        <record id="l10n_sv.ndc_journal" model="account.journal">
+            <field name="type_report">ndc</field>
+        </record>
+        <record id="l10n_sv.exp_journal" model="account.journal">
+            <field name="type_report">exp</field>
+        </record>
+        <record id="l10n_sv.axp_journal" model="account.journal">
+            <field name="type_report">axp</field>
+        </record>
+        <record id="l10n_sv.anu_journal" model="account.journal">
+            <field name="type_report">anu</field>
+        </record>
+        <record id="l10n_sv.cccf_journal" model="account.journal">
+            <field name="type_report">compras</field>
+        </record>
+        <record id="l10n_sv.crec_journal" model="account.journal">
+            <field name="type_report">na</field>
+        </record>
+        <record id="l10n_sv.cfcf_journal" model="account.journal">
+            <field name="type_report">na</field>
+        </record>
+        <record id="l10n_sv.cexc_journal" model="account.journal">
+            <field name="type_report">cse</field>
+        </record>
+        <record id="l10n_sv.import_journal" model="account.journal">
+            <field name="type_report">imp</field>
+        </record>
+
+
+
+    </data>
+</odoo>

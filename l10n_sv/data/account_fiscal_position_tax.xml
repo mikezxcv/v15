@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- account.fiscal.position.tax.template -->
+
+        <!-- Exento y No Sujeto Ventas-->
+        <record id="position_tax_exento_ventas" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_exento_ventas"/>
+            <field name="tax_src_id" ref="tax1"/>
+            <field name="tax_dest_id" ref="tax2"/>
+        </record>
+        
+        <!-- Exento y No Sujeto Compras-->        
+        <record id="position_tax_exento_compras" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_exento_compras"/>
+            <field name="tax_src_id" ref="tax5"/>
+            <field name="tax_dest_id" ref="tax9"/>
+        </record>
+        
+        <!-- Gran Contribuyente Ventas -->
+        <record id="position_tax_gran_ventas_1" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_gran_ventas"/>
+            <field name="tax_src_id" ref="tax1"/>
+            <field name="tax_dest_id" ref="tax1"/>
+        </record>
+        <record id="position_tax_gran_ventas_2" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_gran_ventas"/>
+            <field name="tax_src_id" ref="tax1"/>
+            <field name="tax_dest_id" ref="tax14"/>
+        </record>
+        
+        <!-- Gran Contribuyente Compras -->
+        <record id="position_tax_gran_compras" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_gran_compras"/>
+            <field name="tax_src_id" ref="tax5"/>
+            <field name="tax_dest_id" ref="tax5"/>
+        </record>
+        <record id="position_tax_gran_compras" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_gran_compras"/>
+            <field name="tax_src_id" ref="tax5"/>
+            <field name="tax_dest_id" ref="tax6"/>
+        </record>
+        
+        <!-- Exportacion -->        
+        <record id="position_tax_exportacion" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_exportacion"/>
+            <field name="tax_src_id" ref="tax1"/>
+            <field name="tax_dest_id" ref="tax3"/>
+        </record>
+        
+        <!-- Importacion -->                
+        <record id="position_tax_importacion" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_importacion"/>
+            <field name="tax_src_id" ref="tax5"/>
+            <field name="tax_dest_id" ref="tax8"/>
+        </record>
+        
+        <!-- Iva Ventas -->        
+        <record id="position_tax_iva_ventas" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_iva_ventas"/>
+            <field name="tax_src_id" ref="tax1"/>
+            <field name="tax_dest_id" ref="tax1"/>
+        </record>
+        
+        <!-- Iva Compras -->        
+        <record id="position_tax_iva_compras" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_template_iva_compras"/>
+            <field name="tax_src_id" ref="tax5"/>
+            <field name="tax_dest_id" ref="tax5"/>
+        </record>
+
+    </data>
+</openerp>

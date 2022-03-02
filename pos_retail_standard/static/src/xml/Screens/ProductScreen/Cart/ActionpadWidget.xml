@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="RetailActionpadWidget" owl="1">
+        <div class="actionpad"
+             t-att-class="{
+                    'disabled-mode': !env.pos.config.allow_customer and !env.pos.config.allow_payment
+                }"
+             t-att-disabled="!env.pos.config.allow_payment and !env.pos.config.allow_payment"
+        >
+            <div>
+                <button class="button set-customer"
+                        t-att-class="{
+                            'decentered': isLongName,
+                            'oe_hidden': env.session.restaurant_order,
+                            'disabled-mode': !env.pos.config.allow_customer,
+                        }"
+                        t-att-disabled="!env.pos.config.allow_customer"
+                        t-on-click="trigger('click-customer')">
+                    <t><i class="fa fa-user" role="img" aria-label="Customer" title="Customer" /></t>
+                    <t t-if="client">
+                        <t t-esc="client.name"/>
+                        <span t-if="env.isShowKeyBoard">
+                            <i class="fa fa-keyboard-o" t-if="env.isShowKeyBoard"/>
+                            C
+                        </span>
+                    </t>
+                    <t t-else="">
+                        Customer
+                        <span t-if="env.isShowKeyBoard">
+                            <i class="fa fa-keyboard-o" t-if="env.isShowKeyBoard"/>
+                            C
+                        </span>
+                    </t>
+                </button>
+                <!-- <button class="remove-set-customer"
+                        t-att-class="{
+                            'oe_hidden': env.session.restaurant_order or !client,
+                            'disabled-mode': !env.pos.config.allow_customer,
+                        }"
+                        t-att-disabled="!env.pos.config.allow_customer"
+                        t-on-click="trigger('remove-selected-customer')">
+                    <t><i class="fa fa-ban" style="color:red" role="img" aria-label="Remove Selected Customer" title="Remove Selected Customer" /></t>
+                </button> -->
+            </div>
+            <div style="margin-top: 5px;">
+                <button class="button pay highlight"
+                       
+                       
+                        t-on-click="trigger('click-pay')">
+                    <div class="pay-circle">
+                        <i class="fa fa-chevron-right" role="img" aria-label="Pay" title="Pay"/>
+                    </div>
+                    <t t-if="!env.pos.session.restaurant_order">
+                        Payment
+                        <span t-if="env.isShowKeyBoard" style="font-size: 13px">
+                            <i class="fa fa-keyboard-o" t-if="env.isShowKeyBoard"/>
+                            (Arrow Right)
+                        </span>
+                    </t>
+                    <t t-else="">
+                        Place Order
+                        <div class="entry total">
+                            <span class="value">
+                                <t t-esc="state.total"/>
+                            </span>
+                        </div>
+                    </t>
+                </button>
+                <!-- <button class="remove-order"
+                        t-att-class="{
+                            'oe_hidden': env.session.restaurant_order,
+                            'disabled-mode': !env.pos.config.allow_customer,
+                        }"
+                        t-att-disabled="!env.pos.config.allow_customer"
+                        t-on-click="trigger('remove-selected-order')">
+                    <t><i class="fa fa-trash" style="color:red" role="img" aria-label="Remove Selected Order" title="Remove Selected Order" /></t>
+                </button> -->
+            </div>
+            <button class="mode-button numpad-backspace"
+                    t-att-class="{
+                        'disabled-mode': !env.pos.config.allow_remove_line or env.session.restaurant_order
+                    }"
+                    t-att-disabled="!env.pos.config.allow_remove_line or env.session.restaurant_order"
+                    t-on-click="sendInput('ClearCart')">
+                <i class="fa fa-trash"/>
+                Clear Items
+            </button>
+            <button class="mode-button"
+                    t-att-class="{
+                        'disabled-mode': !env.pos.config.discount_value
+                    }"
+                    t-att-disabled="!env.pos.config.allow_remove_line or blockScreen"
+                    t-on-click="sendInput('DiscValue')">
+                <i class="fa fa-sort-amount-desc"/>
+                Disc Value
+            </button>
+            <button class="mode-button"
+                    t-att-class="{
+                        'disabled-mode': !env.pos.config.discount or env.pos.config.discount_ids.length == 0
+                    }"
+                    t-att-disabled="!env.pos.config.discount or env.pos.config.discount_ids.length == 0"
+                    t-on-click="sendInput('GlobalDisc')">
+                <i class="fa fa-sort-amount-desc"/>
+                Global Disc
+            </button>
+            <button class="mode-button"
+                    t-att-class="{
+                        'disabled-mode': !env.pos.config.note_order
+                    }"
+                    t-att-disabled="!env.pos.config.note_order"
+                    t-on-click="sendInput('SetNotes')">
+                <i class="fa fa-edit"/>
+                Notes
+            </button>
+            <button class="mode-button"
+                    t-on-click="sendInput('PrePrintReceipt')"
+                    t-att-class="{
+                        'disabled-mode': !env.pos.config.review_receipt_before_paid or env.session.restaurant_order
+                    }"
+                    t-att-disabled="!env.pos.config.review_receipt_before_paid or env.session.restaurant_order">
+                <i class="fa fa-print"/>
+                Get Receipt
+            </button>
+            <button class="mode-button"
+                    t-on-click="sendInput('QuicklyPaid')"
+                    t-att-class="{
+                        'disabled-mode': !env.pos.config.quickly_payment_full
+                    }"
+                    t-att-disabled="!env.pos.config.quickly_payment_full">
+                <i class="fa fa-check"/>
+                Quickly Paid
+            </button>
+            <button class="mode-button"
+                    t-on-click="sendInput('PartialPaid')"
+                    t-att-class="{
+                        'disabled-mode': !env.pos.config.paid_partial
+                    }"
+                    t-att-disabled="!env.pos.config.paid_partial">
+                <i class="fa fa-check"/>
+                Partial Paid
+            </button>
+            <button class="mode-button"
+                    t-on-click="sendInput('ReturnMode')"
+                    t-att-class="{
+                        'disabled-mode': !env.pos.config.return_products or env.session.restaurant_order,
+                        'highlight': isReturnOrder,
+                    }"
+                    t-att-disabled="!env.pos.config.return_products or env.session.restaurant_order">
+                <i class="fa fa-arrow-left"/>
+                <t t-esc="returnStringButton"/>
+            </button>
+        </div>
+    </t>
+
+</templates>

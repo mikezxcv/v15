@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record model="ir.ui.view" id="view_form_municipality">
+            <field name="name">res.partner.municipality</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='child_ids']" position="attributes">
+                    <attribute name="context">
+                        {
+                        'default_parent_id': active_id,
+                        'default_street': street,
+                        'default_street2': street2,
+                        'default_city': city,
+                        'default_state_id': state_id,
+                        'default_zip': zip,
+                        'default_country_id': country_id,
+                        'default_lang': lang,
+                        'default_user_id': user_id,
+                        'default_type': 'other',
+                        'default_munic_id': munic_id
+                        }
+                    </attribute>
+                </xpath>
+                <xpath expr="//field[@name='city']" position="after">
+                    <field name="munic_id" class="o_address_state" placeholder="Municipality" options='{"no_open": True}' attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}" context="{'dpto_id': state_id}"/>
+                </xpath>
+                <xpath expr="//field[@name='child_ids']/form//field[@name='city']" position="after">
+                    <field name="munic_id" class="o_address_state" placeholder="Municipality" options='{"no_open": True}' context="{'dpto_id': state_id}"/>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_form_address_municipality">
+            <field name="name">res.partner.address.municipality</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_address_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='city']" position="after">
+                    <field name="munic_id" class="o_address_state" placeholder="Municipality" options='{"no_open": True}' attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}" context="{'dpto_id': state_id}"/>
+                </xpath>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="view_partner_search_municipality">
+                <field name="name">view.partner.search.municipality</field>
+                <field name="model">res.partner</field>
+                <field name="inherit_id" ref="base.view_res_partner_filter"/>
+                <field name="arch" type="xml">
+                    <field name="name" position="after">
+                        <field name="munic_id" string="Municipality"/>
+                    </field>
+                </field>
+         </record>
+</odoo>

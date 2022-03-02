@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="ProductCheckOut" owl="1">
+        <div class="checkout">
+            <!-- <ListFeaturesButtons controlButtons="props.controlButtons"/> -->
+            <button class="button set-customer"
+                    t-att-class="{
+                        'decentered': isLongName,
+                        'oe_hidden': env.session.restaurant_order,
+                        'disabled-mode': !env.pos.config.allow_customer,
+                    }"
+                    t-att-disabled="!env.pos.config.allow_customer"
+                    t-on-click="trigger('click-customer')">
+                <t><i class="fa fa-user" role="img" aria-label="Customer" title="Customer" /></t>
+                <t t-if="client">
+                    <t t-esc="client.name"/>
+                    <t t-if="!env.isMobile">
+                        <span class="shortcut-keyboard"><i class="fa fa-keyboard-o"></i> C</span>
+                    </t>
+                </t>
+                <t t-else="">
+                    Set Customer
+                    <t t-if="!env.isMobile">
+                        <span class="shortcut-keyboard"><i class="fa fa-keyboard-o"></i> C</span>
+                    </t>
+                </t>
+            </button>
+            <button class="button pay"
+                    style="text-align: center; padding: 0px !important"
+                    t-att-class="{
+                        'decentered': isLongName,
+                        'highlight': state.total != 0,
+                    }"
+                    t-on-click="trigger('click-pay')">
+                <t t-if="!env.pos.session.restaurant_order">
+                    <i class="fa fa-check"/>
+                    PAID ORDER
+                    <span class="shortcut-keyboard" t-if="!env.isMobile" style="color: #fff">
+                        <i class="fa fa-keyboard-o"/>
+                        <i class="fa fa-arrow-right"/>
+                    </span>
+                </t>
+                <t t-else="">
+                    <i class="fa fa-check"/>
+                    PLACE ORDER
+                    <div class="entry total">
+                        <span class="value">
+                            <t t-esc="state.total"/>
+                        </span>
+                    </div>
+                </t>
+            </button>
+        </div>
+    </t>
+
+</templates>

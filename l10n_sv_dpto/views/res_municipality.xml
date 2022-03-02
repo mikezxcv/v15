@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_municipality_tree" model="ir.ui.view">
+        <field name="name">res.municipality.tree</field>
+        <field name="model">res.municipality</field>
+        <field name="arch" type="xml">
+            <tree string="Municipality">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="dpto_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_municipality" model="ir.actions.act_window">
+            <field name="name">Municipality</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.municipality</field>
+            <field name="view_mode">tree,form</field>
+    </record>
+    
+    <menuitem
+              action="action_municipality"
+              id="menu_municipality_partner"
+              parent="base.menu_config"
+              sequence="1"
+              groups="base.group_no_one"
+              />
+</odoo>

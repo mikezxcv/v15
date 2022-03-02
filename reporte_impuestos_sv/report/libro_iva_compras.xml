@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="libro_iva_report_compras">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="reporte_impuestos_sv.libro_iva_report_compras_document"
+                       t-lang="doc.company_id.partner_id.lang"/>
+                </t>
+            </t>
+        </template>
+        <template id="libro_iva_report_compras_document">
+            <t t-set="doc" t-value="doc.with_context({'lang':doc.company_id.partner_id.lang})"/>
+            <t t-call="reporte_impuestos_sv.iva_layout">
+                <div class="page article">
+                    <style>
+                        table{
+                        width: 100%;
+                        }
+                        span{
+                        font-size: small !important;
+                        }
+                        p{
+                        font-size: small !important;
+                        }
+                    </style>
+                    <div class="container">
+                        <table>
+                            <thead class="font-weight-bold">
+                                <tr>
+                                    <td colspan="15" width="100%" valign="top"
+                                        style="border: 1px solid #000000; padding: 0.1cm">
+                                        <h3 align="center">DETALLE</h3>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td rowspan="2" width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <p align="center">No.</p>
+                                    </td>
+                                    <td rowspan="2" width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <p align="center">Fecha de emision</p>
+                                    </td>
+                                    <td rowspan="2" width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <p align="center">No. de doc</p>
+                                    </td>
+                                    <td rowspan="2" width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+
+                                        <p align="center">N.R.C</p>
+                                    </td>
+                                    <td rowspan="2" width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+
+                                        <p align="center">NIT o DUI sujeto excluido</p>
+                                    </td>
+                                    <td rowspan="2" width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <p align="center">Nombre del proveedor</p>
+                                    </td>
+                                    <td colspan="2" width="13%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <p align="center">Compras Exentas</p>
+                                    </td>
+                                    <td colspan="3" width="20%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <p align="center">Compras Gravadas</p>
+                                    </td>
+                                    <td rowspan="2" width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <p align="center">Anticipo a cuenta IVA retenido</p>
+                                    </td>
+                                    <td rowspan="2" width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+
+                                        <p align="center">Anticipo a cuenta IVA Recivido</p>
+                                    </td>
+                                    <td rowspan="2" width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+
+                                        <p align="center">Total compras</p>
+                                    </td>
+                                    <td rowspan="2" width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+                                        <p align="center">Compras a sujetos excluidos</p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <p align="center">Internas</p>
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <p align="center">Importaciones</p>
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <p align="center">Internas</p>
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <p align="center"> Importaciones</p>
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <p align="center">Credito fiscal</p>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Inicializando Variables -->
+                                <t t-set="internas_e" t-value="0"/>
+                                <t t-set="importaciones_e" t-value="0"/>
+                                <t t-set="internas_g" t-value="0"/>
+                                <t t-set="importaciones_g" t-value="0"/>
+                                <t t-set="iva_credito_g" t-value="0"/>
+                                <t t-set="retenciones" t-value="0"/>
+                                <t t-set="percepcion" t-value="0"/>
+                                <t t-set="totales" t-value="0"/>
+                                <t t-set="excluidas" t-value="0"/>
+                                <tr valign="middle" t-foreach="doc.detalle_iva_compra_ids" t-as="l">
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.correlativo"/>
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.fecha_emision"/>
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.num_doc"/>
+
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.partner_id.nrc"/>
+
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.partner_id.dui"/>
+                                        <t t-if="l.partner_id.vat and l.partner_id.dui">
+                                            /
+                                        </t>
+                                        <span t-field="l.partner_id.vat"/>
+
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.partner_id.display_name"/>
+
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.internas_e"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="internas_e" t-value="l.internas_e + internas_e"/>
+
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.importaciones_e"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="importaciones_e" t-value="l.importaciones_e + importaciones_e"/>
+
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.internas_g"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="internas_g" t-value="l.internas_g + internas_g"/>
+
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.importaciones_g"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="importaciones_g" t-value="l.importaciones_g + importaciones_g"/>
+
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.credito_fiscal"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="iva_credito_g" t-value="l.credito_fiscal + iva_credito_g"/>
+
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.anticipo_iva_ret"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="retenciones" t-value="l.anticipo_iva_ret + retenciones"/>
+
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.anticipo_iva_rec"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="percepcion" t-value="l.anticipo_iva_rec + percepcion"/>
+
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+                                        <span t-field="l.total_compras"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="totales" t-value="l.total_compras + totales"/>
+
+                                    </td>
+                                    <td width="7%"
+                                        style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+                                        <span t-field="l.compra_suj_e"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="excluidas" t-value="l.compra_suj_e + excluidas"/>
+
+                                    </td>
+                                </tr>
+
+                                <tr style="font-weight: bold;">
+                                    <td colspan="6" class="text-center">
+                                        Total General
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="internas_e"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="importaciones_e"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="internas_g"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="importaciones_g"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="iva_credito_g"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="retenciones"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="percepcion"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="totales"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="excluidas"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                        <div class="row">
+                            <style>
+                                span{
+                                font-size: small !important;
+                                }
+                                table{
+                                border-collapse: collapse !important;
+                                width: 100%;
+                                }
+                                table th, table td{
+                                padding: 1px; /* Apply cell padding */
+                                }
+                                table th {
+                                vertical-align: middle !important;
+                                }
+                                th{
+                                font-size: small !important;
+                                border-top: 1px solid gray;
+                                border-bottom: 1px solid gray;
+                                }
+                                td{
+                                border-left: 1px solid gray !important;
+                                border-bottom: 0.5px solid #C899AD ! important;
+                                border-bottom-style: dashed;
+                                border-right: 1px solid gray !important;
+                                }
+                            </style>
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>
+                                            Detalle
+                                        </td>
+                                        <td>
+                                            Valor
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.resumen_line_ids" t-as="r">
+                                        <td>
+                                            <span t-field="r.detalle"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="r.total"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            Firma:____________________________________________________________
+                        </div>
+                        <div class="row">
+                            Contador: <span style="font-size: large !important;"
+                                            t-field="doc.responsable_id.display_name"/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

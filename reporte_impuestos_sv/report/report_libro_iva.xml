@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+                id="libro_iva_fcf"
+                model="libro.iva"
+                string="Consumidor Final"
+                report_type="qweb-pdf"
+                name="reporte_impuestos_sv.libro_iva_report_fcf"
+                file="reporte_impuestos_sv.libro_iva_report_fcf"
+        />
+        <record id="paperformat_libro_iva_fcf" model="report.paperformat">
+            <field name="name">IVA FCF</field>
+            <field name="default" eval="True"/>
+            <field name="format">Letter</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">35</field>
+            <field name="margin_bottom">25</field>
+            <field name="margin_left">3</field>
+            <field name="margin_right">3</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">30</field>
+            <field name="dpi">90</field>
+        </record>
+        <record id="libro_iva_fcf" model="ir.actions.report">
+            <field name="paperformat_id" ref="paperformat_libro_iva_fcf"/>
+            <field name="print_report_name">(object.name)</field>
+        </record>
+
+        <report
+                id="libro_iva_ccf"
+                model="libro.iva"
+                report_type="qweb-pdf"
+                string="Credito Fiscal"
+                name="reporte_impuestos_sv.libro_iva_report_ccf"
+                file="reporte_impuestos_sv.libro_iva_report_ccf"
+        />
+        <record id="paperformat_libro_iva_ccf" model="report.paperformat">
+            <field name="name">IVA CCF</field>
+            <field name="default" eval="True"/>
+            <field name="format">Letter</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">35</field>
+            <field name="margin_bottom">15</field>
+            <field name="margin_left">3</field>
+            <field name="margin_right">3</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">30</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <record id="libro_iva_ccf" model="ir.actions.report">
+            <field name="paperformat_id" ref="paperformat_libro_iva_ccf"/>
+            <field name="print_report_name">(object.name)</field>
+        </record>
+
+        <report
+                id="libro_iva_compras"
+                model="libro.iva"
+                report_type="qweb-pdf"
+                string="Compras"
+                name="reporte_impuestos_sv.libro_iva_report_compras"
+                file="reporte_impuestos_sv.libro_iva_report_compras"
+        />
+        <record id="paperformat_libro_iva_compras" model="report.paperformat">
+            <field name="name">IVA Compras</field>
+            <field name="default" eval="True"/>
+            <field name="format">Letter</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">35</field>
+            <field name="margin_bottom">15</field>
+            <field name="margin_left">3</field>
+            <field name="margin_right">3</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">30</field>
+            <field name="dpi">90</field>
+        </record>
+        <record id="libro_iva_compras" model="ir.actions.report">
+            <field name="paperformat_id" ref="paperformat_libro_iva_compras"/>
+            <field name="print_report_name">(object.name)</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="res_company_form_inherit" model="ir.ui.view">
+            <field name="name">res_company.form</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='city']" position="after">
+                    <field name="munic_id"
+                           class="o_address_state"
+                           placeholder="Municipality"
+                           options='{"no_open": True}'
+                           context="{'dpto_id': state_id}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

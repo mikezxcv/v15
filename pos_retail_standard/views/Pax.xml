@@ -1,0 +1,72 @@
+<odoo>
+
+    <record id="pax_terminal_form" model="ir.ui.view">
+        <field name="name">pax.terminal.form</field>
+        <field name="model">pax.terminal</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="ip_addr"/>
+                        <field name="protocol"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="pax_terminal_tree" model="ir.ui.view">
+        <field name="name">pax.terminal.tree</field>
+        <field name="model">pax.terminal</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="ip_addr"/>
+                <field name="protocol"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_pax_terminal" model="ir.actions.act_window">
+        <field name="name">Pax Terminal Devices</field>
+        <field name="res_model">pax.terminal</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="menu_pax_terminal_root"
+        parent="pos_retail_standard.menu_master_data"
+        name="Pax Terminal"/>
+
+    <menuitem id="menu_pax_terminal_child"
+        parent="menu_pax_terminal_root"
+        action="action_pax_terminal"/>
+
+    <record id="pax_payment_form" model="ir.ui.view">
+        <field name="name">pax.payment.form</field>
+        <field name="model">pax.payment</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="amount"/>
+                    </group>
+                    <footer>
+                        <button name="payment_process" type="object" string="Testing Pay" class="oe_highlight"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_pax_payment" model="ir.actions.act_window">
+        <field name="name">Pax Payment</field>
+        <field name="res_model">pax.payment</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <menuitem id="menu_pax_payment_child"
+        name="Payment"
+        parent="menu_pax_terminal_root"
+        action="action_pax_payment"/>
+
+</odoo>

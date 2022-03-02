@@ -1,0 +1,35 @@
+id,name,code,user_type_id/id,chart_template_id/id,tag_ids/id,reconcile
+activos_circulantes,Activos circulantes,1010,account.data_account_type_current_assets,l10n_sv.sv_coa,,False
+inventario,Inventario,1101,account.data_account_type_current_assets,l10n_sv.sv_coa,,False
+inventario_entrante,Inventario entrante,1102,account.data_account_type_current_assets,l10n_sv.sv_coa,,True
+inventario_saliente,Inventario saliente,1103,account.data_account_type_current_assets,l10n_sv.sv_coa,,True
+cuenta_por_cobrar,Cuenta por cobrar,1210,account.data_account_type_receivable,l10n_sv.sv_coa,,True
+productos_a_recibir,Productos a recibir,1211,account.data_account_type_current_assets,l10n_sv.sv_coa,,True
+impuesto_pagado,Impuesto pagado,1310,account.data_account_type_current_assets,l10n_sv.sv_coa,,False
+impuestos_por_cobrar,Impuestos por cobrar,1320,account.data_account_type_current_assets,l10n_sv.sv_coa,,False
+anticipos,Anticipos,1410,account.data_account_type_prepayments,l10n_sv.sv_coa,,False
+activo_fijo,Activo fijo,1510,account.data_account_type_fixed_assets,l10n_sv.sv_coa,,False
+activos_no_corrientes,Activos no corrientes,1910,account.data_account_type_non_current_assets,l10n_sv.sv_coa,,False
+pasivo_circulante,Pasivo circulante,2010,account.data_account_type_current_liabilities,l10n_sv.sv_coa,,False
+cuenta_por_pagar,Cuenta por pagar,2110,account.data_account_type_payable,l10n_sv.sv_coa,,True
+facturas_a_recibir,Facturas a recibir,2111,account.data_account_type_current_liabilities,l10n_sv.sv_coa,,True
+impuesto_debito,Impuesto debito,2510,account.data_account_type_current_liabilities,l10n_sv.sv_coa,,False
+impuesto_credito,Impuesto credito,2520,account.data_account_type_current_liabilities,l10n_sv.sv_coa,,False
+pasivos_no_corrientes,Pasivos no corrientes,2910,account.data_account_type_non_current_liabilities,l10n_sv.sv_coa,,False
+capital,Capital,3010,account.data_account_type_equity,l10n_sv.sv_coa,,False
+dividendos,Dividendos,3020,account.data_account_type_equity,l10n_sv.sv_coa,,False
+venta_de_productos,Venta de productos,5000,account.data_account_type_revenue,l10n_sv.sv_coa,account.account_tag_operating,False
+ganancia_por_cambio_de_moneda,Ganancia por cambio de moneda,5410,account.data_account_type_revenue,l10n_sv.sv_coa,account.account_tag_financing,False
+ganancia_por_diferencia_de_efectivo,Ganancia por diferencia de efectivo,5420,account.data_account_type_revenue,l10n_sv.sv_coa,account.account_tag_investing,False
+otros_ingresos,Otros ingresos,5500,account.data_account_type_other_income,l10n_sv.sv_coa,,False
+costo_de_los_bienes_vendidos,Costo de los bienes vendidos,4000,account.data_account_type_direct_costs,l10n_sv.sv_coa,account.account_tag_operating,False
+gastos,Gastos,6000,account.data_account_type_expenses,l10n_sv.sv_coa,account.account_tag_operating,False
+compra_de_equipos,Compra de equipos,6110,account.data_account_type_expenses,l10n_sv.sv_coa,account.account_tag_investing,False
+alquiler,Alquiler,6120,account.data_account_type_expenses,l10n_sv.sv_coa,account.account_tag_investing,False
+comisiones_bancarias,Comisiones bancarias,6200,account.data_account_type_expenses,l10n_sv.sv_coa,account.account_tag_financing,False
+gastos_salariales,Gastos salariales,6300,account.data_account_type_expenses,l10n_sv.sv_coa,account.account_tag_operating,False
+perdida_por_cambio_de_monedas,Pérdida por cambio de monedas,6410,account.data_account_type_expenses,l10n_sv.sv_coa,account.account_tag_financing,False
+perdida_por_diferencia_de_efectivo,Pérdida por diferencia de efectivo,6420,account.data_account_type_expenses,l10n_sv.sv_coa,account.account_tag_investing,False
+gastos_de_investigacion_y_desarrollo,Gastos de investigacion y desarrollo,9610,account.data_account_type_expenses,l10n_sv.sv_coa,account.account_tag_investing,False
+gastos_de_venta,Gastos de venta,9620,account.data_account_type_expenses,l10n_sv.sv_coa,account.account_tag_investing,False
+cuenta_por_cobrar_(pos),Cuenta por cobrar (PoS),1013,account.data_account_type_receivable,l10n_sv.sv_coa,,True

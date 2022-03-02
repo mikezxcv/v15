@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="main_iva"
+                  name="Declaraciones de I.V.A."
+                  groups="account.group_account_user"
+                  parent="account.menu_finance_reports"/>
+
+        <menuitem id="main_detalle_iva"
+                  name="Detalle Declaraciones de I.V.A."
+                  groups="account.group_account_user"
+                  parent="account.menu_finance_reports"/>
+    </data>
+</odoo>

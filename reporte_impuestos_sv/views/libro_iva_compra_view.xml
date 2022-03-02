@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_dec_compra_iva_tree" model="ir.ui.view">
+            <field name="name">view_dec_compra_iva_tree</field>
+            <field name="model">libro.iva</field>
+            <field name="priority">2</field>
+            <field name="arch" type="xml">
+                <tree string="Declaracion de I.V.A."
+                      decoration-bf="message_needaction==True"
+                      decoration-muted="state=='cancel'">
+                    <field name="message_needaction" invisible="1"/>
+                    <field name="state"/>
+                    <field name="name"/>
+                    <field name="active" optional="hide"/>
+                    <field name="fecha"/>
+                    <field name="company_id" optional="hide"/>
+                    <field name="company_currency_id" optional="hide"/>
+                    <field name="mes"/>
+                    <field name="state"/>
+                    <field name="responsable_id" optional="hide"/>
+                    <field name="usuario_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_compra_iva_form" model="ir.ui.view">
+            <field name="name">view_compra_iva_form</field>
+            <field name="model">libro.iva</field>
+            <field name="arch" type="xml">
+                <form string="Libro de Iva de Compras">
+                    <header>
+                        <field name="active" invisible="1"/>
+                        <button name="change_active"
+                                groups="account.group_account_manager"
+                                string="Archivar"
+                                type="object"
+                                attrs="{'invisible': [('active', '=', False), ('state', '=', 'cancel')]}"/>
+                        <button name="change_active"
+                                groups="account.group_account_manager"
+                                string="Desarchivar"
+                                type="object"
+                                states="cancel"
+                                attrs="{'invisible': [('active', '=', True)]}"/>
+                        <button name="iva_print"
+                                groups="account.group_account_user"
+                                string="Imprimir"
+                                type="object"
+                                states="draft,open"/>
+                        <button name="iva_open"
+                                groups="account.group_account_manager"
+                                string="Validar"
+                                type="object"
+                                states="draft"/>
+
+                        <button name="iva_cancel"
+                                groups="account.group_account_manager"
+                                string="Cancelar"
+                                type="object"
+                                states="open"/>
+
+                        <button name="detalle_compra"
+                                groups="account.group_account_user"
+                                string="Generar Detalle"
+                                type="object"
+                                states="draft"/>
+
+                        <field name="state"
+                               widget="statusbar"
+                               nolabel="1"
+                               statusbar_visible="draft,open"
+                               statusbar_colors='{"draft":"blue","cancel":"gray","open":"green"}'/>
+                    </header>
+                    <sheet string="Libro de Iva de Compra">
+                        <div class="oe_button_box" name="button_box"/>
+                        <widget name="web_ribbon"
+                                title="Archivado"
+                                bg_color="bg-danger"
+                                attrs="{'invisible': [('active', '=', True)]}"/>
+                        <field name="type" invisible="1"/>
+                        <group>
+                            <group col="4">
+                                <h1>
+                                    <field name="name" readonly='True'/>
+                                </h1>
+                            </group>
+                        </group>
+                        <group>
+                            <group col="2">
+                                <field name="usuario_id"/>
+                                <field name="responsable_id"
+                                       widget="selection"
+                                       domain="[('company_id','=',company_id)]"
+                                       string="Contador"
+                                       attr="{'readonly': [('state','!=','draft')]}"/>
+                                <field name="company_id"
+                                       string="Compañia"/>
+                            </group>
+                            <group col="2">
+                                <field name="fecha"
+                                       attr="{'readonly': [('state','!=','draft')]}"/>
+                                <field name="mes"
+                                       attr="{'readonly': [('state','!=','draft')]}"/>
+                                <field name="company_currency_id"
+                                       string="Moneda"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Detalle Compras">
+                                <field name="detalle_iva_compra_ids">
+                                    <tree string="Compras">
+                                        <field name="correlativo" optional="hide"/>
+                                        <field name="fecha_emision" optional="hide"/>
+                                        <field name="num_doc"/>
+                                        <field name="partner_id"/>
+                                        <field name="internas_e" optional="hide"/>
+                                        <field name="importaciones_e" optional="hide"/>
+                                        <field name="internas_g" optional="hide"/>
+                                        <field name="importaciones_g" optional="hide"/>
+                                        <field name="credito_fiscal" optional="hide"/>
+                                        <field name="anticipo_iva_ret" optional="hide"/>
+                                        <field name="anticipo_iva_rec" optional="hide"/>
+                                        <field name="compra_suj_e" optional="hide"/>
+                                        <field name="total_compras"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <group>
+                                                <field name="correlativo" string="No"/>
+                                                <field name="fecha_emision"/>
+                                                <field name="num_doc"/>
+                                                <field name="partner_id"/>
+                                            </group>
+                                            <grop>
+                                                <field name="internas_e"/>
+                                                <field name="importaciones_e"/>
+                                                <field name="internas_g"/>
+                                                <field name="importaciones_g"/>
+                                                <field name="credito_fiscal"/>
+                                                <field name="anticipo_iva_ret"/>
+                                                <field name="anticipo_iva_rec"/>
+                                                <field name="compra_suj_e"/>
+                                                <field name="total_compras"/>
+                                            </grop>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"
+                               widget="mail_followers"
+                               groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_libro_iva_compras" model="ir.actions.act_window">
+            <field name="name">Declaracion de I.V.A Compras</field>
+            <field name="res_model">libro.iva</field>
+            <field name="domain">[('type', '=', 'compras')]</field>
+            <field name="context">{'type': 'compras', 'default_libro_iva_id_type': 'compras'}</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_libro_iva_compras_view_tree" model="ir.actions.act_window.view">
+            <field name="sequence" eval="6"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_dec_compra_iva_tree"/>
+            <field name="act_window_id" ref="action_libro_iva_compras"/>
+        </record>
+        <record id="action_libro_iva_compras_view_form" model="ir.actions.act_window.view">
+            <field name="sequence" eval="6"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_compra_iva_form"/>
+            <field name="act_window_id" ref="action_libro_iva_compras"/>
+        </record>
+
+
+        <menuitem id="declaracion_iva_compra"
+                  name="Declaracion de I.V.A. Compra"
+                  groups="account.group_account_user"
+                  parent="reporte_impuestos_sv.main_iva"
+                  action="action_libro_iva_compras"/>
+    </data>
+</odoo>

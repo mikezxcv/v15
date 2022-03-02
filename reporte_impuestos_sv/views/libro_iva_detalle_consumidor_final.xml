@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_det_iva_consu_final_tree" model="ir.ui.view">
+            <field name="name">view_det_iva_consu_final_tree</field>
+            <field name="model">iva.consumidor.final</field>
+            <field name="priority">2</field>
+            <field name="arch" type="xml">
+                <tree string="Detalle de I.V.A. Consumidor Final"
+                      decoration-bf="message_needaction==True">
+                    <field name="message_needaction" invisible="1"/>
+                    <field name="libro_iva_id"/>
+                    <field name="fecha"/>
+                    <field name="num_inicial"/>
+                    <field name="num_final"/>
+                    <field name="caja_sis_compu"/>
+                    <field name="v_exentas"/>
+                    <field name="v_internas_gravadas"/>
+                    <field name="exportaciones"/>
+                    <field name="total_v_diarias_prop"/>
+                    <field name="v_cuentas_terceros"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_iva_consu_final" model="ir.actions.act_window">
+            <field name="name">Detalle de Libro de Consumidor Final</field>
+            <field name="res_model">iva.consumidor.final</field>
+            <field name="domain">[('libro_iva_id.type', '=', 'fcf')]</field>
+            <field name="context">{'libro_iva_id.type': 'fcf', 'default_libro_iva_id_type': 'fcf'}</field>
+            <field name="view_mode">tree</field><!-- pendiente ,calendar,graph-->
+            <field name="view_id" ref="reporte_impuestos_sv.view_det_iva_consu_final_tree"/>
+        </record>
+        <menuitem id="iva_detalle_consumidor_final"
+                  name="Detalle de I.V.A. de Consumidor Final"
+                  groups="account.group_account_user"
+                  parent="reporte_impuestos_sv.main_detalle_iva"
+                  action="action_iva_consu_final"/>
+    </data>
+</odoo>

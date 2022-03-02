@@ -1,0 +1,332 @@
+@media screen and (max-width: 768px) {
+    .pos .actionpad .button.set-customer {
+        font-size: unset !important;
+        width: 98% !important;
+        height: 3em !important;
+    }
+    .pos .actionpad .remove-set-customer {
+        height: 3em !important;
+        display: none !important;
+    }
+    .pos .actionpad .button.pay {
+        font-size: unset !important;
+        height: 3em !important;
+    }
+    .pos .oe_status {
+        display: none !important;
+    }
+
+    .pos .breadcrumb {
+        width: 10px;
+        height: 50px;
+        margin-right: 25px;
+        margin-bottom: 5px;
+    }
+
+    .pos .filter {
+        display: none !important;
+    }
+
+    .pos .popups .popup-selection {
+        left: 0px !important;
+        width: 95%;
+    }
+
+    .pos .popup.popup-selection .selection-item {
+        width: 33% !important;
+        height: 80px !important;
+        max-width: unset !important;
+    }
+
+    .pos .modal-dialog {
+        width: 95%;
+    }
+
+    .pos .numpad {
+        margin-right: 0px !important;
+        min-width: unset;
+    }
+
+    .pos .actionpad .mode-button {
+        width: 33% !important;
+    }
+
+    .pos .breadcrumb-button.breadcrumb-home {
+        font-size: 13px !important;
+        padding: unset;
+    }
+
+    .screen .top-content .next {
+        margin-right: 0px !important;
+    }
+
+    .screen .top-content .button {
+        margin-right: 0px !important;
+    }
+
+    .pos .searchbox-client input {
+        width: unset !important;
+    }
+
+    .screen .top-content .save {
+        margin-right: 20px !important;
+    }
+
+    .pos .client-selected {
+        display: none;
+    }
+
+    .pos .switchpane {
+        height: 70px;
+        width: 100%;
+    }
+
+    .pos .pos-search-bar .filter .options {
+        min-width: unset !important;
+    }
+
+    .pos .rightpane-header .pos-search-bar {
+        margin-left: 0px !important;
+    }
+
+    .pos .pos-search-bar .search {
+        min-width: 190px !important;
+    }
+
+    .pos .order .orderline .price {
+        font-size: 16px !important;
+    }
+
+    .pos .login-button {
+        margin: 10px;
+    }
+
+    .pos .order .orderline .product-name {
+        line-height: 20px !important;
+        font-size: 16px !important;
+    }
+
+    .paymentmethods {
+        margin-top: 0px !important;
+    }
+    .pos .product-line-name {
+        font-size: 13px !important;
+        line-height: 20px !important;
+    }
+    .pos .line-icon {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+    .pos .order .orderline .tax-line {
+        display: none !important;
+    }
+    .pos .button-extend > button {
+        width: 30% !important;
+    }
+    .pos .popup-notification {
+        left: 0% !important;
+        top: 0% !important;
+        font-size: 13px !important;
+        max-height: 50px !important;
+    }
+    .pos .control-button {
+        width: 100% !important;
+        height: 55px !important;
+        line-height: 20px;
+        font-size: 13px !important;
+        border-radius: 3px;
+    }
+
+    .pos .payment-numpad .numpad button {
+        height: 60px !important;
+    }
+    .pos .payment-numpad {
+        width: 100% !important;
+        float: unset !important;
+    }
+    .pos .popups .popup-selection {
+        left: 0px !important;
+        width: 95%;
+    }
+
+    .pos .payment-status-change .label {
+        font-size: unset !important;
+    }
+
+    .payment-screen .payment-controls {
+        width: 43%;
+    }
+
+    .payment-screen .customer-button {
+        width: 43%;
+    }
+
+    .pos .modal-dialog {
+        width: 95%;
+    }
+
+    .pos .button-label {
+        font-size: 11px !important;
+    }
+
+    .pos .actionpad .button .fa-user {
+        display: none;
+    }
+
+    .pos .leftpane .pads .subpads {
+        margin-left: 0px !important;
+    }
+
+    .pos .numpad button {
+        height: 40px !important;
+        font-size: 16px !important;
+    }
+    .pos .pay {
+        display: none !important;
+    }
+    .pos .order .summary .line .subentry {
+        line-height: 20px;
+    }
+    .payment-screen .payment-buttons .button {
+        line-height: 20px !important;
+        padding-left: 0px !important;
+        min-height: 50px;
+    }
+    .pos .payment-numpad .numpad button {
+        height: 60px !important;
+    }
+    .pos .orderline-input {
+        margin: unset !important;
+    }
+
+    .pos .popups .popup-selection {
+        left: 0px !important;
+        width: 95%;
+    }
+
+    .pos .popup .category-simple-button {
+        width: 38% !important;
+        min-height: 50px !important;
+        min-width: unset !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+
+    .pos .modal-dialog .popup textarea {
+        width: 90%;
+        border: 1px solid #3c4858;
+    }
+
+    .pos .modal-dialog .popup .product {
+        width: 10em !important;
+        margin: 0.5em !important;
+    }
+
+    .pos .modal-dialog {
+        width: 95%;
+    }
+
+    .pos .product {
+        max-width: 35% !important;
+        height: 12em !important;
+        margin-bottom: 1em !important;
+        margin: 2px !important;
+        min-height: 14em !important;
+    }
+
+    .payment-screen .paymentlines-empty .total {
+        padding: 20px !important;
+        font-size: 40px !important;
+    }
+
+    .pos .product .product-img-big img {
+        height: 50%;
+        width: 50%;
+    }
+
+    .pos .client-details-left {
+        width: 100% !important;
+    }
+
+    .pos .client-details-right {
+        width: 100% !important;
+    }
+
+    .pos .header {
+        margin-top: 35px;
+    }
+
+    .pos .leftpane {
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pos .payment-status-change {
+        padding: 10px !important;
+    }
+
+    .pos .leftpane .pads .subpads {
+        display: flex;
+    !important;
+    }
+
+    .pos .button-extend {
+        bottom: 0px;
+        position: initial;
+        width: 20% !important;
+        height: 100% !important;
+    }
+
+    .pos .screen {
+        position: absolute !important;
+    }
+
+    .payment-status-container {
+        font-size: 20px;
+        padding: 0px !important;
+        /*display: grid;*/
+    }
+
+    .screen .left-content {
+        max-width: unset !important;
+        width: 100% !important;
+    }
+
+    .payment-status-container > div {
+        width: 100% !important;
+    }
+
+    .pos .client-details-left {
+        width: 100% !important;
+    }
+    .pos .header-main-content .mode-button {
+        width: 48% !important;
+    }
+    .pos .control-button .fa {
+        font-size: 13px !important;
+    }
+    .pos .product img {
+        margin-top: unset !important;
+    }
+    .pos .order .summary .line {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .paymentmethods .button {
+        line-height: 25px !important;
+        min-height: 80px !important;
+    }
+
+    .pos .payment-coins {
+        width: 100% !important;
+        display: inline-block !important;
+    }
+
+    .paymentline .payment-name {
+        line-height: 20px;
+    }
+}

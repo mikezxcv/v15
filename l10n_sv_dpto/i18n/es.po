@@ -1,0 +1,1444 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_sv_dpto
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-22 15:39+0000\n"
+"PO-Revision-Date: 2019-10-22 09:59-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_26
+msgid "Acajutla"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_42
+msgid "Agua Caliente"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_97
+msgid "Aguilares"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_01
+msgid "Ahuachapan"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_176
+msgid "Alegria"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_245
+msgid "Anamoros"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_75
+msgid "Antiguo Cuscatlan"
+msgstr "Antiguo Cuscatlan"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_02
+msgid "Apaneca"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_163
+msgid "Apastepeque"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_98
+msgid "Apopa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_219
+msgid "Arambala"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_43
+msgid "Arcatao"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_27
+msgid "Armenia"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_03
+msgid "Atiquizaya"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_99
+msgid "Ayutuxtepeque"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_44
+msgid "Azacualpa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:ir.model,name:l10n_sv_dpto.model_res_bank
+msgid "Bank"
+msgstr "Banco"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_177
+msgid "Berlin"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_246
+msgid "Bolivar"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_220
+msgid "Cacaopera"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_178
+msgid "California"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_28
+msgid "Caluco"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_116
+msgid "Candelaria"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_13
+msgid "Candelaria De La Frontera"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_199
+msgid "Carolina"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_48
+msgid "Chalatenango"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_15
+msgid "Chalchuapa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_202
+msgid "Chapeltique"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_222
+msgid "Chilanga"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_79
+msgid "Chiltiupan"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_203
+msgid "Chinameca"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_204
+msgid "Chirilagua"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_154
+msgid "Cinquera"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_45
+msgid "Citala"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_76
+msgid "Ciudad Arce"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_200
+msgid "Ciudad Barrios"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_115
+msgid "Ciudad Delgado"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_14
+msgid "Coatepeque"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: code:addons/l10n_sv_dpto/models/res_municipality.py:0
+#, python-format
+msgid "Code"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:ir.model.fields,help:l10n_sv_dpto.field_res_municipality__code
+msgid "Code of municipality"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_117
+msgid "Cojutepeque"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_77
+msgid "Colon"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_201
+msgid "Comacaran"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_46
+msgid "Comalapa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_78
+msgid "Comasagua"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_247
+msgid "Concep De Oriente"
+msgstr "Concepcion De Ote"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_179
+msgid "Concepcion Batres"
+msgstr "Concepcion Batres"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_04
+msgid "Concepcion De Ataco"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_47
+msgid "Concepcion Quezaltepeque"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_248
+msgid "Conchagua"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:ir.model,name:l10n_sv_dpto.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_sv_dpto
+#: code:addons/l10n_sv_dpto/models/res_municipality.py:0
+#, python-format
+msgid "Copy of {}"
+msgstr "Copia de  {}"
+
+#. module: l10n_sv_dpto
+#: code:addons/l10n_sv_dpto/models/res_municipality.py:0
+#, python-format
+msgid "Copy of {} ({})"
+msgstr "Copia de {} ({})"
+
+#. module: l10n_sv_dpto
+#: code:addons/l10n_sv_dpto/models/res_municipality.py:0
+#, python-format
+msgid "Copy of {}%"
+msgstr "Copia de {}%"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_221
+msgid "Corinto"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_municipality__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_sv_dpto
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_municipality__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_29
+msgid "Cuisnahuat"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_100
+msgid "Cuscatancingo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_132
+msgid "Cuyultitan"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_municipality__code
+msgid "Código"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_223
+msgid "Delicias De Concepcion"
+msgstr "Delicias De Concepcion"
+
+#. module: l10n_sv_dpto
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_municipality__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_162
+msgid "Dolores"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_49
+msgid "Dulce Nombre de  Maria"
+msgstr "Dulce Nombre de  Maria"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_118
+#: model:res.municipality,name:l10n_sv_dpto.dpto_249
+msgid "El Carmen"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_50
+msgid "El Carrizal"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_16
+msgid "El Congo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_224
+msgid "El Divisadero"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_101
+msgid "El Paisnal"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_51
+msgid "El Paraiso"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_17
+msgid "El Porvenir"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_05
+msgid "El Refugio"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_119
+#: model:res.municipality,name:l10n_sv_dpto.dpto_133
+#: model:res.municipality,name:l10n_sv_dpto.dpto_225
+msgid "El Rosario"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_250
+msgid "El Sauce"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_205
+msgid "El Transito"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_180
+msgid "El Triunfo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_181
+msgid "Ereguayquin"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_municipality__dpto_id
+#: model:ir.model.fields,help:l10n_sv_dpto.field_res_municipality__dpto_id
+msgid "Estado"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_182
+msgid "Estanzuelas"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_155
+msgid "Guacotecti"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_164
+msgid "Guadalupe"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_226
+msgid "Gualococti"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_227
+msgid "Guatajiagua"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_06
+msgid "Guaymango"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_102
+msgid "Guazapa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_80
+msgid "Huizucar"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_municipality__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_156
+msgid "Ilobasco"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_103
+msgid "Ilopango"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_251
+msgid "Intipuca"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_31
+msgid "Izalco"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_81
+msgid "Jayaque"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_134
+msgid "Jerusalen"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_82
+msgid "Jicalapa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_183
+msgid "Jiquilisco"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_228
+msgid "Joateca"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_229
+msgid "Jocoaitique"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_230
+msgid "Jocoro"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_32
+msgid "Juayua"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_184
+msgid "Jucuapa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_185
+msgid "Jucuaran"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_07
+msgid "Jujutla"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_157
+msgid "Jutiapa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_52
+msgid "La Laguna"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_83
+msgid "La Libertad"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_53
+msgid "La Palma"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_54
+msgid "La Reina"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_252
+msgid "La Union"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_55
+msgid "Las Vueltas"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_municipality____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_sv_dpto
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_municipality__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_sv_dpto
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_municipality__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_253
+msgid "Lislique"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_206
+msgid "Lolotique"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_231
+msgid "Lolotiquillo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_18
+msgid "Masahuat"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_254
+msgid "Meang Del Golfo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_232
+msgid "Meanguera"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_104
+msgid "Mejicanos"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_135
+msgid "Mercedes La Ceiba"
+msgstr "Dulce Nombre de  Maria"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_186
+msgid "Mercedes Umaña"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_19
+msgid "Metapan"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_207
+msgid "Moncagua"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_120
+msgid "Monte San Juan"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: code:addons/l10n_sv_dpto/models/res_bank.py:0
+#: code:addons/l10n_sv_dpto/models/res_municipality.py:0
+#: code:addons/l10n_sv_dpto/models/res_partner.py:0
+#: model:ir.actions.act_window,name:l10n_sv_dpto.action_municipality
+#: model:ir.ui.menu,name:l10n_sv_dpto.menu_municipality_partner
+#: model_terms:ir.ui.view,arch_db:l10n_sv_dpto.view_bank_form_municipality
+#: model_terms:ir.ui.view,arch_db:l10n_sv_dpto.view_form_address_municipality
+#: model_terms:ir.ui.view,arch_db:l10n_sv_dpto.view_form_municipality
+#: model_terms:ir.ui.view,arch_db:l10n_sv_dpto.view_municipality_tree
+#: model_terms:ir.ui.view,arch_db:l10n_sv_dpto.view_partner_search_municipality
+#, python-format
+msgid "Municipality"
+msgstr "Municipio"
+
+#. module: l10n_sv_dpto
+#: model:ir.model,name:l10n_sv_dpto.model_res_municipality
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_bank__munic_id
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_partner__munic_id
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_users__munic_id
+msgid "Municipio"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_33
+msgid "Nahuizalco"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_34
+msgid "Nahulingo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: code:addons/l10n_sv_dpto/models/res_municipality.py:0
+#, python-format
+msgid "Name"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: code:addons/l10n_sv_dpto/models/res_municipality.py:0
+#, python-format
+msgid "Name of municipality"
+msgstr "Nombre de Municipio"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_105
+msgid "Nejapa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:ir.model.fields,field_description:l10n_sv_dpto.field_res_municipality__name
+msgid "Nombre"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_56
+msgid "Nombre De Jesus"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:ir.model.fields,help:l10n_sv_dpto.field_res_municipality__name
+msgid "Nombre de Municipio"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_57
+msgid "Nueva Concepcion"
+msgstr "Nueva Concepcion"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_255
+msgid "Nueva Esparta"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_187
+msgid "Nueva Granada"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_208
+msgid "Nueva Guadalupe"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_58
+msgid "Nueva Trinidad"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_84
+msgid "Nuevo Cuscatlan"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_209
+msgid "Nuevo Eden de San Juan"
+msgstr "Nuevo Eden de San Juan"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_59
+msgid "Ojos De Agua"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_136
+msgid "Olocuilta"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_121
+msgid "Oratorio de Concepcion"
+msgstr "Oratorio de Concepcion"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_233
+msgid "Osicala"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_188
+msgid "Ozatlan"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_106
+msgid "Panchimalco"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_137
+msgid "Paraiso Osorio"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_256
+msgid "Pasaquina"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_234
+msgid "Perquin"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_257
+msgid "Poloros"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_60
+msgid "Potonico"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_189
+msgid "Puerto El Triunfo"
+msgstr "Puerto El Triunfo"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_210
+msgid "Quelepa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_86
+msgid "Quezaltepeque"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_107
+msgid "Rosario De Mora"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_87
+msgid "Sacacoyo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_35
+msgid "Salcoatitan"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_190
+msgid "San Agustin"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_258
+msgid "San Alejo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_36
+msgid "San Antonio Del Monte"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_211
+msgid "San Antonio Del Mosco"
+msgstr "San Antonio Del Mosco"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_62
+msgid "San Antonio Los Ranchos"
+msgstr "San Antonio Los Ranchos"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_138
+msgid "San Antonio Masahuat"
+msgstr "San Antonio Masahuat"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_20
+msgid "San Antonio Pajonal"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_61
+msgid "San Antonio de  La Cruz"
+msgstr "San Antonio de La Cruz"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_122
+msgid "San Bartolo Perulapia"
+msgstr "San Bartolo Perulapia"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_191
+msgid "San Buenaventura"
+msgstr "San Buenaventura"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_235
+msgid "San Carlos"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_165
+msgid "San Cayetano Istepeque"
+msgstr "San Cayetano Istepeque"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_123
+msgid "San Cristobal"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_192
+msgid "San Dionisio"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_139
+msgid "San Emigdio"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_168
+msgid "San Estaban Catarina"
+msgstr "San Estaban Catarina"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_236
+#: model:res.municipality,name:l10n_sv_dpto.dpto_63
+msgid "San Fernando"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_140
+msgid "San Francisco Chinameca"
+msgstr "San Francisco Chinameca"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_237
+msgid "San Francisco Gotera"
+msgstr "San Francisco Gotera"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_194
+msgid "San Francisco Javier"
+msgstr "San Francisco Javier"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_64
+msgid "San Francisco Lempa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_08
+msgid "San Francisco Menendez"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_65
+msgid "San Francisco Morazan"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_212
+msgid "San Gerardo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_66
+msgid "San Ignacio"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_169
+msgid "San Ildefonso"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_158
+#: model:res.municipality,name:l10n_sv_dpto.dpto_238
+msgid "San Isidro"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_67
+msgid "San Isidro Labrador"
+msgstr "San Isidro Labrador"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_213
+msgid "San Jorge"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_259
+msgid "San Jose"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_68
+msgid "San Jose Cancasque"
+msgstr "San Jose Cancasque"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_69
+msgid "San Jose Flores"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_88
+msgid "San Jose Villanueva"
+msgstr "San Jose Villanueva"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_124
+msgid "San Juan Guayabal"
+msgstr "San Juan Guayabal"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_141
+msgid "San Juan Nonualco"
+msgstr "San Juan Nonualco"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_89
+msgid "San Juan Opico"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_142
+msgid "San Juan Talpa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_143
+msgid "San Juan Tepezontes"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_37
+msgid "San Julian"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_09
+#: model:res.municipality,name:l10n_sv_dpto.dpto_170
+msgid "San Lorenzo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_70
+msgid "San Luis Carmen"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_153
+msgid "San Luis La Herradura"
+msgstr "San Luis La Herradura"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_144
+msgid "San Luis Talpa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_214
+msgid "San Luis de la Reina"
+msgstr "San Luis de la Reina"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_108
+msgid "San Marcos"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_109
+msgid "San Martin"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_90
+msgid "San Matias"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_215
+msgid "San Miguel"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_145
+msgid "San Miguel Tepezontes"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_71
+msgid "San Miguel de  Mercedes"
+msgstr "San Miguel de Mercedes"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_91
+msgid "San Pablo Tacachico"
+msgstr "San Pablo Tacachico"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_146
+msgid "San Pedro Masahuat"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_147
+msgid "San Pedro Nonualco"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_125
+msgid "San Pedro Perulapan"
+msgstr "San Pedro Perulapan"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_10
+msgid "San Pedro Puxtla"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_72
+msgid "San Rafael"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_126
+msgid "San Rafael Cedros"
+msgstr "San Rafael Cedros"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_148
+msgid "San Rafael Obrajuelo"
+msgstr "San Rafael Obrajuelo"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_216
+msgid "San Rafael Oriente"
+msgstr "San Rafael Oriente"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_127
+msgid "San Ramon"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_110
+msgid "San Salvador"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_171
+msgid "San Sebastian"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_21
+msgid "San Sebastian Salitrillo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_239
+msgid "San Simon"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_172
+msgid "San Vicente"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_22
+msgid "Santa Ana"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_38
+msgid "Santa Catarina Masahuat"
+msgstr "Santa Catarina Masahuat"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_166
+msgid "Santa Clara"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_128
+msgid "Santa Cruz Analquito"
+msgstr "Santa Cruz Analquito"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_129
+msgid "Santa Cruz Michapa"
+msgstr "Santa Cruz Michapa"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_193
+msgid "Santa Elena"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_30
+msgid "Santa Isabel Ishuatan"
+msgstr "Santa Isabel Ishuatan"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_195
+msgid "Santa Maria"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_149
+msgid "Santa Maria Ostuma"
+msgstr "Santa Maria Ostuma"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_73
+msgid "Santa Rita"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_23
+msgid "Santa Rosa Guachipilin"
+msgstr "Santa Rosa Guachipilin"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_260
+msgid "Santa Rosa Lima"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_85
+msgid "Santa Tecla"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_24
+msgid "Santiago De La Frontera"
+msgstr "Santiago De La Frontera"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_196
+msgid "Santiago De Maria"
+msgstr "Santiago De Maria"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_150
+msgid "Santiago Nonualco"
+msgstr "Santiago Nonualco"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_111
+msgid "Santiago Texacuangos"
+msgstr "Santiago Texacuangos"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_167
+msgid "Santo Domingo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_39
+msgid "Santo Domingo Guzman"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_112
+msgid "Santo Tomas"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_240
+msgid "Sensembra"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_159
+msgid "Sensuntepeque"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_217
+msgid "Sesori"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_241
+msgid "Sociedad"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_40
+msgid "Sonsonate"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_41
+msgid "Sonzacate"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_113
+msgid "Soyapango"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: code:addons/l10n_sv_dpto/models/res_municipality.py:0
+#, python-format
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_130
+msgid "Suchitoto"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_11
+msgid "Tacuba"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_93
+msgid "Talnique"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_92
+msgid "Tamanique"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_151
+msgid "Tapalhuaca"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_197
+msgid "Tecapan"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_173
+msgid "Tecoluca"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_160
+msgid "Tejutepeque"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_74
+msgid "Tejutla"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_131
+msgid "Tenancingo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_94
+msgid "Teotepeque"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_95
+msgid "Tepecoyo"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_174
+msgid "Tepetitan"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_25
+msgid "Texistepeque"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:ir.model.constraint,message:l10n_sv_dpto.constraint_res_municipality_code_unique
+msgid "The code must be unique"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_114
+msgid "Tonacatepeque"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_242
+msgid "Torola"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_12
+msgid "Turin"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_218
+msgid "Uluazapa"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_198
+msgid "Usulutan"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_175
+msgid "Verapaz"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_161
+msgid "Victoria"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_243
+msgid "Yamabal"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_261
+msgid "Yayantique"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_244
+msgid "Yoloaiquin"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_262
+msgid "Yucuaiquin"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_152
+msgid "Zacatecoluca"
+msgstr ""
+
+#. module: l10n_sv_dpto
+#: model:res.municipality,name:l10n_sv_dpto.dpto_96
+msgid "Zaragoza"
+msgstr ""

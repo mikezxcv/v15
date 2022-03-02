@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_manager_libro_iva,access_manager_libro_iva,model_libro_iva,account.group_account_manager,1,1,1,0
+access_invoice_libro_iva,access_invoice_libro_iva,model_libro_iva,account.group_account_user,1,0,0,0
+access_iva_credito_fiscal,access_iva_credito_fiscal,model_iva_credito_fiscal,account.group_account_user,1,1,1,1
+access_libro_iva_compra,access_libro_iva_compra,model_libro_iva_compra,account.group_account_user,1,1,1,1
+access_iva_consumidor_final,access_iva_consumidor_final,model_iva_consumidor_final,account.group_account_user,1,1,1,1
+access_resumen_line,access_resumen_line,model_resumen_line,account.group_account_user,1,1,1,1

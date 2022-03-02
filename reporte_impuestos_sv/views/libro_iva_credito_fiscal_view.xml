@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_ccf_iva_tree" model="ir.ui.view">
+            <field name="name">view_ccf_iva_tree</field>
+            <field name="model">libro.iva</field>
+            <field name="priority">2</field>
+            <field name="arch" type="xml">
+                <tree string="Declaracion de I.V.A. Credito Fiscal"
+                      decoration-bf="message_needaction==True"
+                      decoration-muted="state=='cancel'">
+                    <field name="message_needaction" invisible="1"/>
+                    <field name="state" optional="hide"/>
+                    <field name="name" optional="hide"/>
+                    <field name="fecha"/>
+                    <field name="company_id" optional="hide"/>
+                    <field name="company_currency_id" optional="hide"/>
+                    <field name="mes"/>
+                    <field name="state" optional="hide"/>
+                    <field name="responsable_id"/>
+                    <field name="usuario_id" optional="hide"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_ccf_iva_form" model="ir.ui.view">
+            <field name="name">view_ccf_iva_form</field>
+            <field name="model">libro.iva</field>
+            <field name="arch" type="xml">
+                <form string="Libro de Iva de Credito Fiscal">
+                    <header>
+                        <field name="active" invisible="1"/>
+                        <button name="change_active"
+                                groups="account.group_account_manager"
+                                string="Archivar"
+                                type="object"
+                                states="cancel"
+                                attrs="{'invisible': [('active', '=', False)]}"/>
+                        <button name="change_active"
+                                groups="account.group_account_manager"
+                                string="Desarchivar"
+                                type="object"
+                                states="cancel"
+                                attrs="{'invisible': [('active', '=', True)]}"/>
+                        <button name="iva_print"
+                                groups="account.group_account_user"
+                                string="Imprimir"
+                                type="object"
+                                states="draft,open"/>
+                        <button name="iva_open"
+                                groups="account.group_account_manager"
+                                string="Validar"
+                                type="object"
+                                states="draft"/>
+
+                        <button name="iva_cancel"
+                                groups="account.group_account_manager"
+                                string="Cancelar"
+                                type="object"
+                                states="open"/>
+
+                        <button name="detalle_ccf"
+                                groups="account.group_account_user"
+                                string="Generar Detalle"
+                                type="object"
+                                states="draft"/>
+
+                        <field name="state"
+                               widget="statusbar"
+                               nolabel="1"
+                               statusbar_visible="draft,open"
+                               statusbar_colors='{"draft":"blue","cancel":"gray","open":"green"}'/>
+                    </header>
+                    <sheet string="Libro de Iva de Credito Fiscal">
+                        <div class="oe_button_box" name="button_box"/>
+                        <widget name="web_ribbon"
+                                title="Archivado"
+                                bg_color="bg-danger"
+                                attrs="{'invisible': [('active', '=', True)]}"/>
+                        <field name="type" invisible="1"/>
+                        <group>
+                            <group col="4">
+                                <h1>
+                                    <field name="name" readonly='True'/>
+                                </h1>
+                            </group>
+                        </group>
+                        <group>
+                            <group col="2">
+                                <field name="usuario_id"/>
+                                <field name="responsable_id"
+                                       widget="selection"
+                                       domain="[('company_id','=',company_id)]"
+                                       string="Contador"
+                                       attr="{'readonly': [('state','!=','draft')]}"/>
+                                <field name="company_id"
+                                       string="Compañia"/>
+                            </group>
+                            <group col="2">
+                                <field name="fecha"
+                                       attr="{'readonly': [('state','!=','draft')]}"/>
+                                <field name="mes"
+                                       attr="{'readonly': [('state','!=','draft')]}"/>
+                                <field name="company_currency_id"
+                                       string="Moneda"/>
+                            </group>
+                        </group>
+                        <notebook>
+
+                            <page string="Detalle Credito Fiscal">
+                                <field name="detalle_iva_credito_fiscal_ids">
+                                    <tree string="Credito Fiscal">
+                                        <field name="correlativo" optional="hide"/>
+                                        <field name="fecha_emision" optional="hide"/>
+                                        <field name="num_corr_preimp" optional="hide"/>
+                                        <field name="partner_id"/>
+                                        <field name="prp_exentas" optional="hide"/>
+                                        <field name="prp_gravadas" optional="hide"/>
+                                        <field name="prp_debito_fiscal" optional="hide"/>
+                                        <field name="iva_percibido" optional="hide"/>
+                                        <field name="iva_retenido" optional="hide"/>
+                                        <field name="total" />
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <group>
+                                                <field name="correlativo" string="No"/>
+                                                <field name="fecha_emision"/>
+                                                <field name="num_corr_preimp"/>
+                                                <field name="partner_id"/>
+                                            </group>
+                                            <grop>
+                                                <field name="prp_exentas"/>
+                                                <field name="prp_gravadas"/>
+                                                <field name="prp_debito_fiscal"/>
+                                                <field name="iva_percibido"/>
+                                                <field name="iva_retenido"/>
+                                                <field name="total"/>
+                                            </grop>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"
+                               widget="mail_followers"
+                               groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_libro_iva_ccf" model="ir.actions.act_window">
+            <field name="name">Declaracion de I.V.A Credito Fiscal</field>
+            <field name="res_model">libro.iva</field>
+            <field name="domain">[('type', '=', 'ccf')]</field>
+            <field name="context">{'type': 'ccf', 'default_type': 'ccf'}</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_libro_iva_ccf_view_tree" model="ir.actions.act_window.view">
+            <field name="sequence" eval="6"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_ccf_iva_tree"/>
+            <field name="act_window_id" ref="action_libro_iva_ccf"/>
+        </record>
+        <record id="action_libro_iva_ccf_view_form" model="ir.actions.act_window.view">
+            <field name="sequence" eval="6"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_ccf_iva_form"/>
+            <field name="act_window_id" ref="action_libro_iva_ccf"/>
+        </record>
+
+        <menuitem id="declaracion_iva_ccf"
+                  name="Declaracion de I.V.A. Credito Fiscal"
+                  groups="account.group_account_user"
+                  parent="reporte_impuestos_sv.main_iva"
+                  action="action_libro_iva_ccf"/>
+    </data>
+</odoo>

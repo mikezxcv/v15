@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="ClientLine" t-inherit="point_of_sale.ClientLine" t-inherit-mode="extension" owl="1">
+        <xpath expr="//tr" position="attributes">
+            <attribute name="t-att-class">{oe_hidden: props.partner.removed}</attribute>
+        </xpath>
+        <xpath expr="//tr/td[1]" position="inside">
+            <button class="edit-client-button btn btn-warning"
+                    t-on-click.stop="trigger('set-customer-to-cart', {client: props.partner})" style="display: block">
+                <i class="fa fa-sign-in"/>
+                Set to Order
+            </button>
+        </xpath>
+        <xpath expr="//tr/td[1]/t[1]" position="before">
+            <t t-if="state.refresh == 'done'">
+                <i style="color: blue; cursor: pointer; margin-left: 10px" class="fa fa-refresh" t-on-mouseover.stop="_onMouseEnter"/>
+            </t>
+            <t t-if="state.refresh == 'connecting'">
+                <i class="fa fa-spinner" style="color: blue" aria-hidden="true"></i>
+            </t>
+            <t t-if="state.refresh == 'error'">
+                <i class="fa fa-exclamation-triangle" style="color: red" aria-hidden="true" t-on-mouseover.stop="_onMouseEnter"/>
+            </t>
+            <span> </span>
+        </xpath>
+        <xpath expr="//tr" position="inside">
+            <td t-if="!env.isMobile">
+                <t t-if="props.partner.barcode">
+                    <button class="edit-client-button" t-on-click.stop="printBarcode">
+                        <i class="fa fa-print"/>
+                        Print Card
+                    </button>
+                    <t t-esc="props.partner.barcode"/>
+                </t>
+                <t t-else="">
+                    <button class="edit-client-button" t-on-click.stop="addBarcode">
+                        <i class="fa fa-plus"/>
+                        Add Barcode
+                    </button>
+                </t>
+                <t t-if="env.pos.config.archive_client">
+                    <button class="edit-client-button" t-on-click.stop="archiveClient">
+                        <i class="fa fa-trash"/>
+                        Move to Black List
+                    </button>
+                </t>
+            </td>
+            <td t-if="!env.isMobile">
+                <t t-if="props.partner.parent_id">
+                    <t t-esc="props.partner.parent_id[1]"/>
+                </t>
+            </td>
+            <td t-if="!env.isMobile">
+                <t t-if="props.partner.type">
+                    <t t-esc="props.partner.type"/>
+                </t>
+                <a class="edit-client-button"
+                        t-on-click.stop="showMore" style="display: block; color: blue">
+                    <i class="fa fa-link"/>
+                </a>
+                <button class="edit-client-button" t-on-click.stop="trigger('show-reference-contact')"
+                        t-if="highlight and env.pos.db.partners_by_parent_id[props.partner.id] and env.pos.db.partners_by_parent_id[props.partner.id].length != 0">
+                    <i class="fa fa-users"/>
+                    Childs
+                    <span class="notification"><t t-esc="env.pos.db.partners_by_parent_id[props.partner.id].length"/></span>
+                </button>
+                <button class="edit-client-button"
+                        t-on-click="trigger('activate-edit-mode', { isNewClient: true, parent_id: props.partner.id })"
+                        t-if="highlight">
+                    <t t-if="!env.isMobile">
+                        <i class="fa fa-users"/>
+                    </t>
+                </button>
+            </td>
+            <td t-if="!env.isMobile">
+                <t t-if="props.partner.company_type">
+                    <t t-esc="props.partner.company_type"/>
+                </t>
+            </td>
+            <td t-if="!env.isMobile">
+                <t t-esc="env.pos.format_currency_no_symbol(props.partner.pos_loyalty_point)"/>
+                <button class="edit-client-button" t-on-click.stop="reChargePoints()"
+                        t-if="env.pos.config.pos_loyalty_id">
+                    <i class="fa fa-edit"/>
+                    ReCharge
+                </button>
+            </td>
+            <td t-if="!env.isMobile">
+                <t t-esc="env.pos.format_currency(props.partner.balance)"/>
+            </td>
+            <td t-if="!env.isMobile">
+                <t t-esc="env.pos.format_currency(props.partner.wallet)"/>
+            </td>
+            <td t-if="!env.isMobile">
+                <t t-esc="env.pos.format_currency_no_symbol(props.partner.pos_order_count)"/>
+            </td>
+            <td t-if="!env.isMobile">
+                <t t-esc="env.pos.format_currency(props.partner.pos_total_amount)"/>
+                <button class="edit-client-button" t-on-click.stop="showPurchasedHistories()"
+                        t-if="env.pos.config.pos_orders_management and countOrdersByClient > 0">
+                    <i class="fa fa-shopping-cart"/>
+                    Purchased Histories (<t t-esc="env.pos.config.load_orders_type"/>)
+                    <span class="notification"><t t-esc="countOrdersByClient"/></span>
+                </button>
+            </td>
+        </xpath>
+        <xpath expr="//button[hasclass('edit-client-button')]" position="replace">
+            <button class="edit-client-button" t-on-click.stop="trigger('click-edit')"
+                    t-if="env.pos.config.update_client">
+                <i class="fa fa-edit"/>
+                EDIT
+                <span class="shortcut-keyboard" t-if="!env.isMobile">
+                    <i class="fa fa-keyboard-o"/>( E )
+                </span>
+            </button>
+            <span class="shortcut-keyboard" t-if="!env.isMobile">
+                <i class="fa fa-keyboard-o"/>
+                Enter
+            </span>
+        </xpath>
+        <xpath expr="//td[3]" position="inside">
+            <button class="edit-client-button" t-on-click="sendMessage(props.partner)"
+                    t-if="!env.isMobile and (props.partner.mobile || props.partner.phone) and env.pos.config.whatsapp_api and env.pos.config.whatsapp_token">
+                <i class="fa fa-whatsapp"></i>
+                Messages
+            </button>
+        </xpath>
+    </t>
+
+</templates>

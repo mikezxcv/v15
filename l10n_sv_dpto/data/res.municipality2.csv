@@ -1,0 +1,263 @@
+id,code,name,dpto_id/id
+dpto_01,l10n_sv_dpto.01_1,Ahuachapan,l10n_sv_dpto.01
+dpto_02,l10n_sv_dpto.01_2,Apaneca,l10n_sv_dpto.01
+dpto_03,l10n_sv_dpto.01_3,Atiquizaya,l10n_sv_dpto.01
+dpto_04,l10n_sv_dpto.01_4,Concepcion De Ataco,l10n_sv_dpto.01
+dpto_05,l10n_sv_dpto.01_5,El Refugio,l10n_sv_dpto.01
+dpto_06,l10n_sv_dpto.01_6,Guaymango,l10n_sv_dpto.01
+dpto_07,l10n_sv_dpto.01_7,Jujutla,l10n_sv_dpto.01
+dpto_08,l10n_sv_dpto.01_8,San Francisco Menendez,l10n_sv_dpto.01
+dpto_09,l10n_sv_dpto.01_9,San Lorenzo,l10n_sv_dpto.01
+o,l10n_sv_dpto.01_10,San Pedro Puxtla,l10n_sv_dpto.01
+dpto_11,l10n_sv_dpto.01_11,Tacuba,l10n_sv_dpto.01
+dpto_12,l10n_sv_dpto.01_12,Turin,l10n_sv_dpto.01
+dpto_13,l10n_sv_dpto.02_1,Candelaria De La Frontera,l10n_sv_dpto.02
+dpto_14,l10n_sv_dpto.02_2,Coatepeque,l10n_sv_dpto.02
+dpto_15,l10n_sv_dpto.02_3,Chalchuapa,l10n_sv_dpto.02
+dpto_16,l10n_sv_dpto.02_4,El Congo,l10n_sv_dpto.02
+dpto_17,l10n_sv_dpto.02_5,El Porvenir,l10n_sv_dpto.02
+dpto_18,l10n_sv_dpto.02_6,Masahuat,l10n_sv_dpto.02
+dpto_19,l10n_sv_dpto.02_7,Metapan,l10n_sv_dpto.02
+dpto_20,l10n_sv_dpto.02_8,San Antonio Pajonal,l10n_sv_dpto.02
+dpto_21,l10n_sv_dpto.02_9,San Sebastian Salitrillo,l10n_sv_dpto.02
+dpto_22,l10n_sv_dpto.02_10,Santa Ana,l10n_sv_dpto.02
+dpto_23,l10n_sv_dpto.02_11,Santa Rosa Guachipilin,l10n_sv_dpto.02
+dpto_24,l10n_sv_dpto.02_12,Santiago De La Frontera,l10n_sv_dpto.02
+dpto_25,l10n_sv_dpto.02_13,Texistepeque,l10n_sv_dpto.02
+dpto_26,l10n_sv_dpto.03_1,Acajutla,l10n_sv_dpto.03
+dpto_27,l10n_sv_dpto.03_2,Armenia,l10n_sv_dpto.03
+dpto_28,l10n_sv_dpto.03_3,Caluco,l10n_sv_dpto.03
+dpto_29,l10n_sv_dpto.03_4,Cuisnahuat,l10n_sv_dpto.03
+dpto_30,l10n_sv_dpto.03_5,Santa Isabel Ishuatan,l10n_sv_dpto.03
+dpto_31,l10n_sv_dpto.03_6,Izalco,l10n_sv_dpto.03
+dpto_32,l10n_sv_dpto.03_7,Juayua,l10n_sv_dpto.03
+dpto_33,l10n_sv_dpto.03_8,Nahuizalco,l10n_sv_dpto.03
+dpto_34,l10n_sv_dpto.03_9,Nahulingo,l10n_sv_dpto.03
+dpto_35,l10n_sv_dpto.03_10,Salcoatitan,l10n_sv_dpto.03
+dpto_36,l10n_sv_dpto.03_11,San Antonio Del Monte,l10n_sv_dpto.03
+dpto_37,l10n_sv_dpto.03_12,San Julian,l10n_sv_dpto.03
+dpto_38,l10n_sv_dpto.03_13,Santa Catarina Masahuat,l10n_sv_dpto.03
+dpto_39,l10n_sv_dpto.03_14,Santo Domingo Guzman,l10n_sv_dpto.03
+dpto_40,l10n_sv_dpto.03_15,Sonsonate,l10n_sv_dpto.03
+dpto_41,l10n_sv_dpto.03_16,Sonzacate,l10n_sv_dpto.03
+dpto_42,l10n_sv_dpto.04_1,Agua Caliente,l10n_sv_dpto.04
+dpto_43,l10n_sv_dpto.04_2,Arcatao,l10n_sv_dpto.04
+dpto_44,l10n_sv_dpto.04_3,Azacualpa,l10n_sv_dpto.04
+dpto_45,l10n_sv_dpto.04_4,Citala,l10n_sv_dpto.04
+dpto_46,l10n_sv_dpto.04_5,Comalapa,l10n_sv_dpto.04
+dpto_47,l10n_sv_dpto.04_6,Concepcion Quezaltepeque,l10n_sv_dpto.04
+dpto_48,l10n_sv_dpto.04_7,Chalatenango,l10n_sv_dpto.04
+dpto_49,l10n_sv_dpto.04_8,Dulce Nombre de  Maria,l10n_sv_dpto.04
+dpto_50,l10n_sv_dpto.04_9,El Carrizal,l10n_sv_dpto.04
+dpto_51,l10n_sv_dpto.04_10,El Paraiso,l10n_sv_dpto.04
+dpto_52,l10n_sv_dpto.04_11,La Laguna,l10n_sv_dpto.04
+dpto_53,l10n_sv_dpto.04_12,La Palma,l10n_sv_dpto.04
+dpto_54,l10n_sv_dpto.04_13,La Reina,l10n_sv_dpto.04
+dpto_55,l10n_sv_dpto.04_14,Las Vueltas,l10n_sv_dpto.04
+dpto_56,l10n_sv_dpto.04_15,Nombre De Jesus,l10n_sv_dpto.04
+dpto_57,l10n_sv_dpto.04_16,Nueva Concepcion,l10n_sv_dpto.04
+dpto_58,l10n_sv_dpto.04_17,Nueva Trinidad,l10n_sv_dpto.04
+dpto_59,l10n_sv_dpto.04_18,Ojos De Agua,l10n_sv_dpto.04
+dpto_60,l10n_sv_dpto.04_19,Potonico,l10n_sv_dpto.04
+dpto_61,l10n_sv_dpto.04_20,San Antonio de  La Cruz,l10n_sv_dpto.04
+dpto_62,l10n_sv_dpto.04_21,San Antonio Los Ranchos,l10n_sv_dpto.04
+dpto_63,l10n_sv_dpto.04_22,San Fernando,l10n_sv_dpto.04
+dpto_64,l10n_sv_dpto.04_23,San Francisco Lempa,l10n_sv_dpto.04
+dpto_65,l10n_sv_dpto.04_24,San Francisco Morazan,l10n_sv_dpto.04
+dpto_66,l10n_sv_dpto.04_25,San Ignacio,l10n_sv_dpto.04
+dpto_67,l10n_sv_dpto.04_26,San Isidro Labrador,l10n_sv_dpto.04
+dpto_68,l10n_sv_dpto.04_27,San Jose Cancasque,l10n_sv_dpto.04
+dpto_69,l10n_sv_dpto.04_28,San Jose Flores,l10n_sv_dpto.04
+dpto_70,l10n_sv_dpto.04_29,San Luis Carmen,l10n_sv_dpto.04
+dpto_71,l10n_sv_dpto.04_30,San Miguel de  Mercedes,l10n_sv_dpto.04
+dpto_72,l10n_sv_dpto.04_31,San Rafael,l10n_sv_dpto.04
+dpto_73,l10n_sv_dpto.04_32,Santa Rita,l10n_sv_dpto.04
+dpto_74,l10n_sv_dpto.04_33,Tejutla,l10n_sv_dpto.04
+dpto_75,l10n_sv_dpto.05_1,Antiguo Cuscatlan,l10n_sv_dpto.05
+dpto_76,l10n_sv_dpto.05_2,Ciudad Arce,l10n_sv_dpto.05
+dpto_77,l10n_sv_dpto.05_3,Colon,l10n_sv_dpto.05
+dpto_78,l10n_sv_dpto.05_4,Comasagua,l10n_sv_dpto.05
+dpto_79,l10n_sv_dpto.05_5,Chiltiupan,l10n_sv_dpto.05
+dpto_80,l10n_sv_dpto.05_6,Huizucar,l10n_sv_dpto.05
+dpto_81,l10n_sv_dpto.05_7,Jayaque,l10n_sv_dpto.05
+dpto_82,l10n_sv_dpto.05_8,Jicalapa,l10n_sv_dpto.05
+dpto_83,l10n_sv_dpto.05_9,La Libertad,l10n_sv_dpto.05
+dpto_84,l10n_sv_dpto.05_10,Nuevo Cuscatlan,l10n_sv_dpto.05
+dpto_85,l10n_sv_dpto.05_11,Santa Tecla,l10n_sv_dpto.05
+dpto_86,l10n_sv_dpto.05_12,Quezaltepeque,l10n_sv_dpto.05
+dpto_87,l10n_sv_dpto.05_13,Sacacoyo,l10n_sv_dpto.05
+dpto_88,l10n_sv_dpto.05_14,San Jose Villanueva,l10n_sv_dpto.05
+dpto_89,l10n_sv_dpto.05_15,San Juan Opico,l10n_sv_dpto.05
+dpto_90,l10n_sv_dpto.05_16,San Matias,l10n_sv_dpto.05
+dpto_91,l10n_sv_dpto.05_17,San Pablo Tacachico,l10n_sv_dpto.05
+dpto_92,l10n_sv_dpto.05_18,Tamanique,l10n_sv_dpto.05
+dpto_93,l10n_sv_dpto.05_19,Talnique,l10n_sv_dpto.05
+dpto_94,l10n_sv_dpto.05_20,Teotepeque,l10n_sv_dpto.05
+dpto_95,l10n_sv_dpto.05_21,Tepecoyo,l10n_sv_dpto.05
+dpto_96,l10n_sv_dpto.05_22,Zaragoza,l10n_sv_dpto.05
+dpto_97,l10n_sv_dpto.06_1,Aguilares,l10n_sv_dpto.06
+dpto_98,l10n_sv_dpto.06_2,Apopa,l10n_sv_dpto.06
+dpto_99,l10n_sv_dpto.06_3,Ayutuxtepeque,l10n_sv_dpto.06
+dpto_100,l10n_sv_dpto.06_4,Cuscatancingo,l10n_sv_dpto.06
+dpto_101,l10n_sv_dpto.06_5,El Paisnal,l10n_sv_dpto.06
+dpto_102,l10n_sv_dpto.06_6,Guazapa,l10n_sv_dpto.06
+dpto_103,l10n_sv_dpto.06_7,Ilopango,l10n_sv_dpto.06
+dpto_104,l10n_sv_dpto.06_8,Mejicanos,l10n_sv_dpto.06
+dpto_105,l10n_sv_dpto.06_9,Nejapa,l10n_sv_dpto.06
+dpto_106,l10n_sv_dpto.06_10,Panchimalco,l10n_sv_dpto.06
+dpto_107,l10n_sv_dpto.06_11,Rosario De Mora,l10n_sv_dpto.06
+dpto_108,l10n_sv_dpto.06_12,San Marcos,l10n_sv_dpto.06
+dpto_109,l10n_sv_dpto.06_13,San Martin,l10n_sv_dpto.06
+dpto_110,l10n_sv_dpto.06_14,San Salvador,l10n_sv_dpto.06
+dpto_111,l10n_sv_dpto.06_15,Santiago Texacuangos,l10n_sv_dpto.06
+dpto_112,l10n_sv_dpto.06_16,Santo Tomas,l10n_sv_dpto.06
+dpto_113,l10n_sv_dpto.06_17,Soyapango,l10n_sv_dpto.06
+dpto_114,l10n_sv_dpto.06_18,Tonacatepeque,l10n_sv_dpto.06
+dpto_115,l10n_sv_dpto.06_19,Ciudad Delgado,l10n_sv_dpto.06
+dpto_116,l10n_sv_dpto.07_1,Candelaria,l10n_sv_dpto.07
+dpto_117,l10n_sv_dpto.07_2,Cojutepeque,l10n_sv_dpto.07
+dpto_118,l10n_sv_dpto.07_3,El Carmen,l10n_sv_dpto.07
+dpto_119,l10n_sv_dpto.07_4,El Rosario,l10n_sv_dpto.07
+dpto_120,l10n_sv_dpto.07_5,Monte San Juan,l10n_sv_dpto.07
+dpto_121,l10n_sv_dpto.07_6,Oratorio de Concepcion,l10n_sv_dpto.07
+dpto_122,l10n_sv_dpto.07_7,San Bartolo Perulapia,l10n_sv_dpto.07
+dpto_123,l10n_sv_dpto.07_8,San Cristobal,l10n_sv_dpto.07
+dpto_124,l10n_sv_dpto.07_9,San Juan Guayabal,l10n_sv_dpto.07
+dpto_125,l10n_sv_dpto.07_10,San Pedro Perulapan,l10n_sv_dpto.07
+dpto_126,l10n_sv_dpto.07_11,San Rafael Cedros,l10n_sv_dpto.07
+dpto_127,l10n_sv_dpto.07_12,San Ramon,l10n_sv_dpto.07
+dpto_128,l10n_sv_dpto.07_13,Santa Cruz Analquito,l10n_sv_dpto.07
+dpto_129,l10n_sv_dpto.07_14,Santa Cruz Michapa,l10n_sv_dpto.07
+dpto_130,l10n_sv_dpto.07_15,Suchitoto,l10n_sv_dpto.07
+dpto_131,l10n_sv_dpto.07_16,Tenancingo,l10n_sv_dpto.07
+dpto_132,l10n_sv_dpto.08_1,Cuyultitan,l10n_sv_dpto.08
+dpto_133,l10n_sv_dpto.08_2,El Rosario,l10n_sv_dpto.08
+dpto_134,l10n_sv_dpto.08_3,Jerusalen,l10n_sv_dpto.08
+dpto_135,l10n_sv_dpto.08_4,Mercedes La Ceiba,l10n_sv_dpto.08
+dpto_136,l10n_sv_dpto.08_5,Olocuilta,l10n_sv_dpto.08
+dpto_137,l10n_sv_dpto.08_6,Paraiso Osorio,l10n_sv_dpto.08
+dpto_138,l10n_sv_dpto.08_7,San Antonio Masahuat,l10n_sv_dpto.08
+dpto_139,l10n_sv_dpto.08_8,San Emigdio,l10n_sv_dpto.08
+dpto_140,l10n_sv_dpto.08_9,San Francisco Chinameca,l10n_sv_dpto.08
+dpto_141,l10n_sv_dpto.08_10,San Juan Nonualco,l10n_sv_dpto.08
+dpto_142,l10n_sv_dpto.08_11,San Juan Talpa,l10n_sv_dpto.08
+dpto_143,l10n_sv_dpto.08_12,San Juan Tepezontes,l10n_sv_dpto.08
+dpto_144,l10n_sv_dpto.08_13,San Luis Talpa,l10n_sv_dpto.08
+dpto_145,l10n_sv_dpto.08_14,San Miguel Tepezontes,l10n_sv_dpto.08
+dpto_146,l10n_sv_dpto.08_15,San Pedro Masahuat,l10n_sv_dpto.08
+dpto_147,l10n_sv_dpto.08_16,San Pedro Nonualco,l10n_sv_dpto.08
+dpto_148,l10n_sv_dpto.08_17,San Rafael Obrajuelo,l10n_sv_dpto.08
+dpto_149,l10n_sv_dpto.08_18,Santa Maria Ostuma,l10n_sv_dpto.08
+dpto_150,l10n_sv_dpto.08_19,Santiago Nonualco,l10n_sv_dpto.08
+dpto_151,l10n_sv_dpto.08_20,Tapalhuaca,l10n_sv_dpto.08
+dpto_152,l10n_sv_dpto.08_21,Zacatecoluca,l10n_sv_dpto.08
+dpto_153,l10n_sv_dpto.08_22,San Luis La Herradura,l10n_sv_dpto.08
+dpto_154,l10n_sv_dpto.09_1,Cinquera,l10n_sv_dpto.09
+dpto_155,l10n_sv_dpto.09_2,Guacotecti,l10n_sv_dpto.09
+dpto_156,l10n_sv_dpto.09_3,Ilobasco,l10n_sv_dpto.09
+dpto_157,l10n_sv_dpto.09_4,Jutiapa,l10n_sv_dpto.09
+dpto_158,l10n_sv_dpto.09_5,San Isidro,l10n_sv_dpto.09
+dpto_159,l10n_sv_dpto.09_6,Sensuntepeque,l10n_sv_dpto.09
+dpto_160,l10n_sv_dpto.09_7,Tejutepeque,l10n_sv_dpto.09
+dpto_161,l10n_sv_dpto.09_8,Victoria,l10n_sv_dpto.09
+dpto_162,l10n_sv_dpto.09_9,Dolores,l10n_sv_dpto.09
+dpto_163,l10n_sv_dpto.10_1,Apastepeque,l10n_sv_dpto.10
+dpto_164,l10n_sv_dpto.10_2,Guadalupe,l10n_sv_dpto.10
+dpto_165,l10n_sv_dpto.10_3,San Cayetano Istepeque,l10n_sv_dpto.10
+dpto_166,l10n_sv_dpto.10_4,Santa Clara,l10n_sv_dpto.10
+dpto_167,l10n_sv_dpto.10_5,Santo Domingo,l10n_sv_dpto.10
+dpto_168,l10n_sv_dpto.10_6,San Estaban Catarina,l10n_sv_dpto.10
+dpto_169,l10n_sv_dpto.10_7,San Ildefonso,l10n_sv_dpto.10
+dpto_170,l10n_sv_dpto.10_8,San Lorenzo,l10n_sv_dpto.10
+dpto_171,l10n_sv_dpto.10_9,San Sebastian,l10n_sv_dpto.10
+dpto_172,l10n_sv_dpto.10_10,San Vicente,l10n_sv_dpto.10
+dpto_173,l10n_sv_dpto.10_11,Tecoluca,l10n_sv_dpto.10
+dpto_174,l10n_sv_dpto.10_12,Tepetitan,l10n_sv_dpto.10
+dpto_175,l10n_sv_dpto.10_13,Verapaz,l10n_sv_dpto.10
+dpto_176,l10n_sv_dpto.11_1,Alegria,l10n_sv_dpto.11
+dpto_177,l10n_sv_dpto.11_2,Berlin,l10n_sv_dpto.11
+dpto_178,l10n_sv_dpto.11_3,California,l10n_sv_dpto.11
+dpto_179,l10n_sv_dpto.11_4,Concepcion Batres,l10n_sv_dpto.11
+dpto_180,l10n_sv_dpto.11_5,El Triunfo,l10n_sv_dpto.11
+dpto_181,l10n_sv_dpto.11_6,Ereguayquin,l10n_sv_dpto.11
+dpto_182,l10n_sv_dpto.11_7,Estanzuelas,l10n_sv_dpto.11
+dpto_183,l10n_sv_dpto.11_8,Jiquilisco,l10n_sv_dpto.11
+dpto_184,l10n_sv_dpto.11_9,Jucuapa,l10n_sv_dpto.11
+dpto_185,l10n_sv_dpto.11_10,Jucuaran,l10n_sv_dpto.11
+dpto_186,l10n_sv_dpto.11_11,Mercedes Umaña,l10n_sv_dpto.11
+dpto_187,l10n_sv_dpto.11_12,Nueva Granada,l10n_sv_dpto.11
+dpto_188,l10n_sv_dpto.11_13,Ozatlan,l10n_sv_dpto.11
+dpto_189,l10n_sv_dpto.11_14,Puerto El Triunfo,l10n_sv_dpto.11
+dpto_190,l10n_sv_dpto.11_15,San Agustin,l10n_sv_dpto.11
+dpto_191,l10n_sv_dpto.11_16,San Buenaventura,l10n_sv_dpto.11
+dpto_192,l10n_sv_dpto.11_17,San Dionisio,l10n_sv_dpto.11
+dpto_193,l10n_sv_dpto.11_18,Santa Elena,l10n_sv_dpto.11
+dpto_194,l10n_sv_dpto.11_19,San Francisco Javier,l10n_sv_dpto.11
+dpto_195,l10n_sv_dpto.11_20,Santa Maria,l10n_sv_dpto.11
+dpto_196,l10n_sv_dpto.11_21,Santiago De Maria,l10n_sv_dpto.11
+dpto_197,l10n_sv_dpto.11_22,Tecapan,l10n_sv_dpto.11
+dpto_198,l10n_sv_dpto.11_23,Usulutan,l10n_sv_dpto.11
+dpto_199,l10n_sv_dpto.12_1,Carolina,l10n_sv_dpto.12
+dpto_200,l10n_sv_dpto.12_2,Ciudad Barrios,l10n_sv_dpto.12
+dpto_201,l10n_sv_dpto.12_3,Comacaran,l10n_sv_dpto.12
+dpto_202,l10n_sv_dpto.12_4,Chapeltique,l10n_sv_dpto.12
+dpto_203,l10n_sv_dpto.12_5,Chinameca,l10n_sv_dpto.12
+dpto_204,l10n_sv_dpto.12_6,Chirilagua,l10n_sv_dpto.12
+dpto_205,l10n_sv_dpto.12_7,El Transito,l10n_sv_dpto.12
+dpto_206,l10n_sv_dpto.12_8,Lolotique,l10n_sv_dpto.12
+dpto_207,l10n_sv_dpto.12_9,Moncagua,l10n_sv_dpto.12
+dpto_208,l10n_sv_dpto.12_10,Nueva Guadalupe,l10n_sv_dpto.12
+dpto_209,l10n_sv_dpto.12_11,Nuevo Eden de San Juan,l10n_sv_dpto.12
+dpto_210,l10n_sv_dpto.12_12,Quelepa,l10n_sv_dpto.12
+dpto_211,l10n_sv_dpto.12_13,San Antonio Del Mosco,l10n_sv_dpto.12
+dpto_212,l10n_sv_dpto.12_14,San Gerardo,l10n_sv_dpto.12
+dpto_213,l10n_sv_dpto.12_15,San Jorge,l10n_sv_dpto.12
+dpto_214,l10n_sv_dpto.12_16,San Luis de la Reina,l10n_sv_dpto.12
+dpto_215,l10n_sv_dpto.12_17,San Miguel,l10n_sv_dpto.12
+dpto_216,l10n_sv_dpto.12_18,San Rafael Oriente,l10n_sv_dpto.12
+dpto_217,l10n_sv_dpto.12_19,Sesori,l10n_sv_dpto.12
+dpto_218,l10n_sv_dpto.12_20,Uluazapa,l10n_sv_dpto.12
+dpto_219,l10n_sv_dpto.13_1,Arambala,l10n_sv_dpto.13
+dpto_220,l10n_sv_dpto.13_2,Cacaopera,l10n_sv_dpto.13
+dpto_221,l10n_sv_dpto.13_3,Corinto,l10n_sv_dpto.13
+dpto_222,l10n_sv_dpto.13_4,Chilanga,l10n_sv_dpto.13
+dpto_223,l10n_sv_dpto.13_5,Delicias De Concepcion,l10n_sv_dpto.13
+dpto_224,l10n_sv_dpto.13_6,El Divisadero,l10n_sv_dpto.13
+dpto_225,l10n_sv_dpto.13_7,El Rosario,l10n_sv_dpto.13
+dpto_226,l10n_sv_dpto.13_8,Gualococti,l10n_sv_dpto.13
+dpto_227,l10n_sv_dpto.13_9,Guatajiagua,l10n_sv_dpto.13
+dpto_228,l10n_sv_dpto.13_10,Joateca,l10n_sv_dpto.13
+dpto_229,l10n_sv_dpto.13_11,Jocoaitique,l10n_sv_dpto.13
+dpto_230,l10n_sv_dpto.13_12,Jocoro,l10n_sv_dpto.13
+dpto_231,l10n_sv_dpto.13_13,Lolotiquillo,l10n_sv_dpto.13
+dpto_232,l10n_sv_dpto.13_14,Meanguera,l10n_sv_dpto.13
+dpto_233,l10n_sv_dpto.13_15,Osicala,l10n_sv_dpto.13
+dpto_234,l10n_sv_dpto.13_16,Perquin,l10n_sv_dpto.13
+dpto_235,l10n_sv_dpto.13_17,San Carlos,l10n_sv_dpto.13
+dpto_236,l10n_sv_dpto.13_18,San Fernando,l10n_sv_dpto.13
+dpto_237,l10n_sv_dpto.13_19,San Francisco Gotera,l10n_sv_dpto.13
+dpto_238,l10n_sv_dpto.13_20,San Isidro,l10n_sv_dpto.13
+dpto_239,l10n_sv_dpto.13_21,San Simon,l10n_sv_dpto.13
+dpto_240,l10n_sv_dpto.13_22,Sensembra,l10n_sv_dpto.13
+dpto_241,l10n_sv_dpto.13_23,Sociedad,l10n_sv_dpto.13
+dpto_242,l10n_sv_dpto.13_24,Torola,l10n_sv_dpto.13
+dpto_243,l10n_sv_dpto.13_25,Yamabal,l10n_sv_dpto.13
+dpto_244,l10n_sv_dpto.13_26,Yoloaiquin,l10n_sv_dpto.13
+dpto_245,l10n_sv_dpto.14_1,Anamoros,l10n_sv_dpto.14
+dpto_246,l10n_sv_dpto.14_2,Bolivar,l10n_sv_dpto.14
+dpto_247,l10n_sv_dpto.14_3,Concep De Oriente,l10n_sv_dpto.14
+dpto_248,l10n_sv_dpto.14_4,Conchagua,l10n_sv_dpto.14
+dpto_249,l10n_sv_dpto.14_5,El Carmen,l10n_sv_dpto.14
+dpto_250,l10n_sv_dpto.14_6,El Sauce,l10n_sv_dpto.14
+dpto_251,l10n_sv_dpto.14_7,Intipuca,l10n_sv_dpto.14
+dpto_252,l10n_sv_dpto.14_8,La Union,l10n_sv_dpto.14
+dpto_253,l10n_sv_dpto.14_9,Lislique,l10n_sv_dpto.14
+dpto_254,l10n_sv_dpto.14_10,Meang Del Golfo,l10n_sv_dpto.14
+dpto_255,l10n_sv_dpto.14_11,Nueva Esparta,l10n_sv_dpto.14
+dpto_256,l10n_sv_dpto.14_12,Pasaquina,l10n_sv_dpto.14
+dpto_257,l10n_sv_dpto.14_13,Poloros,l10n_sv_dpto.14
+dpto_258,l10n_sv_dpto.14_14,San Alejo,l10n_sv_dpto.14
+dpto_259,l10n_sv_dpto.14_15,San Jose,l10n_sv_dpto.14
+dpto_260,l10n_sv_dpto.14_16,Santa Rosa Lima,l10n_sv_dpto.14
+dpto_261,l10n_sv_dpto.14_17,Yayantique,l10n_sv_dpto.14
+dpto_262,l10n_sv_dpto.14_18,Yucuaiquin,l10n_sv_dpto.14

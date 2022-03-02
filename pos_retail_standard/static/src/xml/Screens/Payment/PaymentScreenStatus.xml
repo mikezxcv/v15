@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="PaymentScreenStatus" t-inherit="point_of_sale.PaymentScreenStatus" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('total')]" position="replace">
+            <!-- <div class="total">
+                TOTAL: <t t-esc="totalDueText" />
+            </div> -->
+        </xpath>
+        <xpath expr="//div[hasclass('payment-status-container')]" position="replace">
+            <table class='summary-table' style="width: 72%; float: left; margin-top: 0px">
+                <colgroup>
+                    <col width='40%'/>
+                    <col width='60%'/>
+                </colgroup>
+                <tr class="receipt-line">
+                    <td style="text-align: left; font-weight: 900">
+                        Remaining
+                    </td>
+                    <td class="sub-value" t-att-class="{ highlight: currentOrder.get_due() > 0 }">
+                        <span class="amount">
+                            <t t-esc="remainingText" />
+                        </span>
+                    </td>
+                </tr>
+                <tr class="receipt-line" t-if="!env.isMobile">
+                    <td style="text-align: left">
+                        Total Due
+                    </td>
+                    <td class="sub-value">
+                        <t t-esc="totalDueText" />
+                    </td>
+                </tr>
+                <tr class="receipt-line">
+                    <td style="text-align: left; font-weight: 900">
+                        Change
+                    </td>
+                    <td t-att-class="{'total-value': currentOrder.get_change() > 0}" style="text-align: right">
+                        <span class="amount">
+                            <t t-esc="changeText" />
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </xpath>
+    </t>
+
+</templates>

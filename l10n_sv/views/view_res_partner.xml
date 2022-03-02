@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_partner_l10n_sv_account">
+            <field name="name">view_partner_l10n_sv_account</field>
+            <field name="model">res.partner</field>
+            <field name="priority">30</field>
+            <field name="inherit_id" ref="account.view_partner_property_form"/>
+            <field name="arch" type="xml">
+                <group position="inside" name="fiscal_information">
+                    <field name="vat" string="N.I.T." attrs="{'required': [('is_company', '=', True)]}"/>
+                    <field name="nrc" attrs="{'required': [('is_company', '=', True)]}"/>
+                    <field name="giro" attrs="{'required': [('is_company', '=', True)]}"/>
+                </group>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_partner_l10n_sv">
+            <field name="name">view_partner_l10n_sv</field>
+            <field name="model">res.partner</field>
+            <field name="priority">60</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form[1]/sheet[1]/group[1]/group[1]/field[@name='vat']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='child_ids']/form//field[@name='phone']" position="after">
+                    <field name="fax"/>
+                    <field name="pbx"/>
+                    <field name="extension"/>
+                    <field name="directo"/>
+                </xpath>
+                <xpath expr="//form[1]/sheet[1]/group[1]/group[1]/field[@name='vat']" position="after">
+                    <field name="fax"/>
+                    <field name="pbx"/>
+                </xpath>
+                <xpath expr="//field[@name='category_id']" position="after">
+                    <field name="extension"/>
+                    <field name="directo"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_partner_search_l10n_sv">
+            <field name="name">view_partner_search_l10n_sv</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="nrc"/>
+                    <field name="vat" string="N.I.T."/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
+    

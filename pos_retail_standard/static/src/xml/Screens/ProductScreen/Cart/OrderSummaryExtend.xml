@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="OrderSummaryExtend" owl="1">
+        <button t-on-click="clickShowSummaryExtend"
+                class="input-button number-char order_line_button"
+                style="background: #fff;color: black; margin-right: 0px">
+            <t t-if="isShowSummaryExtend">
+                <i class="fa fa-toggle-on"/>
+            </t>
+            <t t-else="">
+                <i class="fa fa-toggle-off"/>
+            </t>
+        </button>
+        <div class="summary clearfix" t-if="isShowSummaryExtend">
+            <table class='summary-table'>
+                <colgroup>
+                    <col width='35%'/>
+                    <col width='65%'/>
+                </colgroup>
+                <tr class="header-colum">
+                    <th class="header-table">Order: <t t-esc="order.uid"/> </th>
+                    <th class="header-table">Created Time: <t t-esc="order.created_time"/></th>
+                </tr>
+                <tr class="receipt-line">
+                    <td style="text-align: left">
+                        Notes and Signature
+                    </td>
+                    <td style="text-align: left">
+                        <span t-if="order.date_order">
+                            Date Order: <t t-esc="order.date_order"/>
+                        </span>
+                        <div class="signature_element" t-if="order.note">
+                            <span class="summary-label">Notes :</span>
+                            <t t-esc="order.note"/>
+                        </div>
+                        <div class="signature_element" t-if="order.signature">
+                            <span class="summary-label">Signature:</span>
+                            <img class="product-img signature"
+                                 t-att-src="order.get_signature() || ''"
+                                 style="max-height:400px;max-width:200px"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="receipt-line">
+                    <td style="text-align: left">
+                        Shipping
+                    </td>
+                    <td style="text-align: left">
+                        <div class="note_element" t-if="order.delivery_address">
+                            <span class="summary-label">Shipping Address: </span>
+                            <span>
+                                <t t-esc="order.delivery_address"/>
+                            </span>
+                        </div>
+                        <div class="note_element" t-if="order.delivery_date">
+                            <span class="summary-label">Shipping Date: </span>
+                            <span>
+                                <t t-esc="order.delivery_date"/>
+                            </span>
+                        </div>
+                        <div class="note_element" t-if="order.delivery_phone">
+                            <span class="summary-label">Shipping Phone: </span>
+                            <span class='value'>
+                                <t t-esc="order.delivery_phone"/>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="receipt-line">
+                    <td style="text-align: left">
+                        Promotions
+                    </td>
+                    <td style="text-align: left">
+                        <t t-if="env.pos.couponProgramsAutomatic">
+                            <div class="note_element">
+                                <span class="summary-label">Promotion Coupons Program</span>
+                            </div>
+                            <ul class="info-list">
+                                <t t-foreach="env.pos.couponProgramsAutomatic" t-as="program" t-key="program.id">
+                                    <div class="info promotion_active">
+                                        <t t-esc="program['name']"/>
+                                    </div>
+                                </t>
+                            </ul>
+                        </t>
+                        <t t-if="promotions">
+                            <div class="note_element">
+                                <span class="summary-label">Promotions Active Bellow:</span>
+                            </div>
+                            <ul class="info-list">
+                                <t t-set="number" t-value="1"/>
+                                <t t-foreach="promotions" t-as="promotion" t-key="promotion.id">
+                                    <div class="info promotion_active">
+                                        <span class="line_number"><t t-esc="number"/>. </span>
+                                        <t t-esc="promotion['name']"/>
+                                        <t t-set="number" t-value="number + 1"/>
+                                    </div>
+                                </t>
+                            </ul>
+                        </t>
+                        <div class="note_element" t-if="order.guest">
+                            <span class="summary-label">Guest: </span>
+                            <span class="order-note">
+                                <t t-esc="order.guest"/>
+                            </span>
+
+                        </div>
+                        <div class="note_element" t-if="order.guest_number">
+                            <span class="summary-label">Guest Number: </span>
+                            <span class="order-note">
+                                <t t-esc="order.guest_number"/>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </t>
+
+</templates>

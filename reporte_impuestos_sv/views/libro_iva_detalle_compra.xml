@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_det_iva_compra_tree" model="ir.ui.view">
+            <field name="name">view_det_iva_compra_tree</field>
+            <field name="model">libro.iva.compra</field>
+            <field name="priority">2</field>
+            <field name="arch" type="xml">
+                <tree string="Detalle de Compra"
+                      decoration-bf="message_needaction==True">
+                    <field name="message_needaction" invisible="1"/>
+                    <field name="libro_iva_id"/>
+                    <field name="correlativo"/>
+                    <field name="fecha_emision"/>
+                    <field name="num_doc"/>
+                    <field name="partner_id"/>
+                    <field name="internas_e"/>
+                    <field name="importaciones_e"/>
+                    <field name="internas_g"/>
+                    <field name="importaciones_g"/>
+                    <field name="credito_fiscal"/>
+                    <field name="anticipo_iva_ret"/>
+                    <field name="anticipo_iva_rec"/>
+                    <field name="compra_suj_e"/>
+                    <field name="total_compras"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_libro_compra_tree" model="ir.actions.act_window">
+            <field name="name">Detalle de Libro de Compra</field>
+            <field name="res_model">libro.iva.compra</field>
+            <field name="domain">[('libro_iva_id.type', '=', 'compras')]</field>
+            <field name="context">{'libro_iva_id.type': 'compras', 'default_libro_iva_id_type': 'compras'}</field>
+            <field name="view_mode">tree</field><!-- pendiente ,calendar,graph-->
+            <field name="view_id" ref="reporte_impuestos_sv.view_det_iva_compra_tree"/>
+        </record>
+
+        <menuitem id="detalle_iva_compra"
+                  name="Detalle I.V.A. Compra"
+                  groups="account.group_account_user"
+                  parent="reporte_impuestos_sv.main_detalle_iva"
+                  action="action_libro_compra_tree"/>
+    </data>
+</odoo>

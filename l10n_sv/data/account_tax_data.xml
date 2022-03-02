@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Account Tax Group -->
+        <record id="tax_group_iva_retencion" model="account.tax.group">
+            <field name="name">IVA RETENIDO</field>
+        </record>
+        <record id="tax_group_iva" model="account.tax.group">
+            <field name="name">IVA</field>
+        </record>
+        <record id="tax_group_iva_exento" model="account.tax.group">
+            <field name="name">EXENTO Y NO SUJETA</field>
+        </record>
+        <record id="tax_group_iva_percibido" model="account.tax.group">
+            <field name="name">IVA PERCIBIDO</field>
+        </record>
+        <record id="tax_group_iva_exportacion" model="account.tax.group">
+            <field name="name">IVA EXPORTACION</field>
+        </record>
+        <record id="tax_group_iva_importacion" model="account.tax.group">
+            <field name="name">IVA IMPORTACION</field>
+        </record>
+
+
+        <!-- Taxes -->
+
+        <record id="tax1" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">IVA 13%</field>
+            <field name="description">IVA</field>
+            <field name="amount">13</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="tax_group_iva"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_credito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_credito'),
+                }),
+            ]"/>
+        </record>
+
+        <record id="tax2" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">EXENTAS</field>
+            <field name="description">EXENTAS</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="tax_group_iva_exento"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_credito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_credito'),
+                }),
+            ]"/>
+        </record>
+
+        <record id="tax3" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">NO SUJETAS</field>
+            <field name="description">NO SUJETAS</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="tax_group_iva_exento"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_credito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_credito'),
+                })
+            ]"/>
+        </record>
+
+        <record id="tax4" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">RETENCION 1%</field>
+            <field name="description">RETENCION 1%</field>
+            <field name="amount">1</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="tax_group_iva_retencion"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_credito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_credito'),
+                }),
+            ]"/>
+        </record>
+
+        <record id="tax5" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">IVA EXPORTACION</field>
+            <field name="description">EXPORTACION</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_group_id" ref="tax_group_iva_exportacion"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_credito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_credito'),
+                }),
+            ]"/>
+        </record>
+
+
+        <record id="tax6" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">RETENCION 10%</field>
+            <field name="description">RETENCION 10%</field>
+            <field name="amount">10</field>
+            <field name="type_tax_use">sale</field>
+            <field name="tax_scope">service</field>
+            <field name="tax_group_id" ref="tax_group_iva_retencion"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_credito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_credito'),
+                }),
+            ]"/>
+        </record>
+
+            <record id="tax7" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">IVA 13%</field>
+            <field name="description">IVA</field>
+            <field name="amount">13</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_iva"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+        </record>
+
+        <record id="tax8" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">COMPRAS NO SUJETAS</field>
+            <field name="description">COMPRAS NO SUJETAS</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_iva_exento"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+        </record>
+
+        <record id="tax9" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">PERCEPCION 1%</field>
+            <field name="description">PERCEPCION 1%</field>
+            <field name="amount">1</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_iva_percibido"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+        </record>
+
+        <record id="tax10" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">PERCEPCION 2%</field>
+            <field name="description">PERCEPCION 2%</field>
+            <field name="amount">2</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_iva_percibido"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+        </record>
+
+        <record id="tax11" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">IMPORTACIONES 13%</field>
+            <field name="description">IMPORTACIONES 13%</field>
+            <field name="amount">13</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_iva_importacion"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+        </record>
+
+        <record id="tax12" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">COMPRAS EXENTAS</field>
+            <field name="description">COMPRAS EXENTAS</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_iva_exento"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+        </record>
+
+        <record id="tax13" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">RETENCION 10%</field>
+            <field name="description">RETENCION 10%</field>
+            <field name="amount">10</field>
+            <field name="tax_scope">service</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_iva_retencion"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+        </record>
+
+        <record id="tax14" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_sv.sv_coa"/>
+            <field name="name">IMPORTACION EXENTA</field>
+            <field name="description">IMPORTACION EXENTA</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="tax_group_id" ref="tax_group_iva_retencion"/>
+            <field name="invoice_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+            <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('l10n_sv.impuesto_debito'),
+                }),
+            ]"/>
+        </record>
+
+    </data>
+</odoo>

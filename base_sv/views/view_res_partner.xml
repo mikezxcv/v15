@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <odoo>
+        <data>
+            <record model="ir.ui.view" id="view_partner_base_sv">
+                <field name="name">view_partner_base_sv</field>
+                <field name="model">res.partner</field>
+                <field name="inherit_id" ref="base.view_partner_form"/>
+                <field name="arch" type="xml">
+                    <field name="vat" position="replace">
+                        <field name="vat" string="N.I.T."/>
+                        <field name="dui" attrs="{'invisible': [('is_company', '=', True)]}"/>
+                    </field>
+                </field>
+            </record>
+            <record model="ir.ui.view" id="view_partner_base_sv_contact">
+                <field name="name">view_partner_base_sv_contact</field>
+                <field name="model">res.partner</field>
+                <field name="inherit_id" ref="base.view_partner_form"/>
+                <field name="arch" type="xml">
+                    <xpath expr="//field[@name='child_ids']/form//field[@name='name']" position="after">
+                        <field name="dui"/>
+                    </xpath>
+                </field>
+            </record>
+                
+            <record model="ir.ui.view" id="view_partner_search_base_sv">
+                <field name="name">view_partner_search_base_sv</field>
+                <field name="model">res.partner</field>
+                <field name="inherit_id" ref="base.view_res_partner_filter"/>
+                <field name="arch" type="xml">
+                    <field name="name" position="after">
+                        <field name="dui"/>
+                    </field>
+                </field>
+            </record>
+        </data>
+    </odoo>
+    

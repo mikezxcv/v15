@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report 
+            id="l10n_invoice_sv.report_consumidor_final"
+            model="account.move"
+            string="Consumidor Final"
+            report_type="qweb-pdf"
+            name="l10n_invoice_sv.report_invoice_main_fcf"
+            file="l10n_invoice_sv.report_invoice_main_fcf"
+        />
+
+        <record id="paperformat_invoice_fcf" model="report.paperformat">
+	      <field name="name">Factura Consumidor Final</field>
+	      <field name="default" eval="True"/>
+	      <field name="format">Letter</field>
+	      <field name="orientation">Portrait</field>
+	      <field name="margin_top">35</field>
+	      <field name="margin_bottom">60</field>
+	      <field name="margin_left">3</field>
+	      <field name="margin_right">3</field>
+	      <field name="header_line" eval="False"/>
+	      <field name="header_spacing">35</field>
+	      <field name="dpi">90</field>
+		</record>
+
+        <record id="l10n_invoice_sv.report_consumidor_final" model="ir.actions.report">
+            <field name="print_report_name">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name
+            </field>
+            <field name="paperformat_id" ref="paperformat_invoice_fcf"/>
+			<field name="attachment">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name</field>
+			<field name="attachment_use" eval="False"/>
+        </record>        
+
+        <report 
+            id="report_credito_fiscal"
+            model="account.move"
+            string="Credito Fiscal"
+            report_type="qweb-pdf"
+            name="l10n_invoice_sv.report_invoice_main_ccf"
+            file="l10n_invoice_sv.report_invoice_main_ccf"
+        />
+
+        <record id="paperformat_invoice_ccf" model="report.paperformat">
+	      <field name="name">Comprobante de Credito Fiscal</field>
+	      <field name="default" eval="True"/>
+	      <field name="format">Letter</field>
+	      <field name="orientation">Portrait</field>
+	      <field name="margin_top">35</field>
+	      <field name="margin_bottom">60</field>
+	      <field name="margin_left">3</field>
+	      <field name="margin_right">3</field>
+	      <field name="header_line" eval="False"/>
+	      <field name="header_spacing">35</field>
+	      <field name="dpi">90</field>
+		</record>
+
+        <record id="report_credito_fiscal" model="ir.actions.report">
+            <field name="print_report_name">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name
+            </field>
+            <field name="paperformat_id" ref="paperformat_invoice_ccf"/>
+			<field name="attachment">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name</field>
+            <field name="attachment_use" eval="False"/>
+        </record>
+
+        <report 
+            id="report_exportacion"
+            model="account.move"
+            string="Factura Exportacion"
+            report_type="qweb-pdf"
+            name="l10n_invoice_sv.report_invoice_main_exp"
+            file="l10n_invoice_sv.report_invoice_main_exp"
+        />
+        <record id="paperformat_invoice_exportacion" model="report.paperformat">
+	      <field name="name">Factura de Exportacion</field>
+	      <field name="default" eval="True"/>
+	      <field name="format">Letter</field>
+	      <field name="orientation">Portrait</field>
+	      <field name="margin_top">35</field>
+	      <field name="margin_bottom">60</field>
+	      <field name="margin_left">3</field>
+	      <field name="margin_right">3</field>
+	      <field name="header_line" eval="False"/>
+	      <field name="header_spacing">35</field>
+	      <field name="dpi">90</field>
+		</record>
+        
+        <record id="report_exportacion" model="ir.actions.report">
+            <field name="print_report_name">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name
+            </field>
+            <field name="paperformat_id" ref="paperformat_invoice_exportacion"/>
+			<field name="attachment">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name</field>
+            <field name="attachment_use" eval="False"/>
+        </record>
+        <report 
+            id="report_ndc"
+            model="account.move"
+            string="Nota de Credito"
+            report_type="qweb-pdf"
+            name="l10n_invoice_sv.report_invoice_main_ndc"
+            file="l10n_invoice_sv.report_invoice_main_ndc"
+        />
+        <record id="paperformat_invoice_ndc" model="report.paperformat">
+	      <field name="name">Nota de Credito</field>
+	      <field name="default" eval="True"/>
+	      <field name="format">Letter</field>
+	      <field name="orientation">Portrait</field>
+	      <field name="margin_top">35</field>
+	      <field name="margin_bottom">60</field>
+	      <field name="margin_left">3</field>
+	      <field name="margin_right">3</field>
+	      <field name="header_line" eval="False"/>
+	      <field name="header_spacing">35</field>
+	      <field name="dpi">90</field>
+		</record>
+        <record id="report_ndc" model="ir.actions.report">
+            <field name="print_report_name">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name
+            </field>
+            <field name="paperformat_id" ref="paperformat_invoice_ndc"/>
+			<field name="attachment">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name</field>
+            <field name="attachment_use" eval="False"/>
+        </record>
+        <report 
+            id="account.account_invoice_action_report_duplicate"
+            model="account.move"
+            string="Anulaciones"
+            report_type="qweb-pdf"
+            name="l10n_invoice_sv.report_invoice_main_anu"
+            file="l10n_invoice_sv.report_invoice_main_anu"
+        />
+        <record id="paperformat_invoice_anu" model="report.paperformat">
+	      <field name="name">Anulaciones</field>
+	      <field name="default" eval="True"/>
+	      <field name="format">Letter</field>
+	      <field name="orientation">Portrait</field>
+	      <field name="margin_top">35</field>
+	      <field name="margin_bottom">60</field>
+	      <field name="margin_left">3</field>
+	      <field name="margin_right">3</field>
+	      <field name="header_line" eval="False"/>
+	      <field name="header_spacing">35</field>
+	      <field name="dpi">90</field>
+		</record>
+        <record id="account.account_invoice_action_report_duplicate" model="ir.actions.report">
+            <field name="print_report_name">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name
+            </field>
+            <field name="paperformat_id" ref="paperformat_invoice_ccf"/>
+			<field name="attachment">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name</field>
+            <field name="attachment_use" eval="False"/>
+        </record>
+        <report 
+            id="report_anul_export"
+            model="account.move"
+            string="Anulaciones"
+            report_type="qweb-pdf"
+            name="l10n_invoice_sv.report_invoice_main_anu"
+            file="l10n_invoice_sv.report_invoice_main_anu"
+        />
+        <record id="paperformat_anul_export" model="report.paperformat">
+	      <field name="name">Anulaciones</field>
+	      <field name="default" eval="True"/>
+	      <field name="format">Letter</field>
+	      <field name="orientation">Portrait</field>
+	      <field name="margin_top">35</field>
+	      <field name="margin_bottom">60</field>
+	      <field name="margin_left">3</field>
+	      <field name="margin_right">3</field>
+	      <field name="header_line" eval="False"/>
+	      <field name="header_spacing">35</field>
+	      <field name="dpi">90</field>
+		</record>
+        <record id="report_anul_export" model="ir.actions.report">
+            <field name="print_report_name">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name
+            </field>
+            <field name="paperformat_id" ref="paperformat_invoice_ccf"/>
+			<field name="attachment">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name</field>
+            <field name="attachment_use" eval="False"/>
+        </record>
+        <report 
+            id="report_invoice_digital"
+            model="account.move"
+            string="Factura Digital"
+            report_type="qweb-pdf"
+            name="l10n_invoice_sv.report_invoice_main_digital"
+            file="l10n_invoice_sv.report_invoice_main_digital"
+        />
+        <record id="paperformat_invoice_digital" model="report.paperformat">
+	      <field name="name">Factura Digital</field>
+	      <field name="default" eval="True"/>
+	      <field name="format">Letter</field>
+	      <field name="orientation">Portrait</field>
+	      <field name="margin_top">30</field>
+	      <field name="margin_bottom">60</field>
+	      <field name="margin_left">3</field>
+	      <field name="margin_right">3</field>
+	      <field name="header_line" eval="False"/>
+	      <field name="header_spacing">30</field>
+	      <field name="dpi">90</field>
+		</record>
+
+        <record id="report_invoice_digital" model="ir.actions.report">
+            <field name="print_report_name">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name
+            </field>
+            <field name="paperformat_id" ref="paperformat_invoice_fcf"/>
+			<field name="attachment">object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name</field>
+            <field name="attachment_use" eval="False"/>
+        </record>   
+    </data>
+</odoo>

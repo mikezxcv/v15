@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record model="ir.ui.view" id="view_bank_form_municipality">
+            <field name="name">res.bank.municipality</field>
+            <field name="model">res.bank</field>
+            <field name="inherit_id" ref="base.view_res_bank_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='city']" position="after">
+                    <field name="munic_id" class="o_address_state" placeholder="Municipality" options='{"no_open": True}' context="{'dpto_id': state}"/>
+                </xpath>
+            </field>
+        </record>
+</odoo>

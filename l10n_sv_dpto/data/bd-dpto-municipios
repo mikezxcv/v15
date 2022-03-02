@@ -1,0 +1,284 @@
+Aqui les dejo la codificacion oficial, utilizada en el numero de nit y en demas cosas...
+
+codigo_DEPARTAMENT nombre
+01   AHUACHAPAN  
+02   SANTA ANA   
+00   OBLIGATORIO 
+03   SONSONATE   
+04   CHALATENANGO
+05   LA LIBERTAD 
+06   SAN SALVADOR
+07   CUSCATLAN   
+08   LA PAZ      
+09   CABAÑAS     
+10   SAN VICENTE 
+11   USULUTAN    
+12   SAN MIGUEL  
+13   MORAZAN     
+14   LA UNION    
+
+y los municipios
+
+codigo_DEPARTAMENTO   codigo_MUNICIPIO   nombre_MUNICIPIO
+01   01   AHUACHAPAN                                        
+01   02   APANECA                                           
+01   03   ATIQUIZAYA                                        
+01   04   CONCEPCION DE ATACO                               
+01   05   EL REFUGIO                                        
+01   06   GUAYMANGO                                         
+01   07   JUJUTLA                                           
+01   08   SAN FRANCISCO MENENDEZ                            
+01   09   SAN LORENZO                                       
+01   10   SAN PEDRO PUXTLA                                  
+01   11   TACUBA                                            
+01   12   TURIN                                             
+02   01   CANDELARIA DE LA FRONTERA                         
+02   02   COATEPEQUE                                        
+02   03   CHALCHUAPA                                        
+02   04   EL CONGO                                          
+02   05   EL PORVENIR                                       
+02   06   MASAHUAT                                          
+02   07   METAPAN                                           
+02   08   SAN ANTONIO PAJONAL                               
+02   09   SAN SEBASTIAN SALITRILLO                          
+02   10   SANTA ANA                                         
+02   11   STA ROSA GUACHI                                   
+02   12   STGO D LA FRONT                                   
+02   13   TEXISTEPEQUE                                      
+03   01   ACAJUTLA                                          
+03   02   ARMENIA                                           
+03   03   CALUCO                                            
+03   04   CUISNAHUAT                                        
+03   05   STA I ISHUATAN                                    
+03   06   IZALCO                                            
+03   07   JUAYUA                                            
+03   08   NAHUIZALCO                                        
+03   09   NAHULINGO                                         
+03   10   SALCOATITAN                                       
+03   11   SAN ANTONIO DEL MONTE                             
+03   12   SAN JULIAN                                        
+03   13   STA C MASAHUAT                                    
+03   14   SANTO DOMINGO GUZMAN                              
+03   15   SONSONATE                                         
+03   16   SONZACATE                                         
+04   01   AGUA CALIENTE                                     
+04   02   ARCATAO                                           
+04   03   AZACUALPA                                         
+04   04   CITALA                                            
+04   05   COMALAPA                                          
+04   06   CONCEPCION QUEZALTEPEQUE                          
+04   07   CHALATENANGO                                      
+04   08   DULCE NOM MARIA                                   
+04   09   EL CARRIZAL                                       
+04   10   EL PARAISO                                        
+04   11   LA LAGUNA                                         
+04   12   LA PALMA                                          
+04   13   LA REINA                                          
+04   14   LAS VUELTAS                                       
+04   15   NOMBRE DE JESUS                                   
+04   16   NVA CONCEPCION                                    
+04   17   NUEVA TRINIDAD                                    
+04   18   OJOS DE AGUA                                      
+04   19   POTONICO                                          
+04   20   SAN ANT LA CRUZ                                   
+04   21   SAN ANT RANCHOS                                   
+04   22   SAN FERNANDO                                      
+04   23   SAN FRANCISCO LEMPA                               
+04   24   SAN FRANCISCO MORAZAN                             
+04   25   SAN IGNACIO                                       
+04   26   SAN I LABRADOR                                    
+04   27   SAN J CANCASQUE                                   
+04   28   SAN JOSE FLORES                                   
+04   29   SAN LUIS CARMEN                                   
+04   30   SN MIG MERCEDES                                   
+04   31   SAN RAFAEL                                        
+04   32   SANTA RITA                                        
+04   33   TEJUTLA                                           
+05   01   ANTGO CUSCATLAN                                   
+05   02   CIUDAD ARCE                                       
+05   03   COLON                                             
+05   04   COMASAGUA                                         
+05   05   CHILTIUPAN                                        
+05   06   HUIZUCAR                                          
+05   07   JAYAQUE                                           
+05   08   JICALAPA                                          
+05   09   LA LIBERTAD                                       
+05   10   NUEVO CUSCATLAN                                   
+05   11   SANTA TECLA
+05   12   QUEZALTEPEQUE                                     
+05   13   SACACOYO                                          
+05   14   SN J VILLANUEVA                                   
+05   15   SAN JUAN OPICO                                    
+05   16   SAN MATIAS                                        
+05   17   SAN P TACACHICO                                   
+05   18   TAMANIQUE                                         
+05   19   TALNIQUE                                          
+05   20   TEOTEPEQUE                                        
+05   21   TEPECOYO                                          
+05   22   ZARAGOZA                                          
+06   01   AGUILARES                                         
+06   02   APOPA                                             
+06   03   AYUTUXTEPEQUE                                     
+06   04   CUSCATANCINGO                                     
+06   05   EL PAISNAL                                        
+06   06   GUAZAPA                                           
+06   07   ILOPANGO                                          
+06   08   MEJICANOS                                         
+06   09   NEJAPA                                            
+06   10   PANCHIMALCO                                       
+06   11   ROSARIO DE MORA                                   
+06   12   SAN MARCOS                                        
+06   13   SAN MARTIN                                        
+06   14   SAN SALVADOR                                      
+06   15   STG TEXACUANGOS                                   
+06   16   SANTO TOMAS                                       
+06   17   SOYAPANGO                                         
+06   18   TONACATEPEQUE                                     
+06   19   CIUDAD DELGADO                                    
+07   01   CANDELARIA                                        
+07   02   COJUTEPEQUE                                       
+07   03   EL CARMEN                                         
+07   04   EL ROSARIO                                        
+07   05   MONTE SAN JUAN                                    
+07   06   ORAT CONCEPCION                                   
+07   07   SAN B PERULAPIA                                   
+07   08   SAN CRISTOBAL                                     
+07   09   SAN J GUAYABAL                                    
+07   10   SAN P PERULAPAN                                   
+07   11   SAN RAF CEDROS                                    
+07   12   SAN RAMON                                         
+07   13   STA C ANALQUITO                                   
+07   14   STA C MICHAPA                                     
+07   15   SUCHITOTO                                         
+07   16   TENANCINGO                                        
+08   01   CUYULTITAN                                        
+08   02   ROSARIO LA PAZ                                    
+08   03   JERUSALEN                                         
+08   04   MERCED LA CEIBA                                   
+08   05   OLOCUILTA                                         
+08   06   PARAISO OSORIO                                    
+08   07   SN ANT MASAHUAT                                   
+08   08   SAN EMIGDIO                                       
+08   09   SN FCO CHINAMEC                                   
+08   10   SAN J NONUALCO                                    
+08   11   SAN JUAN TALPA                                    
+08   12   SAN JUAN TEPEZONTES                               
+08   13   SAN LUIS TALPA                                    
+08   14   SAN MIGUEL TEPEZONTES                             
+08   15   SAN PEDRO MASAHUAT                                
+08   16   SAN PEDRO NONUALCO                                
+08   17   SAN R OBRAJUELO                                   
+08   18   STA MA OSTUMA                                     
+08   19   STGO NONUALCO                                     
+08   20   TAPALHUACA                                        
+08   21   ZACATECOLUCA                                      
+08   22   SN LUIS LA HERR                                   
+09   01   CINQUERA                                          
+09   02   GUACOTECTI                                        
+09   03   ILOBASCO                                          
+09   04   JUTIAPA                                           
+09   05   SAN ISIDRO                                        
+09   06   SENSUNTEPEQUE                                     
+09   07   TEJUTEPEQUE                                       
+09   08   VICTORIA                                          
+09   09   DOLORES
+10   01   APASTEPEQUE                                       
+10   02   GUADALUPE                                         
+10   03   SAN CAY ISTEPEQ                                   
+10   04   SANTA CLARA                                       
+10   05   SANTO DOMINGO                                     
+10   06   SN EST CATARINA                                   
+10   07   SAN ILDEFONSO                                     
+10   08   SAN LORENZO                                       
+10   09   SAN SEBASTIAN                                     
+10   10   SAN VICENTE                                       
+10   11   TECOLUCA                                          
+10   12   TEPETITAN                                         
+10   13   VERAPAZ                                           
+11   01   ALEGRIA                                           
+11   02   BERLIN                                            
+11   03   CALIFORNIA                                        
+11   04   CONCEP BATRES                                     
+11   05   EL TRIUNFO                                        
+11   06   EREGUAYQUIN                                       
+11   07   ESTANZUELAS                                       
+11   08   JIQUILISCO                                        
+11   09   JUCUAPA                                           
+11   10   JUCUARAN                                          
+11   11   MERCEDES UMAÑA                                    
+11   12   NUEVA GRANADA                                     
+11   13   OZATLAN                                           
+11   14   PTO EL TRIUNFO                                    
+11   15   SAN AGUSTIN                                       
+11   16   SN BUENAVENTURA                                   
+11   17   SAN DIONISIO                                      
+11   18   SANTA ELENA                                       
+11   19   SAN FCO JAVIER                                    
+11   20   SANTA MARIA                                       
+11   21   STGO DE MARIA                                     
+11   22   TECAPAN                                           
+11   23   USULUTAN                                          
+12   01   CAROLINA                                          
+12   02   CIUDAD BARRIOS                                    
+12   03   COMACARAN                                         
+12   04   CHAPELTIQUE                                       
+12   05   CHINAMECA                                         
+12   06   CHIRILAGUA                                        
+12   07   EL TRANSITO                                       
+12   08   LOLOTIQUE                                         
+12   09   MONCAGUA                                          
+12   10   NUEVA GUADALUPE                                   
+12   11   NVO EDEN S JUAN                                   
+12   12   QUELEPA                                           
+12   13   SAN ANT D MOSCO                                   
+12   14   SAN GERARDO                                       
+12   15   SAN JORGE                                         
+12   16   SAN LUIS REINA                                    
+12   17   SAN MIGUEL                                        
+12   18   SAN RAF ORIENTE                                   
+12   19   SESORI                                            
+12   20   ULUAZAPA                                          
+13   01   ARAMBALA                                          
+13   02   CACAOPERA                                         
+13   03   CORINTO                                           
+13   04   CHILANGA                                          
+13   05   DELIC DE CONCEP                                   
+13   06   EL DIVISADERO                                     
+13   07   EL ROSARIO                                        
+13   08   GUALOCOCTI                                        
+13   09   GUATAJIAGUA                                       
+13   10   JOATECA                                           
+13   11   JOCOAITIQUE                                       
+13   12   JOCORO                                            
+13   13   LOLOTIQUILLO                                      
+13   14   MEANGUERA                                         
+13   15   OSICALA                                           
+13   16   PERQUIN                                           
+13   17   SAN CARLOS                                        
+13   18   SAN FERNANDO                                      
+13   19   SAN FCO GOTERA                                    
+13   20   SAN ISIDRO                                        
+13   21   SAN SIMON                                         
+13   22   SENSEMBRA                                         
+13   23   SOCIEDAD                                          
+13   24   TOROLA                                            
+13   25   YAMABAL                                           
+13   26   YOLOAIQUIN                                        
+14   01   ANAMOROS                                          
+14   02   BOLIVAR                                           
+14   03   CONCEP DE OTE                                     
+14   04   CONCHAGUA                                         
+14   05   EL CARMEN                                         
+14   06   EL SAUCE                                          
+14   07   INTIPUCA                                          
+14   08   LA UNION                                          
+14   09   LISLIQUE                                          
+14   10   MEANG DEL GOLFO                                   
+14   11   NUEVA ESPARTA                                     
+14   12   PASAQUINA                                         
+14   13   POLOROS                                           
+14   14   SAN ALEJO                                         
+14   15   SAN JOSE                                          
+14   16   SANTA ROSA LIMA                                   
+14   17   YAYANTIQUE                                        
+14   18   YUCUAIQUIN

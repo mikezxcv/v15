@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sv_partner_address_form" model="ir.ui.view">
+        <field name="name">sv_partner_address_form</field>
+        <field name="model">res.partner</field>
+        <field name="priority" eval="900"/>
+        <field name="arch" type="xml">
+            <form>
+                <div class="o_address_format">
+                    <field name="parent_id" invisible="1"/>
+                    <field name="type" invisible="1"/>
+                    <field name="street" placeholder="Street" class="o_address_street"/>
+                    <field name="street2" placeholder="Street2" invisible="1"/>
+                    <field name="city" placeholder="Province..." invisible="1"/>
+                    <field name="munic_id" class="o_address_state" placeholder="Municipality"
+                           options='{"no_open": True}'
+                           attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"
+                           context="{'dpto_id': state_id}"/>
+                    <field name="state_id" class="o_address_state" placeholder="State..." options='{"no_open": True}'/>
+                    <field name="country_id" placeholder="Country" class="o_address_country"
+                           options='{"no_open": True, "no_create": True}'/>
+                    <field name="zip" invisible="1" placeholder="ZIP" class="o_address_zip"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="base.sv" model="res.country">
+        <field name="vat_label">N.I.T.</field>
+        <field name="currency_id" ref="base.USD"/>
+        <field name="zip_required" eval="False"/>
+        <field name="address_format">
+            %(street)s, %(state_name)s, %(country_name)s
+        </field>
+    </record>
+</odoo>

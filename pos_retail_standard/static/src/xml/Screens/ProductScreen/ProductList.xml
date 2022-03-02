@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="RetailProductList" owl="1">
+        <t t-if="env.pos.config.product_view == 'list'">
+            <div class='product-list-container'>
+                <div class="product-list-scroller touch-scrollable">
+                    <table class="product-list list">
+                        <thead style="width: 100%">
+                            <tr class="header-table">
+                                <th width="40%" class="text-left">Name</th>
+                                <th width="5%" class="text-center">Default Code</th>
+                                <th width="5%" class="text-right">BarCode</th>
+                                <th width="20%" class="text-right">Sale Price</th>
+                                <th width="20%" class="text-left">Stock</th>
+                            </tr>
+                        </thead>
+                        <tbody class='product-list-contents'>
+                            <div t-if="props.products.length != 0 and env.pos.config.allow_add_product" class="product-list">
+                                <t t-foreach="props.products" t-as="product" t-key="product.id">
+                                    <ProductItem product="product" />
+                                </t>
+                            </div>
+                            <div t-else="" class="product-list-empty">
+                                <t t-if="!env.pos.config.allow_add_product">
+                                    <div class="product-list-empty">
+                                        <p>
+                                            You have not permission add Products to Cart
+                                        </p>
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <div class="product-list-empty">
+                                        <t t-if="props.searchWord !== ''">
+                                            <p>
+                                                No results found for "
+                                                <b t-esc="props.searchWord"></b>
+                                                ".
+                                                You can press to Keyboard "ESC" for quickly Clear Search Box or click (x) on right Search Box
+                                            </p>
+                                        </t>
+                                        <t t-else="">
+                                            <p>There are no Products results. You can press to Keyboard "ESC" for quickly Clear Search  or click (x) on right Search Box</p>
+                                        </t>
+                                    </div>
+                                </t>
+                            </div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </t>
+        <t t-else="">
+            <div class="product-list-container">
+                <div t-if="props.products.length != 0 and env.pos.config.allow_add_product" class="product-list">
+                    <t t-foreach="props.products" t-as="product" t-key="product.id">
+                        <ProductItem product="product" />
+                    </t>
+                </div>
+                <div t-else="" class="product-list-empty">
+                    <t t-if="!env.pos.config.allow_add_product">
+                        <div class="product-list-empty">
+                            <p>
+                                You have not permission add Products to Cart
+                            </p>
+                        </div>
+                    </t>
+                    <t t-else="">
+                        <div class="product-list-empty">
+                            <t t-if="props.searchWord !== ''">
+                                <p>
+                                    No results found for "
+                                    <b t-esc="props.searchWord"></b>
+                                    ".
+                                    You can press to Keyboard "ESC" for quickly Clear Search or click (x) on right Search Box
+                                </p>
+                            </t>
+                            <t t-else="">
+                                <p>There are no Products results. You can press to Keyboard "ESC" for quickly Clear Search or click (x) on right Search Box</p>
+                            </t>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </t>
+
+    </t>
+
+</templates>

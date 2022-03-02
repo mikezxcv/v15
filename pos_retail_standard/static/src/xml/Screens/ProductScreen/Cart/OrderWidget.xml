@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="OrderWidget" t-inherit="point_of_sale.OrderWidget" t-inherit-mode="extension" owl="1">
+        <!-- <xpath expr="//ul[hasclass('orderlines')]" position="before">
+            <LicenseExpiredDays/>
+        </xpath> -->
+        <xpath expr="//OrderSummary" position="replace">
+            <OrderSummary total="state.total" tax="state.tax" discount="state.discount"
+                          margin="state.margin"
+                          totalItems="state.totalItems"
+                          totalQuantities="state.totalQuantities"
+                          totalWithOutTaxes="state.totalWithOutTaxes"/>
+        </xpath>
+        <xpath expr="//h1" position="replace">
+            <h1>Este pedido está vacío, agregue artículos del producto al carrito</h1>
+        </xpath>
+        <xpath expr="//ul[hasclass('orderlines')]" position="replace">
+            <table class='summary-table'>
+                <colgroup>
+                    <col width='3%'/>
+                    <col width='50%'/>
+                    <col width='20%'/>
+                    <col width='27%'/>
+                </colgroup>
+<!--                <tr class="header-colum">-->
+<!--                    <th class="header-table" style="text-align: center">No.</th>-->
+<!--                    <th class="header-table" style="text-align: left">Product</th>-->
+<!--                    <th class="header-table" style="text-align: center" t-if="!env.pos.config.manual_input_cart">Qty</th>-->
+<!--                    <th class="header-table" style="text-align: center">Total</th>-->
+<!--                </tr>-->
+                <t t-foreach="orderlinesArray" t-as="orderline" t-key="orderline.id">
+                    <Orderline line="orderline" />
+                </t>
+            </table>
+        </xpath>
+    </t>
+
+</templates>

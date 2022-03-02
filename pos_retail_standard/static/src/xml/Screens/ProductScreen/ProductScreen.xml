@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="ProductScreen" t-inherit="point_of_sale.ProductScreen" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('rightpane')]" position="replace"/>
+        <xpath expr="//div[hasclass('leftpane')]" position="replace">
+            <t t-if="env.session.config.cart_box_style == 'left'">
+                <div class="leftpane left_01" t-if="!env.isMobile || mobile_pane === 'left'"
+                     t-att-class="{'scale-mode': state.screen != 'Products'}">
+                    <t t-if="state.cashControl">
+                        <CashBoxOpening cashControl="state"/>
+                    </t>
+                    <t t-else="">
+                        <OrderWidget t-on-click="backToCart"/>
+                        <button class="full-cart-screen" t-on-click.stop="showFullFeature">
+                            <t t-if="env.pos.showFullFeatures">
+                                <i class="fa fa-toggle-on" aria-hidden="true"></i>
+                            </t>
+                            <t t-else="">
+                                <i class="fa fa-toggle-off" aria-hidden="true"></i>
+                            </t>
+                        </button>
+                        <div class="pads" >
+                            <div class="subpads" t-if="state.screen == 'Products'">
+                                <ActionpadWidget client="client" />
+                                <NumpadWidget activeMode="state.numpadMode"/>
+                            </div>
+                        </div>
+                        <t t-if="env.isMobile">
+                            <MobileOrderWidget pane="mobile_pane" t-on-switchpane="switchPane"/>
+                        </t>
+                    </t>
+                </div>
+               <ListFeaturesButtons
+                       t-if="!state.cashControl and state.screen == 'Products' and env.pos.showFullFeatures"
+                       controlButtons="controlButtons"/>
+                <div class="rightpane" t-if="!env.isMobile || mobile_pane === 'right'">
+                    <!-- single screen -->
+                    <t t-if="state.screen == 'Products'">
+                        <ProductsWidget t-if="!state.cashControl"/>
+                        <t t-if="env.isMobile">
+                            <MobileOrderWidget pane="mobile_pane" t-on-switchpane="switchPane"/>
+                        </t>
+                        <div class="placeholder-Base"/>
+                        <div class="block-screen" t-if="blockScreen">
+                            Return Mode is [On], Locked add products to cart. If you wanted Exchange cart, Please Click to button [Return Mode] on Dock Buttons (Buttom of Page)
+                        </div>
+                        <!-- <ProductCheckOut controlButtons="controlButtons" client="client" t-if="!state.cashControl and !env.isMobile and env.pos.showFullFeatures"/> -->
+                    </t>
+                    <t t-if="state.screen == 'Payment'">
+                        <PaymentScreen isShown="true" singleScreen="true"/>
+                    </t>
+                    <t t-if="state.screen == 'Clients'">
+                        <ClientListScreen isShown="true" singleScreen="true"/>
+                    </t>
+                    <t t-if="state.screen == 'Receipt'">
+                        <ReprintReceiptScreen isShown="true" singleScreen="true" order="env.pos.get_order()"/>
+                    </t>
+                    <t t-if="state.screen == 'Floors'">
+                        <FloorScreen/>
+                    </t>
+                    <t t-if="state.screen == 'Split'">
+                        <SplitBillScreen/>
+                    </t>
+                    <t t-if="state.screen == 'Tickets'">
+                        <TicketScreen/>
+                    </t>
+                </div>
+            </t>
+            <t t-else="">
+                <div class="rightpane" t-if="!env.isMobile || mobile_pane === 'right'">
+                    <!-- single screen -->
+                    <t t-if="state.screen == 'Products'">
+                        <ProductsWidget t-if="!state.cashControl"/>
+                        <t t-if="env.isMobile">
+                            <MobileOrderWidget pane="mobile_pane" t-on-switchpane="switchPane"/>
+                        </t>
+                        <div class="placeholder-Base"/>
+                        <div class="block-screen" t-if="blockScreen">
+                            Return Mode is [On], Locked add products to cart. If you wanted Exchange cart, Please Click to button [Return Mode] on Dock Buttons (Buttom of Page)
+                        </div>
+                        <!-- <ProductCheckOut controlButtons="controlButtons" client="client" t-if="!state.cashControl and !env.isMobile and env.pos.showFullFeatures"/> -->
+                    </t>
+                    <t t-if="state.screen == 'Payment'">
+                        <PaymentScreen isShown="true" singleScreen="true"/>
+                    </t>
+                    <t t-if="state.screen == 'Clients'">
+                        <ClientListScreen isShown="true" singleScreen="true"/>
+                    </t>
+                    <t t-if="state.screen == 'Receipt'">
+                        <ReprintReceiptScreen isShown="true" singleScreen="true" order="env.pos.get_order()"/>
+                    </t>
+                    <t t-if="state.screen == 'Floors'">
+                        <FloorScreen/>
+                    </t>
+                    <t t-if="state.screen == 'Split'">
+                        <SplitBillScreen/>
+                    </t>
+                    <t t-if="state.screen == 'Tickets'">
+                        <TicketScreen/>
+                    </t>
+                    <div class="placeholder-Base"/>
+                </div>
+<!--                <ListFeaturesButtons-->
+<!--                        t-if="!state.cashControl and state.screen == 'Products' and env.pos.showFullFeatures"-->
+<!--                        controlButtons="controlButtons"/>-->
+                <div class="leftpane left_02" t-if="!env.isMobile || mobile_pane === 'left'"
+                     t-att-class="{'scale-mode': state.screen != 'Products'}">
+                    <t t-if="state.cashControl">
+                        <CashBoxOpening cashControl="state"/>
+                    </t>
+                    <t t-else="">
+                        <OrderWidget t-on-click="backToCart"/>
+                        <button class="full-cart-screen" t-on-click.stop="showFullFeature">
+                            <t t-if="env.pos.showFullFeatures">
+                                <i class="fa fa-toggle-on" aria-hidden="true"></i>
+                            </t>
+                            <t t-else="">
+                                <i class="fa fa-toggle-off" aria-hidden="true"></i>
+                            </t>
+                        </button>
+                        <div class="pads" t-if="env.pos.showFullFeatures">
+                            <div class="subpads" t-if="state.screen == 'Products'">
+                                <ActionpadWidget client="client"/>
+                                <NumpadWidget activeMode="state.numpadMode"/>
+                            </div>
+                        </div>
+                        <t t-if="env.isMobile">
+                            <MobileOrderWidget pane="mobile_pane" t-on-switchpane="switchPane"/>
+                        </t>
+                    </t>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//ProductsWidget" position="after">
+            <div id="livestream_scanner">
+                <div id="interactive" class="viewport"></div>
+                <div class="error"></div>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('screen-full-width')]" position="attributes">
+            <attribute name="t-att-class">{ 'display-list-features-button': allowDisplayListFeaturesButton}</attribute>
+        </xpath>
+    </t>
+
+</templates>

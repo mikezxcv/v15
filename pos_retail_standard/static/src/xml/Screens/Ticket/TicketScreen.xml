@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="RetailTicketScreen" owl="1" t-inherit="point_of_sale.TicketScreen" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('buttons')]/button[hasclass('highlight')]" position="replace">
+            <t t-if="env.pos.config.allow_add_order">
+                <button t-if="showNewTicketButton" class="highlight" t-on-click="createNewOrder">
+                    New Order
+                </button>
+                <button class="highlight btn-warning" t-on-click="removeAllOrders" t-if="env.pos.config.allow_remove_order">
+                    <i class="fa fa-trash"/>
+                    Remove all Orders
+                </button>
+            </t>
+        </xpath>
+        <xpath expr="//div[hasclass('delete-button')]" position="replace">
+            <t t-if="env.pos.config.allow_remove_order">
+                <div t-if="!hideDeleteButton(order)" class="col center very-narrow delete-button" name="delete" t-on-click.stop="deleteOrder(order)">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//div[hasclass('header-row')]//div[hasclass('very-narrow')]" position="before">
+            <t t-if="env.pos.config.sync_multi_session">
+                <div class="col start">Created By</div>
+            </t>
+            <t t-if="env.pos.config.paid_partial">
+                <div class="col end">Save to Partial Order</div>
+            </t>
+        </xpath>
+        <xpath expr="//div[hasclass('order-row')]//div[hasclass('delete-button')]" position="before">
+            <t t-if="env.pos.config.sync_multi_session">
+                <div class="col start">
+                    <t t-esc="order.session_info.user.name"></t>
+                </div>
+            </t>
+            <t t-if="env.pos.config.paid_partial">
+                <div class="col end delete-button" name="save" t-on-click.stop="saveToPartialOrder(order)">
+                    <i class="fa fa-save" aria-hidden="true"></i>
+                </div>
+            </t>
+        </xpath>
+    </t>
+
+</templates>

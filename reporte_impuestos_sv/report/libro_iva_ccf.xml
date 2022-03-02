@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="libro_iva_report_ccf">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="reporte_impuestos_sv.libro_iva_report_ccf_document"
+                       t-lang="doc.company_id.partner_id.lang"/>
+                </t>
+            </t>
+        </template>
+        <template id="libro_iva_report_ccf_document">
+            <t t-set="doc" t-value="doc.with_context({'lang':doc.company_id.partner_id.lang})"/>
+            <t t-call="reporte_impuestos_sv.iva_layout">
+                <div class="page article">
+                    <style>
+                        span{
+                        font-size: small !important;
+                        }
+                        table{
+                        border-collapse: collapse !important;
+                        width: 100%;
+                        }
+                        table th, table td{
+                        padding: 1px; /* Apply cell padding */
+                        }
+                        table th {
+                        vertical-align: middle !important;
+                        }
+                        th{
+                        font-size: small !important;
+                        border-top: 1px solid gray;
+                        border-bottom: 1px solid gray;
+                        }
+                        td{
+                        border-left: 1px solid gray !important;
+                        border-bottom: 0.5px solid #C899AD ! important;
+                        border-bottom-style: dashed;
+                        border-right: 1px solid gray !important;
+                        }
+                    </style>
+                    <div class="container">
+                        <table>
+                            <thead>
+                                <tr class="text-center">
+                                    <th rowspan="2" class="text-center" style="width: 5%;">
+                                        Num
+                                    </th>
+                                    <th rowspan="2" class="text-center" style="width: 5%;">
+                                        Fecha
+                                    </th>
+                                    <th rowspan="2" class="text-center" style="width: 10%;">
+                                        Doc #
+                                    </th>
+                                    <th rowspan="2" class="text-center" style="width: 40%;">
+                                        Cliente
+                                    </th>
+                                    <th rowspan="2" class="text-center" style="width: 10%;">
+                                        N.R.C
+                                    </th>
+                                    <th colspan="2" class="text-center"
+                                        style="border-bottom: 1px solid white !important;">
+                                        Ventas
+                                    </th>
+                                    <th rowspan="2" class="text-center" style="width: 5%;">
+                                        Debito Fiscal
+                                    </th>
+                                    <th rowspan="2" class="text-center" style="width: 5%;">
+                                        IVA Retenido
+                                    </th>
+                                    <th rowspan="2" class="text-center" style="width: 10%;">
+                                        Ventas Totales
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" style="width: 5%;">
+                                        Exentas
+                                    </th>
+                                    <th class="text-center" style="width: 5%;">
+                                        Gravadas
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Inicializando Variables -->
+                                <t t-set="exentas" t-value="0"/>
+                                <t t-set="gravadas" t-value="0"/>
+                                <t t-set="retenciones" t-value="0"/>
+                                <t t-set="debito_fiscal" t-value="0"/>
+                                <t t-set="totales" t-value="0"/>
+
+                                <tr t-foreach="doc.detalle_iva_credito_fiscal_ids" t-as="l">
+                                    <td class="text-center">
+                                        <span t-field="l.correlativo"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.fecha_emision"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.num_corr_preimp"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="l.partner_id.display_name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="l.partner_id.nrc"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.prp_exentas"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="exentas" t-value="l.prp_exentas + exentas"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.prp_gravadas"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="gravadas" t-value="l.prp_gravadas + gravadas"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.iva_retenido"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="retenciones" t-value="l.iva_retenido + retenciones"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.prp_debito_fiscal"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="debito_fiscal" t-value="l.prp_debito_fiscal + debito_fiscal"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="l.total"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                        <t t-set="totales" t-value="l.total + totales"/>
+                                    </td>
+                                </tr>
+                                <tr style="font-weight: bold;">
+                                    <td colspan="5" class="text-center">
+                                        Total General
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="exentas"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="gravadas"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="retenciones"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="debito_fiscal"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="totales"
+                                              t-options='{"widget": "monetary", "display_currency": doc.company_currency_id}'/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Detalle
+                                    </th>
+                                    <th>
+                                        Valor
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="doc.resumen_line_ids" t-as="r">
+                                    <td>
+                                        <span t-field="r.detalle"/>
+                                    </td>
+                                    <td>
+                                        <span t-field="r.total"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        Firma:____________________________________________________________
+                    </div>
+                    <div class="row">
+                        Contador: <span style="font-size: large !important;"
+                                        t-field="doc.responsable_id.display_name"/>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

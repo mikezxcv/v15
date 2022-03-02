@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="ClientListScreen" t-inherit="point_of_sale.ClientListScreen" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('button')][3]" position="replace">
+            <div class="button save" t-if="state.detailIsShown" t-on-click="trigger('click-save')">
+                <t t-if="!env.isMobile">
+                    <i class="fa fa-floppy-o"/>
+                    <span> Save</span>
+                </t>
+                <t t-else="">
+                    <i class="fa fa-floppy-o"/>
+                </t>
+            </div>
+        </xpath>
+
+<!--        <xpath expr="//div[hasclass('button')][1]" position="before">-->
+<!--            <span t-if="!state.detailIsShown and state.selectedClient" class="client-selected">-->
+<!--                <t t-esc="state.selectedClient.name"/>-->
+<!--                <span> </span>-->
+<!--                <i class="fa fa-hand-o-right"/>-->
+<!--            </span>-->
+<!--        </xpath>-->
+
+        <xpath expr="//div[hasclass('searchbox-client')]//input" position="attributes">
+            <attribute name="t-model">state.query</attribute>
+        </xpath>
+
+        <xpath expr="//div[hasclass('searchbox-client')]" position="after">
+            <div class="button save" t-on-click="trigger('clear-search')" t-if="!state.detailIsShown">
+                <t t-if="!env.isMobile">
+                    <i class="fa fa-refresh"/>
+                    <span> Clear Search</span>
+                </t>
+                <t t-else="">
+                    <i class="fa fa-refresh"/>
+                </t>
+            </div>
+        </xpath>
+        <xpath expr="//table[hasclass('client-list')]/thead/tr/th[5]" position="after">
+            <th t-if="!env.isMobile">Barcode</th>
+            <th t-if="!env.isMobile">Parent</th>
+            <th t-if="!env.isMobile">Type</th>
+            <th t-if="!env.isMobile">Company Type</th>
+            <th t-if="!env.isMobile">Loyalty Points</th>
+            <th t-if="!env.isMobile">Credit Balance</th>
+            <th t-if="!env.isMobile">Wallet Points</th>
+            <th t-if="!env.isMobile">Orders Count</th>
+            <th t-if="!env.isMobile">Purchased</th>
+        </xpath>
+        <xpath expr="//span[hasclass('search-clear-client')]" position="after">
+            <span class="shortcut-keyboard" t-if="!env.isMobile and env.isShowKeyBoard">
+                <i class="fa fa-keyboard-o"/>
+                (B or ESC): Back Screen -
+                (Arrow Up/Down): Up/Down Select Customer -
+                (Enter): Set/DeSelected Customer -
+                (Any another key): Auto focus to Search Box
+            </span>
+        </xpath>
+        <xpath expr="//div[hasclass('back')]" position="inside">
+            <t t-if="!env.isMobile">
+                <span>  </span>
+                <i class="fa fa-keyboard-o"/>B / ESC
+            </t>
+        </xpath>
+        <xpath expr="//div[hasclass('next')]" position="inside">
+            <t t-if="!env.isMobile" style="color: #fff">
+                <span>  </span>
+                <i class="fa fa-keyboard-o"/>Enter
+            </t>
+        </xpath>
+    </t>
+
+</templates>

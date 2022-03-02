@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="ProductOnHand" owl="1">
+        <t t-if="props.product['type'] == 'product'">
+            <span class="qty_available"
+                  t-on-mouseover.stop="reloadStock"
+                  t-att-class="{'price-down': state.out_stock}"
+                  title="Available Quantity in Stock">
+                <span style="font-size: 13px">
+                    <t t-if="state.refreshStock == 'connecting'">
+                        Get Stock <i class="fa fa-spin fa-spinner fa-pulse"/>
+                    </t>
+                    <t t-if="state.refreshStock == 'fail'">
+                        Fail Stock <i class="fa fa-exclamation-triangle" style="color: red"/>
+                    </t>
+                    <t t-if="state.refreshStock == 'done'">
+                        <span class="with-badge" t-att-badge="state.qty_available">
+                            <i class="oe_link_icon fa fa-cubes oe_icon line-icon" aria-hidden="true"></i>
+                        </span>
+                    </t>
+                </span>
+                <t t-if="props.product.tracking!=='none'">
+                    <i class="oe_link_icon fa fa-list oe_icon line-lot-icon"></i>
+                </t>
+            </span>
+        </t>
+        <t t-else="">
+            <span></span>
+        </t>
+    </t>
+
+</templates>

@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="account.move" id="compra1">
+            <field name="partner_id" ref="base.res_partner_12"/>
+            <field name="ref">19SV001C000256</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-01'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_2'),
+                'price_unit': 642.0,
+                'quantity': 1,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra2">
+            <field name="partner_id" ref="base.res_partner_12"/>
+            <field name="ref">19SV001C000257</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-02'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_16_product_template'),
+                'price_unit':  25.00,
+                'quantity': 1,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra3">
+            <field name="partner_id" ref="base.res_partner_2"/>
+            <field name="ref">19SV001C000258</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-03'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_11_product_template'),
+                'price_unit':  16.50,
+                'quantity': 1,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra4">
+            <field name="partner_id" ref="base.res_partner_address_5"/>
+            <field name="ref">19SV001C000259</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-04'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_13_product_template'),
+                'price_unit':  85.00,
+                'quantity': 1,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra5">
+            <field name="partner_id" ref="base.user_demo"/>
+            <field name="ref">19SV001C000260</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-05'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_3_product_template'),
+                'price_unit':  450.00,
+                'quantity': 1,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra6">
+            <field name="partner_id" ref="base.user_demo"/>
+            <field name="ref">19SV001C000261</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-06'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+                (0, 0,
+                  {'product_id': ref('product.product_product_13_product_template'),
+                  'price_unit':  85.00,
+                  'quantity': 1,
+                  'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                  }),
+              ]"/>
+        </record>
+        <record model="account.move" id="compra7">
+            <field name="partner_id" ref="base.partner_demo_portal"/>
+            <field name="ref">19SV001C000262</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-07'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_2'),
+                'price_unit': 642.0,
+                'quantity': 1,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra8">
+            <field name="partner_id" ref="base.res_partner_main2"/>
+            <field name="ref">19SV001C000263</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-08'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_2'),
+                'price_unit': 642.0,
+                'quantity': 2,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra9">
+            <field name="partner_id" ref="base.res_partner_industry_P"/>
+            <field name="ref">19SV001C000264</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-09'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_16_product_template'),
+                'price_unit':  25.00,
+                'quantity': 2,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra10">
+            <field name="partner_id" ref="base.res_partner_main1"/>
+            <field name="ref">19SV001C000265</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-10'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_13_product_template'),
+                'price_unit':  85.00,
+                'quantity': 3,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra11">
+            <field name="partner_id" ref="base.res_partner_12"/>
+            <field name="ref">19SV001C000266</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-11'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_product_3_product_template'),
+              'price_unit': 450.00,
+              'quantity': 4,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra12">
+            <field name="partner_id" ref="base.res_partner_address_31"/>
+            <field name="ref">19SV001C000267</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-12'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0,
+                {'product_id': ref('product.product_product_13_product_template'),
+                'price_unit':  85.00,
+                'quantity': 2,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra13">
+            <field name="partner_id" ref="base.res_partner_address_5"/>
+            <field name="ref">19SV001C000268/field</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-13'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_product_3_product_template'),
+              'price_unit': 450.00,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra14">
+            <field name="partner_id" ref="base.res_partner_address_5"/>
+            <field name="ref">19SV001C000269</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-14'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_product_22_product_template'),
+              'price_unit': 2100.00,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra15">
+            <field name="partner_id" ref="base.res_partner_address_25"/>
+            <field name="ref">19SV001C000279</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-15'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_product_27_product_template'),
+              'price_unit': 3645.00,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra16">
+            <field name="partner_id" ref="base.res_partner_address_11"/>
+            <field name="ref">19SV001C000271</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-16'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_product_20_product_template'),
+                'price_unit': 1950.00,
+                'quantity': 1,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                  }),
+              ]"/>
+        </record>
+        <record model="account.move" id="compra17">
+            <field name="partner_id" ref="base.res_partner_18"/>
+            <field name="ref">19SV001C000272</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-17'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.consu_delivery_03_product_template'),
+                'price_unit': 23500.00,
+                'quantity': 1,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                  }),
+              ]"/>
+        </record>
+        <record model="account.move" id="compra18">
+            <field name="partner_id" ref="base.res_partner_address_7"/>
+            <field name="ref">19SV001C000273</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-18'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_product_8_product_template'),
+                  'price_unit': 1799.00,
+                 'quantity': 1,
+                 'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                   }),
+              ]"/>
+        </record>
+        <record model="account.move" id="compra19">
+            <field name="partner_id" ref="base.res_partner_address_14"/>
+            <field name="ref">19SV001C000274</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-19'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.consu_delivery_02_product_template'),
+                'price_unit': 40000.00,
+                'quantity': 1,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                  }),
+              ]"/>
+        </record>
+        <record model="account.move" id="compra20">
+            <field name="partner_id" ref="base.res_partner_address_33"/>
+            <field name="ref">19SV001C000275</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-20'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_delivery_01_product_template'),
+                'price_unit': 70.00,
+                'quantity': 1,
+                'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                  }),
+              ]"/>
+        </record>
+        <record model="account.move" id="compra21">
+            <field name="partner_id" ref="base.res_partner_address_13"/>
+            <field name="ref">19SV001C000276</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-21'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_product_12_product_template'),
+              'price_unit': 12.50,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra22">
+            <field name="partner_id" ref="base.res_partner_address_32"/>
+            <field name="ref">19SV001C000277</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-22'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_product_12_product_template'),
+              'price_unit': 12.50,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra23">
+            <field name="partner_id" ref="base.res_partner_address_24"/>
+            <field name="ref">19SV001C000278</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-23'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_order_01_product_template'),
+              'price_unit': 280.00,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra24">
+            <field name="partner_id" ref="base.res_partner_address_34"/>
+            <field name="ref">19SV001C000279</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-24'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_delivery_02_product_template'),
+              'price_unit': 40.00,
+              'quantity': 3,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra25">
+            <field name="partner_id" ref="base.res_partner_10"/>
+            <field name="ref">19SV001C000280</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-25'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_product_9_product_template'),
+              'price_unit': 47.00,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra26">
+            <field name="partner_id" ref="base.res_partner_address_18"/>
+            <field name="ref">19SV001C000281</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-26'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_product_9_product_template'),
+              'price_unit': 47.00,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra27">
+            <field name="partner_id" ref="base.res_partner_address_17"/>
+            <field name="ref">19SV001C000282</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-27'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.expense_product_product_template'),
+              'price_unit': 14.00,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra28">
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="ref">19SV001C000283</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-28'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.expense_product_product_template'),
+              'price_unit': 14.00,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra29">
+            <field name="partner_id" ref="base.res_partner_address_2"/>
+            <field name="ref">19SV001C000284</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-26'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_product_7_product_template'),
+              'price_unit': 79.00,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra30">
+            <field name="partner_id" ref="base.res_partner_address_27"/>
+            <field name="ref">19SV001C000285</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-27'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.product_product_7_product_template'),
+              'price_unit': 79.00,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <record model="account.move" id="compra31">
+            <field name="partner_id" ref="base.res_partner_address_1"/>
+            <field name="ref">19SV001C000286</field>
+            <field name="invoice_payment_term_id" ref="account.account_payment_term_end_following_month"/>
+            <field name="move_type">in_invoice</field>
+            <field name="invoice_date" eval="time.strftime('%Y-%m')+'-28'"/>
+            <field name="journal_id" search="[('name','=','Compras con Comprobante Credito Fiscal')]"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="invoice_user_id" ref="base.user_demo"/>
+            <field name="invoice_line_ids" model="account.move.line" eval="[
+              (0, 0, {'product_id': ref('product.consu_delivery_01_product_template'),
+              'price_unit': 60000.00,
+              'quantity': 1,
+              'tax_ids': [(6, 0, obj().tax_ids.search([('name', '=', 'IVA 13%'), ('type_tax_use', '=', 'purchase')], limit=1).ids)]
+                }),
+            ]"/>
+        </record>
+        <function model="account.move" name="action_post">
+        <value eval="[
+            ref('compra1'),
+            ref('compra2'),
+            ref('compra3'),
+            ref('compra4'),
+            ref('compra5'),
+            ref('compra6'),
+            ref('compra7'),
+            ref('compra8'),
+            ref('compra9'),
+            ref('compra10'),
+            ref('compra11'),
+            ref('compra12'),
+            ref('compra13'),
+            ref('compra14'),
+            ref('compra15'),
+            ref('compra16'),
+            ref('compra17'),
+            ref('compra18'),
+            ref('compra19'),
+            ref('compra20'),
+            ref('compra21'),
+            ref('compra22'),
+            ref('compra23'),
+            ref('compra24'),
+            ref('compra25'),
+            ref('compra26'),
+            ref('compra27'),
+            ref('compra28'),
+            ref('compra29'),
+            ref('compra30'),
+            ref('compra31')
+            ]"/>
+        </function>
+
+    </data>
+</odoo>

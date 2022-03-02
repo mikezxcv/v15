@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="NumpadWidgetRetail" owl="1">
+        <div class="numpad"
+             t-att-class="{'oe_hidden': invisibleNumpad}">
+            <button class="input-button number-char" t-on-click="sendInput('1')">1</button>
+            <button class="input-button number-char" t-on-click="sendInput('2')">2</button>
+            <button class="input-button number-char" t-on-click="sendInput('3')">3</button>
+            <button class="mode-button mode_quantity"
+                    t-att-class="{
+                        'selected-mode': props.activeMode === 'quantity',
+                        'disabled-mode': !env.pos.config.allow_qty
+                    }"
+                    t-att-disabled="!env.pos.config.allow_qty"
+                    t-on-click="changeMode('quantity')">
+                <t t-if="!env.isMobile">Qty</t>
+                <t t-else=""><i class="fa fa-calculator"/></t>
+                <span class="shortcut-keyboard" t-if="!env.isMobile">
+                    <i class="fa fa-keyboard-o"/>
+                    Q
+                </span>
+            </button>
+            <!--            <br/>-->
+            <button class="input-button number-char" t-on-click="sendInput('4')">4</button>
+            <button class="input-button number-char" t-on-click="sendInput('5')">5</button>
+            <button class="input-button number-char" t-on-click="sendInput('6')">6</button>
+            <button class="mode-button mode_discount" t-att-class="{
+                        'selected-mode': props.activeMode === 'discount',
+                        'disabled-mode': invisibleDiscountButton
+                    }"
+                    t-att-disabled="invisibleDiscountButton"
+                    t-on-click="changeMode('discount')">
+                <t t-if="!env.isMobile">Disc</t>
+                <t t-else=""><i class="fa fa-level-down"/></t>
+                <span class="shortcut-keyboard" t-if="!env.isMobile">
+                    <i class="fa fa-keyboard-o"/>
+                    D
+                </span>
+            </button>
+            <!--            <br/>-->
+            <button class="input-button number-char" t-on-click="sendInput('7')">7</button>
+            <button class="input-button number-char" t-on-click="sendInput('8')">8</button>
+            <button class="input-button number-char" t-on-click="sendInput('9')">9</button>
+            <button class="mode-button mode_price" t-att-class="{
+                    'selected-mode': props.activeMode === 'price',
+                    'disabled-mode': !hasPriceControlRights or !env.pos.config.allow_price or env.session.restaurant_order or blockScreen
+                }"
+                    t-att-disabled="!hasPriceControlRights or !env.pos.config.allow_price or blockScreen"
+                    t-on-click="changeMode('price')">
+                <t t-if="!env.isMobile">Price</t>
+                <t t-else=""><i class="fa fa-money"/></t>
+                <span class="shortcut-keyboard" t-if="!env.isMobile">
+                    <i class="fa fa-keyboard-o"/>
+                    P
+                </span>
+            </button>
+            <button class="input-button numpad-minus"
+                    t-att-class="{
+                        'disabled-mode': !env.pos.config.allow_qty or blockScreen
+                    }"
+                    t-att-disabled="!env.pos.config.allow_minus or blockScreen"
+
+                    t-on-click="sendInput('-')">+/-</button>
+            <button class="input-button number-char" t-on-click="sendInput('0')">0</button>
+            <button class="input-button number-char" t-on-click="sendInput('.')">.</button>
+            <button class="input-button numpad-backspace"
+                    t-att-class="{
+                        'disabled-mode': !env.pos.config.allow_remove_line or blockScreen
+                    }"
+                    t-att-disabled="!env.pos.config.allow_remove_line or blockScreen"
+
+                    t-on-click="sendInput('Backspace')">
+                <img style="pointer-events: none;" src="/point_of_sale/static/src/img/backspace.png"
+                     width="24" height="21" alt="Backspace"/>
+                <span class="shortcut-keyboard" t-if="!env.isMobile">
+                    <i class="fa fa-keyboard-o"/>
+                    Del
+                </span>
+
+            </button>
+        </div>
+    </t>
+
+</templates>

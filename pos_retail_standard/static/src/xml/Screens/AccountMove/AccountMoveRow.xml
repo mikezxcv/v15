@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="AccountMoveRow" owl="1">
+        <t t-set="move" t-value="props.move"/>
+        <div class="order-row pointer"
+             t-on-mouseover.stop="_autoSyncBackend"
+             t-on-click="trigger('click-move', {move: props.move})"><!-- add move here for send to AccountMoveDetail-->
+            <div class="col start">
+                <t t-esc="move.name"/>
+            </div>
+            <div class="col start">
+                <t t-if="move.partner_id">
+                    <t t-esc="move.partner_id[1]"/>
+                </t>
+                <t t-else="">
+                    N/A
+                </t>
+            </div>
+            <div t-if="!env.isMobile" class="col start">
+                <t t-if="move.invoice_date_due">
+                    <t t-esc="move.invoice_date_due"/>
+                </t>
+                <t t-else="">
+                    N/A
+                </t>
+
+            </div>
+            <div t-if="!env.isMobile" class="col start">
+                <t t-esc="env.pos.format_currency(move.amount_residual)"/>
+            </div>
+            <div t-if="!env.isMobile" class="col start">
+                <t t-esc="env.pos.format_currency(move.amount_tax)"/>
+            </div>
+            <div class="col start">
+                <t t-esc="env.pos.format_currency(move.amount_total)"/>
+            </div>
+            <div class="col start">
+                <t t-if="move.state == 'draft'">Draft</t>
+                <t t-if="move.state == 'posted'">Posted</t>
+                <t t-if="move.state == 'cancel'">Cancelled</t>
+            </div>
+        </div>
+
+    </t>
+</templates>

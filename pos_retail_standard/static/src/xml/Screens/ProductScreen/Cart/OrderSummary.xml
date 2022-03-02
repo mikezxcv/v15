@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="OrderSummary" t-inherit="point_of_sale.OrderSummary" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('line')]" position="after">
+            <table class='summary-table' style="width: 65%; float: right; margin-top: 5px; margin-bottom: 5px">
+                <colgroup>
+                    <col width='40%'/>
+                    <col width='60%'/>
+                </colgroup>
+                <tr class="receipt-line">
+                    <td style="text-align: left; font-weight: 900; color: #FF5722">
+                        TOTAL PAID
+                    </td>
+                    <td class="total-value"
+                        style="text-align: right; padding-right: 40px !important;text-shadow: 1px 1px 1px #fff;color: #FF5722;background: #6ec89b;">
+                        <t t-esc="props.total"/>
+                    </td>
+                </tr>
+                <tr class="receipt-line">
+                    <td style="text-align: left">
+                        Before Taxes
+                    </td>
+                    <td style="text-align: right; padding-right: 40px !important" class="sub-value">
+                        <t t-esc="props.totalWithOutTaxes"/>
+                    </td>
+                </tr>
+                <tr class="receipt-line">
+                    <td style="text-align: left">
+                        Discount
+                    </td>
+                    <td style="text-align: right; padding-right: 40px !important" class="sub-value">
+                        <t t-esc="props.discount"/>
+                    </td>
+                </tr>
+                <tr class="receipt-line">
+                    <td style="text-align: left">
+                        Taxes
+                    </td>
+                    <td style="text-align: right; padding-right: 40px !important" class="sub-value">
+                        <t t-esc="props.tax"/>
+                    </td>
+                </tr>
+                <tr class="receipt-line" t-if="env.pos.config.display_margin">
+                    <td style="text-align: left">
+                        Margin
+                    </td>
+                    <td style="text-align: right; padding-right: 40px !important" class="sub-value">
+                        <t t-esc="props.margin"/>
+                    </td>
+                </tr>
+                <tr class="receipt-line">
+                    <td style="text-align: left">
+                        Total Items
+                    </td>
+                    <td style="text-align: right; padding-right: 40px !important" class="sub-value">
+                        <t t-esc="props.totalItems"/>
+                    </td>
+                </tr>
+                <tr class="receipt-line" t-if="env.pos.config.display_margin">
+                    <td style="text-align: left">
+                        Total Quantities
+                    </td>
+                    <td style="text-align: right; padding-right: 40px !important" class="sub-value">
+                        <t t-esc="props.totalQuantities"/>
+                    </td>
+                </tr>
+            </table>
+            <div class="summary_extend" t-if="!env.session.restaurant_order and !env.isMobile">
+                <ClientInformation partner="env.pos.get_order().get_client()"
+                                   currentOrder="env.pos.get_order()"
+                                   t-if="env.pos.get_order() and env.pos.get_order().get_client() and state.screen != 'Products'"/>
+                <OrderSummaryExtend t-if="state.screen != 'Products'"/>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('line')]" position="attributes">
+            <attribute name="class">line oe_hidden</attribute>
+        </xpath>
+    </t>
+
+</templates>

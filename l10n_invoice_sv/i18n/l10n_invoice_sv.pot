@@ -1,0 +1,1028 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_invoice_sv
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-05 20:07+0000\n"
+"PO-Revision-Date: 2021-03-05 20:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_product_product__arancel
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_product_template__arancel
+msgid "% Tarriff"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+msgid "(-) Retenciones"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid ""
+",\n"
+"                    me(nos) obligo(amos)a pagar en San Salvador, a la orden de"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid ""
+",\n"
+"                  me(nos) obligo(amos)a pagar en San Salvador, a la orden de"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid ""
+"<span style=\"font-size: 8px;font-weight:normal;\">Ventas No Sujetas</span>\n"
+"                    <span style=\"color: white;\">A</span>"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid ""
+"<span style=\"font-size: 8px;font-weight:normal;\">Ventas No Sujetas</span>\n"
+"                  <span style=\"color: white;\">A</span>"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid "<span>NIT: </span>"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid "<span>NRC: </span>"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid "<strong>ENTREGADO POR</strong>"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid "<strong>RECIBIDO POR</strong>"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__access_warning
+msgid "Access warning"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model,name:l10n_invoice_sv.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_move.py:0
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_bank_statement_line__amount_text
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_move__amount_text
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_payment__amount_text
+#, python-format
+msgid "Amount to text"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_journal__type_report__anu
+#, python-format
+msgid "Anulacion"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_journal__type_report__axp
+#, python-format
+msgid "Anulacion de Exportacion"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.actions.report,name:l10n_invoice_sv.report_anul_export
+msgid "Anulaciones"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_journal__type_report__compras
+#, python-format
+msgid "CCF Compras"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Cantidad"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Cantidad en Letras:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Cliente:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_journal__type_report__cse
+#, python-format
+msgid "Compra a Sujetos Excluidos"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_journal__type_report__ccf
+#, python-format
+msgid "Comprobante Credito Fiscal"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Condiciones de pago:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.actions.report,name:l10n_invoice_sv.report_consumidor_final
+msgid "Consumidor Final"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.actions.report,name:l10n_invoice_sv.report_credito_fiscal
+msgid "Credito Fiscal"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid "D.U.I. Ó N.I.T.:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Departamento:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Descripcion"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__description
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.view_form_arancel
+msgid "Description"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_product_product__description_arancel
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_product_template__description_arancel
+msgid "Description of Tariff"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Dirrecion:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_journal__display_name
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_move_reversal__display_name
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_tax__display_name
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__display_name
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_product_template__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.model.fields,help:l10n_invoice_sv.field_account_journal__type_report
+#, python-format
+msgid ""
+"El 'Tipo de Documento Fiscal' es usado en las impresiones de los diferentes "
+"documentos, solo selecionar si la numeracion corresponde a algunos de los "
+"documentos fiscales de venta"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_tax__type_tax__excluidos
+msgid "Excluidos"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_tax__type_tax__exento
+msgid "Exentas"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_tax__type_tax__exportacion
+msgid "Exportacion"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+msgid "Exportacion a nombre de:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.view_product_arancel
+msgid "Exportation and importation"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid "FIRMA:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_journal__type_report__fcf
+#, python-format
+msgid "Factura Consumidor Final"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.actions.report,name:l10n_invoice_sv.report_invoice_digital
+msgid "Factura Digital"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.actions.report,name:l10n_invoice_sv.report_exportacion
+msgid "Factura Exportacion"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_bank_statement_line__inv_refund_id
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_move__inv_refund_id
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_payment__inv_refund_id
+msgid "Factura Relacionada"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_journal__type_report__exp
+#, python-format
+msgid "Factura de Exportacion"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Fecha de Vencimiento:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Fecha:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Giro:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "I.V.A."
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_journal__id
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_move_reversal__id
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_tax__id
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__id
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_product_template__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_tax__type_tax__iva_compra
+msgid "IVA 13% Compra"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_tax__type_tax__iva_venta
+msgid "IVA 13% Venta"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__message_needaction
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__message_has_error
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_journal__type_report__imp
+#, python-format
+msgid "Importaciones"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_tax__type_tax__importacione
+msgid "Importaciones Exentas"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_tax__type_tax__importaciong
+msgid "Importaciones Gravadas"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model,name:l10n_invoice_sv.model_account_journal
+msgid "Journal"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model,name:l10n_invoice_sv.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_journal____last_update
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_move____last_update
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_move_reversal____last_update
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_tax____last_update
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel____last_update
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_product_template____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.view_tax_report_sv
+msgid "Lugar en el cual se registra el impuesto en el libro de iva"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Municipio:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "N.I.T:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "N.R.C:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid "NOMBRE:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__name
+msgid "Name"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.view_form_arancel
+msgid "Name Tarrif"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_journal__type_report__na
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_tax__type_tax__na
+#, python-format
+msgid "No Aplica"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_move__state_refund__no_refund
+msgid "No Retificada"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_tax__type_tax__no_sujeto
+msgid "No Sujetas"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.actions.report,name:l10n_invoice_sv.report_ndc
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_journal__type_report__ndc
+#, python-format
+msgid "Nota de Credito"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid ""
+"PARA OPERACIONES SUPERIORES A $ 11,478.58, COMPLETAR LOS SIGUIENTES DATOS:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Pais:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_tax__type_tax__percepcion1
+msgid "Percepcion 1%"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_tax__type_tax__percepcion2
+msgid "Percepcion 2%"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Precio Unitario"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.actions.act_window,name:l10n_invoice_sv.action_arancel
+msgid "Product Tariff Positions"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model,name:l10n_invoice_sv.model_product_template
+msgid "Product Template"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__product_ids
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.view_form_arancel
+msgid "Productos"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.view_tax_report_sv
+msgid "Registro de Impuesto"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_journal__type_report__anu_compras
+#, python-format
+msgid "Reintegro de CCF Compras"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_tax__type_tax__retencion
+msgid "Retencion 1%"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_bank_statement_line__state_refund
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_move__state_refund
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_payment__state_refund
+#: model:ir.model.fields.selection,name:l10n_invoice_sv.selection__account_move__state_refund__refund
+msgid "Retificada"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/wizard/account_move_reversal.py:0
+#, python-format
+msgid "Reversal of: %s"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/wizard/account_move_reversal.py:0
+#, python-format
+msgid "Reversal of: %s, %s"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/wizard/account_move_reversal.py:0
+#, python-format
+msgid "Reverse Moves"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_move.py:0
+#, python-format
+msgid "Solo se pueden imprimir facturas."
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "SubTotal"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Sumas:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__porcentaje
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_product_product__arancel_id
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_product_template__arancel_id
+msgid "Tariff"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model,name:l10n_invoice_sv.model_posicion_arancel
+msgid "Tariff Position of Products for Export and Import"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.ui.menu,name:l10n_invoice_sv.menu_arancel
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.view_product_arancel
+msgid "Tariff Positions"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model,name:l10n_invoice_sv.model_account_tax
+msgid "Tax"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Telefono:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: code:addons/l10n_invoice_sv/models/account_journal.py:0
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_journal__type_report
+#, python-format
+msgid "Tipo de Documento Fiscal"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_account_tax__type_tax
+msgid "Tipo de Impuesto"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Total"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+msgid "Total:"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__porcentaje
+#: model:ir.model.fields,help:l10n_invoice_sv.field_product_product__arancel
+#: model:ir.model.fields,help:l10n_invoice_sv.field_product_template__arancel
+msgid "Use decimal point to set percentage"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Ventas Afectas"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Ventas Exentas"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Ventas No Sujetas"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,field_description:l10n_invoice_sv.field_posicion_arancel__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.model.fields,help:l10n_invoice_sv.field_posicion_arancel__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "Yo"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.view_invoice_form_sv
+msgid "amount to text"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid ""
+"el comprador o adquiriente acepto por este PAGARE, sin protesto,\n"
+"                    el dia"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid ""
+"el comprador o adquiriente acepto por este PAGARE, sin protesto,\n"
+"                  el dia"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid "la suma de"
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid ""
+"más intereses del 5% por ciento mensual, pagaderos en caso de mora\n"
+"                    reconoceré(mos) intereses del 7% por ciento mensual.\n"
+"                    Para los efectos de esta obligación mercantil, fijo (amos) como domicilio  especial la ciudad\n"
+"                    de San Salvador, y en el caso de acción judicial, renuncio (amos) al derecho de apelar la\n"
+"                    sentencia de remate y toda otra providencia apelable que se dictare en el juicio ejecutivo o\n"
+"                    sus incidencias siendo a mi (nuestro) cargo, cualquier gasto que la sociedad hiciere en el\n"
+"                    cobro de este Pagaré. inclusive los llamados personales y aún cuando por regla general no\n"
+"                    hubiere condenación en costos y faculto (amos) a la sociedad para que designe a la persona\n"
+"                    depositaria de los bienes que se embarguen a quien relevo de la obligación de rendir fianza.\n"
+"                    San Salvador."
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_document_digital
+msgid ""
+"más intereses del 5% por ciento mensual, pagaderos en caso de mora\n"
+"                    reconoceré(mos) intereses del 7% por ciento mensual.\n"
+"                    Para los efectos de esta obligación mercantil, fijo (amos) como domicilio  especial la ciudad\n"
+"                    de San Salvador, y en el caso de acción judicial, renuncio (amos) al derecho de apelar la\n"
+"                    sentencia de remate y toda otra providencia apelable que se dictare en el juicio ejecutivo o\n"
+"                    sus incidencias siendo a mi (nuestro) cargo, cualquier gasto que la sociedad hiciere en el\n"
+"                    cobro de este Pagaré. inclusive los llamados personales y aún cuando por regla general no\n"
+"                    hubiere condenación en costos y faculto(amos) a la sociedad para que designe a la persona\n"
+"                    depositaria de los bienes que se embarguen a quien relevo de la obligación de rendir fianza.\n"
+"                    San Salvador."
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_anu
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_exp
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_fcf
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ndc
+msgid ""
+"más intereses del 5% por ciento mensual, pagaderos en caso de mora\n"
+"                  reconoceré(mos) intereses del 7% por ciento mensual.\n"
+"                  Para los efectos de esta obligación mercantil, fijo (amos) como domicilio  especial la ciudad\n"
+"                  de San Salvador, y en el caso de acción judicial, renuncio (amos) al derecho de apelar la\n"
+"                  sentencia de remate y toda otra providencia apelable que se dictare en el juicio ejecutivo o\n"
+"                  sus incidencias siendo a mi (nuestro) cargo, cualquier gasto que la sociedad hiciere en el\n"
+"                  cobro de este Pagaré. inclusive los llamados personales y aún cuando por regla general no\n"
+"                  hubiere condenación en costos y faculto (amos) a la sociedad para que designe a la persona\n"
+"                  depositaria de los bienes que se embarguen a quien relevo de la obligación de rendir fianza.\n"
+"                  San Salvador."
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model_terms:ir.ui.view,arch_db:l10n_invoice_sv.report_invoice_ccf
+msgid ""
+"más intereses del 5% por ciento mensual, pagaderos en caso de mora\n"
+"                  reconoceré(mos) intereses del 7% por ciento mensual.\n"
+"                  Para los efectos de esta obligación mercantil, fijo (amos) como domicilio  especial la ciudad\n"
+"                  de San Salvador, y en el caso de acción judicial, renuncio (amos) al derecho de apelar la\n"
+"                  sentencia de remate y toda otra providencia apelable que se dictare en el juicio ejecutivo o\n"
+"                  sus incidencias siendo a mi (nuestro) cargo, cualquier gasto que la sociedad hiciere en el\n"
+"                  cobro de este Pagaré. inclusive los llamados personales y aún cuando por regla general no\n"
+"                  hubiere condenación en costos y faculto(amos) a la sociedad para que designe a la persona\n"
+"                  depositaria de los bienes que se embarguen a quien relevo de la obligación de rendir fianza.\n"
+"                  San Salvador."
+msgstr ""
+
+#. module: l10n_invoice_sv
+#: model:ir.actions.report,print_report_name:l10n_invoice_sv.report_anul_export
+#: model:ir.actions.report,print_report_name:l10n_invoice_sv.report_consumidor_final
+#: model:ir.actions.report,print_report_name:l10n_invoice_sv.report_credito_fiscal
+#: model:ir.actions.report,print_report_name:l10n_invoice_sv.report_exportacion
+#: model:ir.actions.report,print_report_name:l10n_invoice_sv.report_invoice_digital
+#: model:ir.actions.report,print_report_name:l10n_invoice_sv.report_ndc
+msgid ""
+"object.partner_id.display_name + ' - ' + object.name + ' - ' + object.journal_id.name\n"
+"            "
+msgstr ""

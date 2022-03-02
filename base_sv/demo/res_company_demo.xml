@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="res.company" id="base.main_company">
+            <field name="vat">0101-010101-101-1</field>
+            <field name="company_registry">100001-1</field>
+            <field name="giro">Ventas NPC</field>
+            <field name="currency_id" ref="base.USD"/>
+            <field name="phone">+503 7777-7777</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="iva_header">
+            <div class="header">
+                <div class="row border">
+                    <div class="col-3 text-center">
+                        <img t-if="company.logo"
+                             t-att-src="image_data_uri(company.logo)"
+                             style="max-height: 45px;"
+                             alt="Logo"/>
+                    </div>
+                    <div class="col-9 text-center">
+                        <h3 t-field="company.name"/>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h4>
+                            <t t-if="doc.type == 'ccf'">
+                                LIBRO DE VENTAS A CONTRIBUYENTES
+                            </t>
+                            <t t-if="doc.type == 'fcf'">
+                                LIBRO DE VENTAS A CONSUMIDORES FINALES
+                            </t>
+                            <t t-if="doc.type == 'compras'">
+                                LIBRO DE COMPRAS
+                            </t>
+                        </h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        Numero de Registro: <span t-field="doc.company_id.company_registry"/>
+                    </div>
+                    <div class="col-6">
+                        Numero de Identificacion Tributario: <span t-field="doc.company_id.vat"/>
+                    </div>
+                </div>
+                <div class="row border-bottom">
+                    <div class="col-6">
+                        Mes: <span t-field="doc.mes"/>
+                    </div>
+                    <div class="col-6">
+                        Año: <span t-esc="doc.fecha.strftime('%Y')"/>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="iva_footer">
+            <div class="footer">
+                <div t-if="report_type == 'pdf'" class="text-muted" style="border-top: 1px solid black;">
+                    Pagina: <span class="page"/> de <span class="topage"/>
+                </div>
+            </div>
+        </template>
+
+        <template id="iva_layout">
+            <!-- Multicompany -->
+            <t t-if="not o and doc">
+                <t t-set="o" t-value="doc"/>
+            </t>
+            <t t-if="o and 'company_id' in o">
+                <t t-set="company" t-value="o.company_id"/>
+            </t>
+            <t t-if="not o or not 'company_id' in o">
+                <t t-set="company" t-value="res_company"/>
+            </t>
+
+            <t t-call="reporte_impuestos_sv.iva_header"/>
+
+            <t t-raw="0"/>
+
+            <t t-call="reporte_impuestos_sv.iva_footer"/>
+        </template>
+    </data>
+</odoo>
